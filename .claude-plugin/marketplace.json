@@ -1,0 +1,14 @@
+{
+  "name": "kheel-skills",
+  "owner": { "name": "Kheel" },
+  "metadata": {
+    "description": "Kheel's skill plugins for agents."
+  },
+  "plugins": [
+    {
+      "name": "kheel-analysis",
+      "source": "./plugins/kheel-analysis",
+      "description": "Agent skills for requirements analysis: glossary (ontology), activity mapping, domain modelling, use cases, stories, business rules and constraints."
+    }
+  ]
+}

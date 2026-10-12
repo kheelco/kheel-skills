@@ -1,0 +1,20 @@
+{
+  "name": "kheel-analysis",
+  "version": "0.1.0",
+  "description": "Agent skills for requirements analysis at various levels of detail: developing a glossary (ontology), mapping activities, modelling the domain, and capturing use cases, stories, business rules and constraints.",
+  "author": {
+    "name": "Kheel"
+  },
+  "keywords": [
+    "requirements",
+    "analysis",
+    "glossary",
+    "ontology",
+    "domain-model",
+    "use-cases",
+    "user-stories",
+    "business-rules"
+  ],
+  "homepage": "https://github.com/kheelco/kheel-skills",
+  "repository": "https://github.com/kheelco/kheel-skills"
+}
