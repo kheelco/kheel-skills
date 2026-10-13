@@ -38,11 +38,11 @@ reciprocal members).
 | Job | Category | Executor | How it stands to the main job, and how its intent differs |
 |---|---|---|---|
 | **[Maintain the membership roll](#maintain-the-membership-roll)**<br>an accurate, current record of who belongs to the club and on what terms, over the life of the club | Main | Membership secretary | |
-| **Provide authoritative information about membership** | Adjacent | Membership secretary | Satisfies a particular information need, current or historical, routine or disputed, where the main job preserves the information. Signal: intent. |
-| **Decide on an application** | Related | Committee | Decides whether, and on what terms, someone joins, before the change is recorded. Signal: authority. |
-| **Join the club** | Related | Applicant | The applicant's own undertaking; the roll takes its result in. Signal: changing the world against representing it. |
-| **Establish membership before relying on it** | Related | Relying party | Uses the roll to confirm someone belongs, for its own purpose. Signal: intent. |
-| **Forecast membership income** | Related | Treasurer | Uses the roll's numbers to forecast; *what if* against *what is*. Signal: lifecycle. |
+| **Provide authoritative information about membership** | Related | Membership secretary | Satisfies a particular information need, current or historical, routine or disputed, where the main job preserves the information. Signal: intent. |
+| **Decide on an application** | Stakeholder | Committee | Decides whether, and on what terms, someone joins, before the change is recorded. Signal: authority. |
+| **Join the club** | Stakeholder | Applicant | The applicant's own undertaking; the roll takes its result in. Signal: changing the world against representing it. |
+| **Establish membership before relying on it** | Stakeholder | Relying party | Uses the roll to confirm someone belongs, for its own purpose. Signal: intent. |
+| **Forecast membership income** | Stakeholder | Treasurer | Uses the roll's numbers to forecast; *what if* against *what is*. Signal: lifecycle. |
 
 ## Entries
 
@@ -52,23 +52,18 @@ reciprocal members).
   the club.
 - **Category:** Main
 - **Executor:** Membership secretary
-- **Episodes:**
-  - Take in a change to the roll (event-driven: a member joins, resigns, changes grade or particulars).
-  - Check the roll against its sources (periodic).
-  - Correct the roll (exceptional: an error found by the secretary, or ordered by a tribunal).
 - **Edge cases:** A family membership (several people, one subscription) and a move between grades (same person,
   different terms) break an object of *who belongs* alone; supports *who belongs and on what terms*.
 - **Qualifiers:** Avoid the anxiety of being blamed when a member is wrongly turned away (emotional).
 - **Circumstances:** The first roll when the club is founded; a national federation at volume, with online joining.
-- **Classifications:**
-  - Check the roll against its sources: a job of its own, part of maintaining the roll (proposed). Independent
-    objective (agreement established at a date), independent completion, and context independence (done when nothing
-    has changed) all point to a job; same executor; would survive a change of tools.
-  - Take in a change: an episode of maintaining the roll (proposed). It only makes sense when a change arrives, and
-    its result is the main job's own.
-  - Open: whether correcting the roll is a job of its own. Correcting an error found long afterwards has its own
-    objective and completion; correcting one found while recording a change only makes sense inside that work. The
-    tests split, and the answer would change what the map holds.
+- **Constituents:**
+
+  | Candidate | Set off by | What was noticed | Lean | Status |
+  |---|---|---|---|---|
+  | Take in a change to the roll | A member joins, resigns, changes grade or particulars | Only happens when a change arrives; its result is the roll's | Likely an episode | Absorbed: passes through Locate, Confirm and Execute |
+  | Check the roll against its sources | The annual check falls due | Done when nothing has changed; its own completion | Unclear | Absorbed: Monitor |
+  | Correct the roll | An error is found, by the secretary or ordered by a tribunal | Sometimes inside a change, sometimes long after | Unclear | Absorbed: Modify |
+  | Establish an authoritative roll | The club is founded, or records are lost | Rare, substantial, own beginning and end | Possibly a job of its own | Deferred: arises only on founding or after a loss, and is not needed for the current purpose; a candidate for a map of its own |
 - **Map:** [Job map](job-maps/maintain-the-membership-roll.md)
 - **Source:** Membership secretary interviews, 2026-03.
 - **Notes:** Left out: the club's insurer setting premiums (touches the roll only through *Establish membership*).
@@ -86,16 +81,18 @@ they carry), and what was unified or split and why.
 
 ### The jobs table
 
-Four columns, the main job first, then adjacent and related jobs:
+Four columns, the main job first, then related and stakeholder jobs:
 
 | Column | Holds |
 |---|---|
 | **Job** | The job's name (verb + object) in bold, linked to its entry if it has one; then, on a new line (`<br>`), its contextual clarifier where it has one. |
-| **Category** | `Main`, `Adjacent` (optionally with its place in time: `Adjacent: before`, `after`, `alongside`) or `Related`. |
+| **Category** | `Main`, `Sub-job` (a constituent confirmed by the job map), `Related` (optionally with its place in time: `Related: before`, `after`, `alongside`) or `Stakeholder`. |
 | **Executor** | The executor's name, as in the executors table. |
 | **How it stands to the main job, and how its intent differs** | In words, how it touches the main job (*decides before the change is recorded*; *uses the roll to…*), its core intent, and the signal that makes it distinct (intent, time horizon, lifecycle, authority, language). Empty for the main job. Classifying relationships systematically is job domain analysis's work. |
 
-Episodes are not rows: they are listed on the entry of the job they belong to. A job is identified by its name; renames keep the old
+Constituent candidates are not rows: they are listed on the main job's entry, and only there (a related job that is
+mapped has none to take in). A constituent the job map confirms as a
+sub-job becomes a row, with category `Sub-job` and its own entry. A job is identified by its name; renames keep the old
 name in its notes until citations are updated. A table cell cannot contain `|` or a line break other than `<br>`.
 
 ### The entries
@@ -105,17 +102,18 @@ heading comes its YAML block when synced (see *Syncing*). Then a bullet list, wr
 does not apply:
 
 - **Statement**, **Category**, **Executor** and **Intent and difference**: as the row says.
-- **Episodes** (a continuing job): each with what sets it off (event-driven, periodic or exceptional).
-- **Classifications**: each candidate that needed the tests ([jobs](jobs.md), *Classifying a candidate*): its proposed
-  classification (job, episode or step) and the tests that support it and point against it; or, where the tests
-  genuinely split, *Open:* with the evidence each way.
+- **Constituents** (the main job): a table of constituent candidates ([jobs](jobs.md), *Constituents of the main job*):
+  the candidate, what sets it off, what was noticed, the lean (*likely an episode*, *likely a step*, *possibly a job
+  of its own*, *unclear*) and the status (*open*; *deferred:* with why the map has not examined it; *absorbed:* where it
+  went in the map; *confirmed:* sub-job, with a link to its row and map).
+- **Open classifications**: boundary questions the topology could not settle, with the evidence each way.
 - **Map**: a link to its job map, if it has one; a link to the job domain analysis, if one covers it.
 - **Edge cases**: the cases the object's breadth was tested against, and what they showed.
 - **Qualifiers**: emotional and social, each labelled, only where evidence supports them.
 - **Circumstances**: each, with what changes in it.
 - **Seams**: where this job's execution leaves any system, and in which direction, if the framing does not already
   say.
-- **Source**, and **Notes** (open questions start with *Open:*; candidates rejected as steps or episodes; related
+- **Source**, and **Notes** (open questions start with *Open:*; candidates rejected as steps; stakeholder
   jobs considered and left out, with why, on the main job; executor questions).
 
 ### Drafts
@@ -155,7 +153,7 @@ version or timestamp; before pushing, check each job's version against the sourc
 |---|---|
 | **Framing and the jobs table** | The standard shape. |
 | **The whole document** | Analysts and review; contested executors or jobs. |
-| **A diagram** | The main job in the centre with its episodes inside it, adjacent jobs beside it, related jobs outside with their executors and relations. Derived from the document, never drawn separately (Mermaid `flowchart` unless the project uses another). |
+| **A diagram** | The main job in the centre with its constituents (and confirmed sub-jobs) inside it, related jobs beside it, stakeholder jobs outside with their executors and relations. Derived from the document, never drawn separately (Mermaid `flowchart` unless the project uses another). |
 | **Part of a domain analysis** | Framing and topology first, ahead of the job maps. |
 
 ## Where it lives

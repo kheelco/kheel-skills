@@ -1,6 +1,6 @@
 # Relationships, seams and obligations
 
-How the topology's jobs touch one another, and where their work crosses into the world. The topology names its related
+How the topology's jobs touch one another, and where their work crosses into the world. The topology names its stakeholder
 jobs and says in words how each stands to the main job; this analysis classifies those relationships, adds the ones
 the boundary turns on, and settles the seams and obligations the topology flagged.
 
@@ -17,9 +17,9 @@ A relationship runs between two jobs of different executors, or two jobs of the 
 | **consumes** | Uses what the other job produces or maintains |
 | **responds to** | Is set off by it |
 
-A relation outside these is usually one of them in other words. Link a relationship to the most specific job it bears
-on: where the main job has sub-jobs (*Decomposition*), a tribunal *governs* correcting the record, not maintaining it in
-general.
+A relation outside these is usually one of them in other words. Link a relationship to the most specific job it bears on:
+where the main job has a confirmed sub-job (from its job map), link to the sub-job; otherwise to the main job, noting
+which part of it the relationship bears on (a tribunal *governs* the roll where a correction is disputed).
 
 A shared relationship is not a shared job: a member resigning, an applicant joining and the executor of a deceased
 member's estate all *change* who is on the roll, but pursue different results, and stay three jobs.
@@ -33,8 +33,8 @@ both. Decompose them:
 
 | Job | Executor | Category |
 |---|---|---|
-| Decide on an application for membership | Committee | Related: governs |
-| Join the club | Applicant | Related: changes |
+| Decide on an application for membership | Committee | Stakeholder: governs |
+| Join the club | Applicant | Stakeholder: changes |
 | Record the new membership | Membership secretary | An episode of the main job |
 
 Then check the **direction of the seam**. Recording is not always passive: in some domains the act of recording gives
@@ -48,24 +48,24 @@ has that effect is a fact about the domain, to be checked against its sources.
 An obligation triggered by the same event as a piece of the main job's work (notifying a federation when a member
 joins) is not part of that work just because it shares the trigger. Ask the outcome question: **is meeting the
 obligation necessary to achieve the executor's desired outcome, or does it serve a distinct outcome** (keeping another
-body's record current, say)? If necessary, it is a step of the episode, or of the related job that makes the change;
-if distinct, it belongs to a separate job, which may be adjacent or part of a broader one (below). Which events create
+body's record current, say)? If necessary, it is a step of the episode, or of the stakeholder job that makes the change;
+if distinct, it belongs to a separate job, which may be related or part of a broader one (below). Which events create
 an obligation at all, and with what deadlines, is a fact about the domain to be checked against its sources, not
 assumed. Until both are settled, record the obligation as an open boundary question, not as a rule
 (*changes may create notification obligations; whether a notification completes the change or belongs to a separate
 reporting job is open*).
 
 An obligation with **its own trigger and lifecycle** (an annual return to a federation) is a candidate job. Before
-calling it adjacent, test its altitude: if its scope is wider than the main job's object (the annual return covers
+calling it related, test its altitude: if its scope is wider than the main job's object (the annual return covers
 officers, finances and facilities as well as members), it belongs to a broader job (*maintain the club's standing with
-its federation*), not beside the main job. Then do not list it as an adjacent job: record a **boundary question**, saying where event-driven and periodic obligations are handled, and leave the broader job to its own
-topology. Only an obligation whose scope is the main job's object, with a lifecycle of its own, is adjacent.
+its federation*), not beside the main job. Then do not list it as a related job: record a **boundary question**, saying where event-driven and periodic obligations are handled, and leave the broader job to its own
+topology. Only an obligation whose scope is the main job's object, with a lifecycle of its own, is related.
 
 **The statement must match the reason.** A candidate's statement and the signal that makes it distinct must describe
 the same thing. A job stated as one activity (*report membership numbers*) but justified by another's lifecycle (the
 annual return's cycle) is not yet a job: restate it as what actually has that lifecycle, then test that.
 
 **Supplying another job is not a job by itself.** That the main job's record feeds another executor's job is captured
-by that related job (*consumes*). It becomes an adjacent job of the main executor only when supplying pursues a
+by that stakeholder job (*consumes*). It becomes a related job of the main executor only when supplying pursues a
 desired outcome of its own (satisfying a particular information need, where the main job preserves authoritative
 information), not merely because information flows or each request has a start and end.

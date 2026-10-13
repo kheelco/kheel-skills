@@ -1,33 +1,37 @@
 ---
 name: job-domain-analysis
 description: >-
-  Use when analysing how a domain's jobs fit together, beyond discovering them: whether candidates are jobs of their
-  own, parts of larger jobs (sub-jobs), episodes or steps; how continuing jobs are done through episodes; how jobs of
-  different executors change, enable, constrain, govern or consume one another; execution seams, including where
-  recording gives a change its effect; event-driven and periodic obligations; and testing boundaries against
-  exceptional cases. Trigger on "how do these jobs fit together", "is this one job or several", "is this part of that
-  job", "sub-job", "episode", "continuing job", "job dependencies", "who governs this", "execution seam", "does
-  recording make the change", "domain analysis of the jobs", or when a job topology or job map leaves a job's identity
-  or boundary unresolved. Optional: a job map can be made straight from a job topology.
+  Use when analysing how a domain's distinct jobs relate to one another, beyond discovering them: whether two
+  candidates are one job or two, whether a candidate belongs to the main job or beside it, whether two people are one
+  executor; how jobs of different executors change, enable, constrain, govern or consume one another; execution seams,
+  including where recording gives a change its effect; event-driven and periodic obligations; and testing boundaries
+  against exceptional cases, settings and change. Trigger on "how do these jobs relate", "is this one job or two", "is
+  this part of the main job or beside it", "are these the same executor", "job dependencies", "who governs this",
+  "execution seam", "does recording make the change", "domain analysis of the jobs", or when a job topology or job map
+  leaves a boundary between jobs unresolved. Optional: a job map can be made straight from a job topology. What
+  happens inside one job (its steps, episodes and sub-jobs) is the job map's work.
 ---
 
 # Job domain analysis
 
-A **job domain analysis** examines how the jobs a topology has found fit together: their identity, decomposition and
-episodes, the relationships between them, where their work crosses into the world, and whether their boundaries hold.
-It is an **optional enrichment** of the job topology (the `job-topology` skill), not a step every analysis must take:
-the topology is enough to start a job map. Use it before mapping when the topology records classifications it could
-not settle, after mapping when a map exposes a boundary problem, or whenever a richer model of the domain's work is
-wanted.
+A **job domain analysis** examines how the jobs a topology has found relate to one another: their identity where it
+is in question, the relationships between them, where their work crosses into the world, the obligations around them,
+and whether their boundaries hold. It is an **optional enrichment** of the job topology (the `job-topology` skill),
+not a step every analysis must take: the topology is enough to start a job map. Use it when the topology records
+boundary questions it could not settle, when a map exposes a problem at the edge of a job, or whenever a richer model
+of how the domain's jobs fit together is wanted.
+
+It works **between** jobs. What happens **inside** a job (whether a piece of work is a step, an episode or a sub-job
+with its own map) is discovered by the job map, which resolves the topology's constituent candidates.
 
 **It enriches the topology; it does not redefine it.** The topology remains the authoritative inventory of jobs and
 executors. This analysis refers to its jobs by name and adds what the topology deliberately leaves out. Where the
-analysis concludes that the topology is wrong (a candidate is a job after all, an executor is two), it proposes the
-change to the topology, which is made there.
+analysis concludes that the topology is wrong (two jobs are one, an executor is two), it proposes the change to the
+topology, which is made there.
 
 This goes beyond what Outcome-Driven Innovation formalises. Ulwick names core, related and emotional jobs and maps one
-job at a time; decomposing jobs, analysing episodes and classifying cross-job relationships is this family's own
-extension, consistent with that framework but not part of it.
+job at a time; classifying cross-job relationships, seams and obligations is this family's own extension, consistent
+with that framework but not part of it.
 
 ## Principles
 
@@ -35,20 +39,21 @@ The family's principles apply: the domain, not the system; written in the glossa
 inferred, proposed) while drafting, with unread sources treated as proposed; draft freely, commit by agreement; rules
 of method are not facts about the domain.
 
-- **Classifications are established, not prescribed.** Whether something is a job, a sub-job, an episode or a step is
-  settled by weighing the evidence ([identity](references/identity.md)), and recorded as undecided where it cannot be.
-- **No classification for the sake of a map.** How the jobs will be mapped is the job map's choice, made afterwards; a
-  classification chosen because it yields a tidier map is a defect.
+- **Classifications are established, not prescribed.** Whether two candidates are one job, or a candidate belongs to
+  the main job, is settled by weighing the evidence ([identity](references/identity.md)), and left open where it
+  cannot be.
+- **No classification for convenience.** A classification chosen because it yields a tidier model or map is a
+  defect.
 
 ## Workflow
 
-1. **Name the task**: settling open classifications from the topology; decomposing a continuing job; analysing
-   relationships; checking seams or obligations; validating boundaries; reviewing.
+1. **Name the task**: settling the topology's open boundary questions; analysing relationships; checking seams or
+   obligations; validating boundaries; reviewing.
 2. **Read the topology** for the domain and its open classifications, flagged seams and boundary questions; and any job
    maps already made. If there is no topology, make one first with `job-topology`.
-3. **Settle identity and decomposition** ([identity](references/identity.md)): for each open candidate, weigh the
-   identity tests; decompose a continuing job into sub-jobs only where its parts have identity of their own; classify
-   its episodes, each with trigger, immediate result and completion.
+3. **Settle identity between jobs** ([identity](references/identity.md)): for each open boundary question (one job or
+   two; part of the main job or beside it; one executor or two), weigh the five tests and propose the change to the
+   topology. Leave a job's internal structure to its map.
 4. **Analyse relationships, seams and obligations** ([relationships](references/relationships.md)): classify each
    relationship and link it to the most specific job it bears on; separate changing the world from recording it, and
    settle each seam's direction; place each obligation.
@@ -66,15 +71,16 @@ domain analysis can be partial: settling one open question is a legitimate piece
 ## Alongside the other skills
 
 - **Job topology**: the source of the jobs and executors, and the place changes to them are made.
-- **Job map**: decides how to map a job, using the decomposition this analysis records (a higher job over its life, or
-  its sub-jobs one by one); a map that exposes a boundary problem comes back here.
-- **Glossary**: every job, episode and case named here is written in its words; analysis is a source of new terms.
+- **Job map**: discovers each job's internal structure (steps, episodes, sub-jobs) and reports it to the topology;
+  this analysis reads the maps where it needs that structure, and a map that exposes a problem at the edge of a job
+  comes back here.
+- **Glossary**: every job and case named here is written in its words; analysis is a source of new terms.
 
 ## Reference
 
 | File | Holds |
 |---|---|
-| [references/identity.md](references/identity.md) | Job identity, decomposition, sub-jobs, continuing jobs and episodes, boundary validation |
+| [references/identity.md](references/identity.md) | Identity between jobs (one job or two; part of the main job or beside it; one executor or two), boundary validation |
 | [references/relationships.md](references/relationships.md) | Kinds of relationship, changing the world against recording it, seams, obligations, supplying another job |
 | [references/review.md](references/review.md) | Reviewing an analysis |
 | [references/format.md](references/format.md) | The analysis document and where it lives |

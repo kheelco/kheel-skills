@@ -24,31 +24,52 @@ notes where it runs alongside or repeats.
 
 A job map maps **one functional job**, chosen from the job topology (the `job-topology` skill), with its executor and
 its desired result. Confirm the job is in the topology and its executor settled; if not, settle them there first. Take
-account of any open classifications the topology recorded, and of any decomposition a job domain analysis has made
-(the `job-domain-analysis` skill): where a classification the map depends on is still open, settle it there, or map
-the candidates separately and compare (below).
+in the topology's **constituent candidates** for the job (work that seems to make up the main job, each with what was
+noticed and a provisional lean; they are recorded on the main job only, so a related job mapped on its own has none)
+and any open boundary questions the map depends on.
 
-Then choose how to map, and record it in the map's *Pre-check* line. This is the job map's choice, made within the
-boundaries the topology and any analysis have set:
+By default the job is mapped **over its life**: the Ulwick job map, whose eight stages hold the steps the executor must
+accomplish to get the job done, over its whole life, not one transaction. For a continuing job, a stage's steps may be
+carried out continuously, periodically or on demand, and each episode passes through only the stages it needs
+(**the continuity rule**). **Circumstances** and **edge cases** are folded into the steps they change (*Circumstances
+and edge cases*, below).
 
-- **One map of the job over its life (the default).** The Ulwick job map: the eight stages hold the steps the executor
-  must accomplish to get the job done, over its whole life, not one transaction. For a continuing job, a stage's steps
-  may be carried out continuously, periodically or on demand, and each episode passes through only the stages it
-  needs (**the continuity rule**): a change through those of taking it in, a periodic check through Monitor, a
-  correction through Modify. **Circumstances** and **edge cases** are folded into the steps they change (*Circumstances
-  and edge cases*, below); neither spawns a map of its own.
-- **A map of a sub-job.** Where a job domain analysis records that a larger job is made up of **sub-jobs** (parts with
-  job identity of their own), any sub-job may be mapped on its own, as one progression from its beginning to its
-  completion. The larger job may still have its own map over its life; the two are complementary views, not
-  alternatives that change what the jobs are. Map sub-jobs when the user asks for each part set out on its own, or
-  when the larger job's map would otherwise hide what matters.
-- **Undecided.** Where the topology left open whether something is a job of its own, **map the candidates
-  separately**, as drafts, without presuming the answer, and compare their desired results, sequences and completions.
-  Where one begins inside another's execution and returns to it, it is that job's Monitor or Modify; otherwise report
-  them back (to the topology, or to a job domain analysis) as candidate jobs or sub-jobs.
+## Resolving constituents, and the granularity check
 
-A job with a beginning and an end (*settle an estate*) is mapped from what starts it to its completion. Never split a
-job into several maps by episode, trigger or source alone, and never let the choice of map decide what the jobs are.
+Mapping is where the job's internal structure is discovered, and the job map is responsible for it. Work through the
+topology's constituent candidates as the map takes shape, and resolve each:
+
+- **Absorbed**: it is an **episode** of the job, passing through some of its steps, or a **step** (or part of one).
+  This is the usual result.
+- **Confirmed as a sub-job**: it is a job in its own right, part of this job, to be mapped on its own.
+- **Deferred**: not examined now, because it is rare, large, or not needed for the purpose in hand; say why. It stays
+  a hypothesis in the topology, and a later map takes it up.
+
+Confirm a sub-job only if it passes the **mappability test**: it has a **coherent progression of its own**, from its
+own beginning through execution to its own completion, that would make a Define-to-Conclude map in its own right,
+**and outcomes of its own**, measuring its own success rather than the parent job's. Weigh the topology's five tests
+(independent objective, independent completion, executor, context independence, stable identity) with that
+progression in view. Being separately completable is not enough: a step can be completed and judged on its own and
+still be a step. A trigger and a completion do not make a job, and **a different success criterion is not a different
+job**: consistency and correctness, or speed and accuracy, are outcomes on the same steps unless each is pursued as an
+accomplishment of its own. A confirmed sub-job's map owns its steps and outcomes; this map keeps a single step
+pointing to it, with no outcomes of its own, so the two cannot disagree.
+
+Where it is unclear, **map the candidate separately**, as a draft, without presuming the answer, and compare: where its
+progression begins inside the job's execution and returns to it, it is that job's Monitor or Modify; where it has its
+own beginning, result and completion, it is a sub-job.
+
+**The granularity check.** If several constituents are confirmed as sub-jobs, ask whether the focal job is the right
+unit for a job map at all, or a **higher-order objective** containing several mappable jobs. If it is, say so: the
+topology may restate it, and the sub-jobs are mapped instead of, or as well as, a map of the whole.
+
+**Feed back to the topology.** Record each constituent's resolution in the map's *Pre-check* line and report it to the
+topology (*absorbed: Monitor*; *confirmed: sub-job*; *deferred*, with why), where the constituent's status is updated and a confirmed sub-job
+becomes a row. A resolution is a reason to revise the topology, not proof that the topology was wrong. Equally, a step
+that turns out to be a job in its own right, though the topology never listed it, goes back as a new candidate.
+
+Never split a job into several maps by episode, trigger, source or success criterion alone, and never let the
+convenience of a map decide what the jobs are.
 
 **Stages are accomplishments, not buckets**, in any map. A step belongs under a stage because it is what
 the executor must accomplish at that point in getting the job done (finding out whether the state has drifted is
@@ -66,8 +87,8 @@ Work the eight types as questions about the job and assign each step found to th
 - **Modify adjusts.** Modify responds to what Monitor or the work itself shows: going back to an earlier step,
   obtaining corrected inputs, resolving conflicting instructions, adjusting what is about to be done, or stopping. In a
   map of a continuing job over its life it also puts the maintained state right where it has drifted. In a map of a
-  sub-job it adjusts that sub-job's execution only; an error that predates it is handed to the sub-job
-  that corrects it. Say what happens next (which step it returns to, or how it ends).
+  sub-job it adjusts that sub-job's execution only; an error that predates it belongs to the parent job's
+  Modify, or to whichever job corrects it. Say what happens next (which step it returns to, or how it ends).
 - **Every step serves the job.** Test each step against the job's desired result (and, in a map of a sub-job,
   its completion). Where work is handed to another executor (a dispute referred to a tribunal), or, in a map of a
   sub-job, to another sub-job, the steps stop at the hand-off: identify, document and refer, not settle.
@@ -98,7 +119,7 @@ milestone.
 - **Verb + object**, in the executor's own language, the object a glossary noun, with a clarifier only where two steps
   would otherwise read alike.
 - **The job's executor.** Every step is accomplished by the executor of the job. A step that someone else accomplishes
-  is part of their job: a related job in the topology. The executor may depend on others (a committee's approval arrives);
+  is part of their job: a stakeholder job in the topology. The executor may depend on others (a committee's approval arrives);
   the step is then what the executor must accomplish about it (*confirm the change has been approved*).
 - **One question per step.** A step whose outcomes answer different questions (whether the action is authorised;
   whether the people and things affected are eligible for it) may be two steps. Split it where that makes the map
@@ -171,7 +192,8 @@ job's Monitor) must work to a named **standard**, the one the job's statement im
   happened but was never evidenced. The completion is justified confidence, or a stated limit to it.
 
 A map that compares a thing with its sources and then claims correctness has done consistency work. Where the
-standard is not evident, settle it with the topology before mapping; where both are needed, they are separate steps.
+standard is not evident, settle it with the topology before mapping; where both are needed, they are
+separate outcomes, or separate steps where each needs work of its own, not separate jobs.
 
 ## A step is not a glossary activity
 
@@ -182,8 +204,13 @@ glossary's activities into the map as steps. A step's nouns should be glossary t
 
 ## Errors to watch for
 
-- **Fragmenting the job unasked.** Several maps for one job, by episode, trigger or source, when the default lifecycle
-  map was wanted.
+- **Fragmenting the job.** Several maps for one job, by episode, trigger, source or success criterion, without
+  the mappability test.
+- **Constituents left unresolved.** The topology's constituent candidates neither absorbed, confirmed nor deferred with
+  a reason, or resolved without feeding back to the topology.
+- **Mirrored steps.** A sub-job's steps or outcomes repeated in the parent's map, so that two copies can disagree.
+- **A sub-job on completion alone.** A constituent confirmed because it can be completed on its own, without a
+  progression and outcomes of its own.
 - **Stages as buckets.** Activities placed under a stage because it needed filling, not because they are what the
   executor must accomplish there.
 - **A step to fill a type.** A step invented, or an episode filed, because a type was empty.
@@ -193,12 +220,12 @@ glossary's activities into the map as steps. A step's nouns should be glossary t
 - **An empty type passed over.** No step under a type, with no look at whether the boundary put its work elsewhere.
 - **A process map in disguise.** Steps that name today's documents, systems and hand-offs. Ask what each is for.
 - **A step per type.** Eight steps, one per type, several of them thin. The types are questions, not slots.
-- **A related job's steps in the map.** The auditor's verification appearing as a Monitor step. Different executor;
+- **A stakeholder job's steps in the map.** The auditor's verification appearing as a Monitor step. Different executor;
   back to the topology.
 - **Steps that are glossary activities transcribed.** *Admit* as a step because the glossary has *Admission*.
 - **Assurance without a standard.** A map that compares with sources and claims correctness, or names no standard.
 - **Sub-steps.** A step broken into steps of its own: the job is too high, or the step is a job.
-- **Forty steps.** The job was stated too high, or the map has absorbed its adjacent jobs.
+- **Forty steps.** The job was stated too high, or the map has absorbed its related jobs.
 - **Seams left unmarked.** A map that reads as though a system did everything.
 - **Cases mislaid.** A circumstance recorded as an edge case or the reverse; a case recorded on a step it does not
   change; an edge case named in words the glossary does not hold, and not sent to it.

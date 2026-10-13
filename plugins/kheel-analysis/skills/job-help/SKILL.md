@@ -47,7 +47,7 @@ to keep the process moving: an unanswered question is recorded as open, and the 
   *desired outcome*) once the idea has landed.
 - **Honest about provenance.** Ulwick's Outcome-Driven Innovation provides the core: functional jobs, executors,
   related and emotional jobs, the eight-stage job map, desired outcome statements and opportunity scoring. The job
-  topology artefact, open classifications, job domain analysis, sub-jobs, episodes, variants for circumstances and edge
+  topology artefact, stakeholder jobs, constituent candidates, open classifications, job domain analysis, sub-jobs, episodes, variants for circumstances and edge
   cases, and seams are this plugin's own, consistent with Ulwick but not part of his method. Never present them as
   canonical Ulwick.
 - **Point, do not duplicate.** Summarise a rule to explain it; for the rule itself, name the skill and reference

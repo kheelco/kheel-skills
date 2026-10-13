@@ -17,9 +17,8 @@ the club*. It contains no solution, technology or process. (`job-topology`, *The
 not their title: *the person or organisation responsible for the club's record of its members*. A volunteer secretary,
 a committee member and a paid administrator can all be the same executor. (`job-topology`, *The executor*.)
 
-**Related jobs.** Other jobs around the main one: some done by the same executor for a different result (*provide
-information about membership*), others by other people that touch it (*decide on an application*, done by the
-committee). (`job-topology`, *The other jobs*.)
+**Related jobs.** Other jobs the same executor is trying to get done around the main one, before, during or after it,
+each for a different result (*provide information about membership*). (`job-topology`, *The other jobs*.)
 
 **Emotional and social jobs.** How the executor wants to feel (*avoid the anxiety of being blamed when a member is
 wrongly turned away*) and be seen (*be seen as a dependable keeper of the club's records*) while doing the job.
@@ -49,20 +48,31 @@ These are this plugin's own, consistent with Ulwick but not part of his method (
 **Job topology.** A compact inventory of the domain's jobs and executors, made before any job is mapped, so the map is
 pointed at the right job. Ulwick does not prescribe one.
 
-**Job, episode or step?** When it is unclear, five tests are weighed: an independent objective, an independent
-completion, the executor, whether it makes sense outside another job's work, and whether it would survive a change of
-tools. No single test decides; having its own trigger and end does not make something a job. The most defensible answer
-is proposed, with its reasons.
+**Stakeholder jobs.** Jobs of other executors that touch the main job: *decide on an application* (the committee),
+*join the club* (the applicant). Ulwick gives them no single name; the topology lists those that help establish the
+main job's boundary. (`job-topology`, *The other jobs*.)
 
-**Open classification.** A case where those tests genuinely split (is correcting the roll a job of its own, or part of
-recording a change?), recorded with the evidence each way instead of being forced.
+**Constituent candidates.** Work the topology finds that seems to make up the main job (taking in changes, checking,
+correcting, setting up), recorded with what was noticed and a provisional lean, but not yet classified. The job map
+decides what each one is, with the job's progression in view, and reports back.
+
+**Job, episode or step?** Five tests are weighed: an independent objective, an independent completion, the executor,
+whether it makes sense outside another job's work, and whether it would survive a change of tools. No single test
+decides; having its own trigger and end does not make something a job (steps have both), and a different success
+criterion (checking for consistency, or for correctness) is an outcome, not a job. The topology uses the tests lightly,
+at its boundary and to form a lean; the job map applies them in full.
+
+**Open classification.** A question at the edge of the main job that the tests genuinely split on (is this part of the
+main job, or a job beside it?), recorded with the evidence each way instead of being forced.
 
 **Continuing job and episodes.** Some jobs never finish: they keep something in a state (*maintain the roll*, *keep
 the fleet roadworthy*). They are done through **episodes**, each set off by something: a change arrives, a check falls
 due, an error is found. In a job map, each episode passes through the stages it needs.
 
-**Sub-job.** A part of a larger job that is a job in its own right: *service a vehicle* within *keep the fleet
-roadworthy*. It can be mapped on its own, alongside the larger job's map. (`job-domain-analysis`.)
+**Sub-job.** A constituent the job map confirms as a job in its own right, because it has a progression and outcomes of
+its own: *service a vehicle* within *keep the fleet roadworthy*. It is added to the topology and mapped on its own,
+alongside the larger job's map. If several turn up, the larger job may be a higher-order objective rather than a job to
+map. (`job-map`.)
 
 **Circumstances and edge cases.** A **circumstance** is a situation the whole job is done in (a first set-up, a large
 organisation, a dispute); an **edge case** is a particular kind of thing the job deals with (a family membership, a

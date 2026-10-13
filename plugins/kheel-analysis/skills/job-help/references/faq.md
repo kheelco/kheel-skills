@@ -4,8 +4,13 @@
 only makes sense with a screen in mind, it has become a workflow.
 
 **Is this Ulwick?** The topology and job map together are Ulwick-aligned: an ODI practitioner will recognise the
-functional job, executor, eight-stage map and outcomes. The topology artefact itself, and job domain analysis,
-sub-jobs, episodes, variants and seams, are this plugin's extension ([extensions](extensions.md)).
+functional job, executor, eight-stage map and outcomes. The topology artefact itself, stakeholder jobs, constituent
+candidates, job domain analysis, sub-jobs, episodes, variants and seams, are this plugin's extension
+([extensions](extensions.md)).
+
+**Related job or stakeholder job?** A related job is another job the *same* executor is trying to get done, which is
+Ulwick's term and his meaning. A stakeholder job is a job of *another* executor that touches the main job; the word
+is this plugin's, since Ulwick gives such jobs no single name.
 
 **Why not start with the map?** Because a map of the wrong job, or one stated at the wrong altitude, is wasted work.
 The topology is usually short; it is there to make sure the map is pointed at the right job.
@@ -19,7 +24,7 @@ nobody does it for its own sake.
 
 **My job never finishes. How do I map it?** Map it over its life: each kind of work (a change arriving, a periodic
 check, a correction) passes through the stages it needs. If some of that work turns out to be a job in its own right,
-it can also be mapped on its own as a sub-job.
+it can also be mapped on its own as a sub-job. The topology notes such work as constituent candidates; the map decides.
 
 **Why does the executor's title not matter?** Because the same job is done by people with different titles, and people
 with the same title do different jobs. The executor is defined by the responsibility they carry.

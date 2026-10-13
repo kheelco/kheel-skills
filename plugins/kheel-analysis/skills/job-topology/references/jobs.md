@@ -31,7 +31,7 @@ An executor's role often spans several jobs, and coordinating someone else's job
 manager may chase a supplier, book the courier and sign for the delivery; that does not put the supplier's delivery in
 the practice manager's job. Ask, of each thing the executor does: **is this getting their job done, or helping someone
 else get theirs done?** Help given to another job is, at most, a step of the executor's own job (*confirm the delivery
-has been authorised*) or a sign of a related job.
+has been authorised*) or a sign of a stakeholder job.
 
 ## The core functional job
 
@@ -41,6 +41,10 @@ club and on what terms* *over the life of the club*. The verb and object, withou
 
 It must be free of any solution, independent of current technology, stable enough to outlive any process, stated from
 the executor's perspective, and about something they are trying to accomplish.
+
+**One job, one verb.** A statement joined with *and* (*maintain the roll and report to the federation*) is usually two
+jobs, or a job and one of its steps: split it and test each part. A compound object is fine where it is one thing the
+executor keeps coherent (*who belongs and on what terms*).
 
 It must be **neutral about sequence**: it should not assume whether a change in the world comes before, during or as a
 consequence of the job, where that differs between circumstances. *Bring the record into line with a change* assumes
@@ -74,68 +78,105 @@ statement or its clarifier, and let the map follow it.
 Some jobs have a beginning, execution and end (*settle an estate*, *run a conference*). Others are **continuing**: they
 keep something in a desired state indefinitely (*keep the fleet roadworthy*, *maintain the membership roll*). A
 continuing job is legitimate, and often the right main job, because its intent is the standing state, not any one
-piece of work. Record the recurring and occasional work it involves, each with what sets it off (*a change arrives*,
-*the annual check falls due*, *an error is found*), as **episodes** on the main job's entry.
+piece of work.
 
-Where it is unclear whether an episode is just an occasion of the main job or a functional job of its own, classify
-it with the tests in *Classifying a candidate*, below. Deciding how a confirmed job decomposes into sub-jobs is left to
-job domain analysis.
+### Constituents of the main job
 
-### Classifying a candidate: job, episode or step
+Surveying a domain usually turns up work that seems to **make up** the main job: taking in changes, checking the state
+against its sources, putting it right, setting it up in the first place. That is useful discovery, and the topology
+records it, as **constituent candidates** on the main job's entry, as input for the job map.
 
-When it is not obvious whether a candidate is a job of its own, an episode of another job, or a step within one, weigh
-five tests. **No single test decides**; together they point to the most defensible classification.
+A constituent candidate is a hypothesis, not a classification. When the job is mapped, each one turns out to be one of:
+
+- an **episode**: an occasion on which the main job is done, passing through some of its map's steps (*take in a
+  change*);
+- a **step**, or part of one (*correct an error found while recording a change*);
+- a **sub-job**: a job in its own right, with a progression and outcomes of its own, that is part of the main job and
+  gets its own map (*establish the register*, on formation or after a loss).
+
+The topology does not settle which: the evidence that settles it is the job's actual progression, which only the job
+map examines. It records, for each candidate:
+
+- **what sets it off** (*a change arrives*, *the annual check falls due*, *an error is found*);
+- **what was noticed**: the evidence from discovery (it is done when nothing else is under way; it has its own
+  completion; it is large and rare; it only happens inside other work);
+- **a lean**: *likely an episode*, *likely a step*, *possibly a job of its own*, or *unclear*, formed lightly from the
+  tests below. The lean is provisional and does not bind the map; do not call a candidate a job here.
+
+When the map resolves a candidate, the topology records the result (*absorbed: episode passing through Locate,
+Confirm and Execute*, or *confirmed: sub-job, see its map*), and a confirmed sub-job becomes a row in the jobs table. A
+candidate the map chooses not to examine yet (rare, large, or not needed for the purpose in hand) is recorded as
+*deferred*, with the reason; it stays a hypothesis until a later map takes it up. A candidate's status is thus *open*,
+*deferred*, *absorbed* or *confirmed*.
+
+**Name a candidate for its stable objective, not for the failure that triggers it.** *Establish an authoritative
+register* (on formation, or after records are lost) is more stable than *Reconstruct the register*, which is named for
+one of its triggers; the trigger is then a circumstance of it.
+
+### The five tests
+
+Five tests help judge whether something is a job of its own. **No single test decides**; weigh them together.
 
 | Test | Question | Points to a job when |
 |---|---|---|
 | **Independent objective** | Is there a meaningful accomplishment distinct from the parent job's objective? | The executor sets out to achieve something they would name and judge on its own (*the vehicle is serviced*), not only a stage towards the parent's result (*the parts are obtained*) |
 | **Independent completion** | Can it be completed, and judged successful, in its own right? | It has its own completion condition and its own sense of *done well*, whether or not the parent job's result is reached |
-| **Executor** | Is the same functional capacity responsible, or a different one? | A different capacity points to a related job; the same capacity is compatible with any classification, and decides nothing alone |
-| **Context independence** | Does it make sense outside a particular episode of another job? | It can be done, and makes sense, when nothing else is under way (a check run when nothing has changed); a step only makes sense inside its job's execution |
+| **Executor** | Is the same functional capacity responsible, or a different one? | A different capacity points to a stakeholder job; the same capacity is compatible with any classification, and decides nothing alone |
+| **Context independence** | Does it make sense outside a particular episode of another job? | It can be done, and makes sense, when nothing else is under way; a step only makes sense inside its job's execution |
 | **Stable identity** | Would it remain recognisable under different processes and technologies? | It would still be a distinct accomplishment if the tools and procedures changed; one that exists only because of today's mechanism is a step, or a mechanism |
 
-- **A trigger and a completion do not establish a job.** Steps have both. Having its own trigger and its own end
-  supports a classification only alongside an independent objective and context independence.
-- **A shared higher-level objective does not settle it either way.** Inspecting, servicing and repairing vehicles all
-  serve a roadworthy fleet and may still be distinct jobs.
-- **Same executor and result, different occasion:** usually an **episode** of the job, not a job of its own: the work
-  makes sense only as one of the occasions on which that job is done.
+- **A trigger and a completion do not establish a job.** Steps have both.
+- **A different success criterion is not a different job.** Checking for consistency and for correctness, or doing
+  something quickly and doing it accurately, are different outcomes of the same work unless each is pursued as an
+  accomplishment of its own.
+- **A shared higher-level objective does not settle it either way.**
 
-**Propose, and explain.** Record the most defensible classification as *proposed*, with the tests that support it and
-any that point the other way. Where the tests genuinely split, so that a different answer would change the main job's
-boundary, record it as an **open classification**, with the evidence each way, for job domain analysis or the job map
-to take up. Open is for real uncertainty, not a way to avoid deciding. A topology with open classifications is complete
-enough to map from, so long as the main job and its executor are clear.
+**Where the topology uses them.** At the **boundary**, to decide whether a candidate is part of the main job (a
+constituent candidate) or a job beside it (related or stakeholder); and lightly, to form a constituent candidate's
+**lean**. Whether a constituent is a job of its own is decided by the job map, which applies the tests in full with the
+progression in view.
+
+### Open classifications
+
+Where the topology cannot settle a **boundary** question (part of the main job, or a job beside it; one executor or
+two), record it as an **open classification**, with the evidence each way, rather than forcing it. Open is for real
+uncertainty that would change the main job's boundary, not a way to avoid deciding; constituent candidates are already
+provisional and need not be marked open. A topology with open classifications is complete enough to map from, so long
+as the main job and its executor are clear.
 
 ## The other jobs
 
 | Category | What it is | Test |
 |---|---|---|
 | **Main job** | The job being analysed: the focal job the map will be built for | Exactly one per topology |
-| **Adjacent job** | A distinct job performed by the **same** executor | A **distinct desired outcome**: the executor is after a different result, not just doing something at a different time. Its own trigger, recipient and completion support that, but do not establish it |
-| **Related job** | A job performed by **another** executor that touches the main job | Its executor is not the main executor |
+| **Related job** | A distinct job performed by the **same** executor | A **distinct desired outcome**: the executor is after a different result, not just doing something at a different time. Its own trigger, recipient and completion support that, but do not establish it |
+| **Stakeholder job** | A job performed by **another** executor that touches the main job | Its executor is not the main executor |
 
-For each adjacent or related job, say **in words how it stands to the main job** (*decides on applications before they
+*Related job* keeps Ulwick's meaning: another job the same executor is trying to get done, before, during or after the
+main job. *Stakeholder job* is the family's own word for a job of another executor that touches the main job; Ulwick
+gives these no single name, and the term should not be presented as his.
+
+For each related or stakeholder job, say **in words how it stands to the main job** (*decides on applications before they
 are recorded*; *uses the roll to check eligibility*). Classifying those relationships systematically is job domain
-analysis's work; here, a clear phrase is enough. How an adjacent job stands **in time** (*before*, *after*,
+analysis's work; here, a clear phrase is enough. How a related job stands **in time** (*before*, *after*,
 *alongside*) may be noted where it helps.
 
-### Which related jobs to include
+### Which stakeholder jobs to include
 
-Many executors touch any main job; a topology that lists them all stops being useful. **Include a related job when
+Many executors touch any main job; a topology that lists them all stops being useful. **Include a stakeholder job when
 its result changes, constrains, validates or materially depends on the main job's object, and understanding that
 relationship is needed to establish the main job's boundary** (what it must take in, what it must provide, who may
 decide what it holds). Leave out jobs that merely use the main job's result in passing, or touch it only through
-another related job already listed.
+another stakeholder job already listed.
 
-- **Merge only what is the same job.** Executors are merged into one, with one related job, only when they pursue the
+- **Merge only what is the same job.** Executors are merged into one, with one stakeholder job, only when they pursue the
   same desired outcome, by the same rule as the main executor (*Unify when the desired outcome is the same*). An
   insurer, a competition organiser and a venue manager who each need to confirm someone is a member before relying on
-  it pursue one outcome: one related job (*establish membership before relying on it*), one executor (*relying
+  it pursue one outcome: one stakeholder job (*establish membership before relying on it*), one executor (*relying
   party*). A member resigning, an applicant joining and the executor of a deceased member's estate stand in the same
-  relationship to the main job (each changes who is on the roll) but pursue different outcomes: three related jobs.
+  relationship to the main job (each changes who is on the roll) but pursue different outcomes: three stakeholder jobs.
   A shared relationship may be shown by grouping their rows together, never by merging their executors or jobs.
-- **Record what was left out.** List related jobs considered and excluded in the main job's notes, with why, so the
+- **Record what was left out.** List stakeholder jobs considered and excluded in the main job's notes, with why, so the
   next reader does not add them back.
 
 ### Flags for deeper analysis
@@ -150,7 +191,7 @@ them to job domain analysis:
 - **Obligations.** Notices, returns and reports owed to others: whether one completes a piece of the main job's work or
   belongs to a separate or broader job.
 - **Supplying another job.** Where the main job's record feeds other executors, whether supplying it is a job of the
-  main executor's own (an adjacent job, if it pursues its own result) or simply what the related jobs consume.
+  main executor's own (a related job, if it pursues its own result) or simply what the stakeholder jobs consume.
 
 ### Rules of method are not facts about the domain
 
@@ -166,8 +207,8 @@ review: apply it as a test, not as a conclusion.
 A job is named for what **its executor** is trying to get done, at a breadth that covers its variants. A job named for
 an output (*Issue a membership card*, *Produce the report*) usually hides two jobs:
 
-- the **consumer's** job (a member proving they belong, to enter a competition), a related job with its own executor;
-- the **supplier's** job (*provide authoritative information about membership*), which may be an adjacent job of the
+- the **consumer's** job (a member proving they belong, to enter a competition), a stakeholder job with its own executor;
+- the **supplier's** job (*provide authoritative information about membership*), which may be a related job of the
   main executor, covering current and historical, routine and disputed requests alike.
 
 Do not conflate them; their outcomes will differ.
@@ -229,33 +270,36 @@ fine. Do not use the step types to settle the topology: that designs a workflow 
 
 - **A title as an executor.** *Senior analyst* says where someone sits, not what they are getting done; a title is fine
   as a name only if the capacity is stated.
-- **Splitting on scale.** A large organisation's version of the job treated as a different executor because it is
-  bigger, when its desired outcome is the same.
+- **Executors split on scale, or merged by relationship.** A large organisation's version of the job treated as a
+  different executor because it is bigger, when its desired outcome is the same; or different executors folded into one
+  because they stand to the main job the same way, though their desired outcomes differ: a company paying a dividend
+  and a lender taking security both rely on the register, but their jobs differ, so they are not one *relying party*; a
+  personal representative and an attorney both act for someone else, but not necessarily towards the same result.
 - **A process as a job.** *Process the application form* names today's mechanism. Ask what the form is for.
+- **A compound statement.** A job joined with *and*, hiding two jobs or a job and one of its steps.
 - **A role's coordination as the role's job.** Work done to help another's job recorded as the executor's own job.
 - **A statement that assumes a sequence.** A job worded as following a change that, in some circumstances, it makes.
 - **An assurance job with no standard.** *Verify the record* with no word on whether consistency or correctness is
   meant.
-- **A forced classification.** A candidate pushed into a category the tests do not support, instead of proposed with
-  its uncertainty or recorded as open; above all, activities merged into one job, or split apart, because they serve
-  the same higher objective.
-- **A job on trigger and completion alone.** A candidate made a job because it has its own trigger and end, without an
-  independent objective or context independence.
-- **Open as a way out.** A candidate left open where the tests clearly point one way.
-- **A topology of everyone.** Related jobs added because an executor touches the main job, not because the
-  relationship helps establish its boundary.
-- **Executors merged by relationship.** Different executors folded into one because they stand to the main job the
-  same way, though their desired outcomes differ.
-- **An adjacent job on trigger alone.** A job separated because it has its own trigger or completion, with no distinct
-  desired outcome.
-- **A modelling choice stated as a domain rule.** A classification written as though the domain required it.
+- **A job on one test.** A candidate made a job, or kept out of one, on a trigger and completion, a shared higher
+  objective, the same executor or a different success criterion alone (consistency and correctness; speed and
+  accuracy), instead of weighed on the five tests and, where they split, recorded as open.
+- **Constituents decided early.** A constituent candidate called a job, or argued into a classification, before the
+  job map has examined it; a lean stated as a verdict; a candidate named for the failure that triggers it
+  (*Reconstruct the register* where the stable objective is *establish an authoritative register*).
+- **Open as a way out.** A boundary question left open where the tests clearly point one way.
+- **A topology of everyone.** Stakeholder jobs added because an executor touches the main job, not because the
+  relationship helps establish its boundary; or an org chart wearing a topology: one job per department, executors
+  named by title, stakeholder jobs that are the reporting line.
+- **A related job on trigger alone.** A job of the main executor separated because it has its own trigger or
+  completion, with no distinct desired outcome; or a step promoted to one (*obtain the committee's approval* has no
+  life outside the change it approves).
 - **A job named for its output.** *Issue a membership card*, hiding the consumer's job and the supplier's.
-- **A step promoted to an adjacent job.** *Obtain the committee's approval* has no life outside the change it approves.
-- **The main job at the wrong altitude or breadth.** Too low and the adjacent jobs are steps of a job nobody has
+- **The main job at the wrong altitude or breadth.** Too low and the related jobs are steps of a job nobody has
   stated; too high and the map will have forty steps; too narrow and edge cases need artificial distinctions.
-- **An org chart wearing a topology.** One job per department, executors named by title, related jobs that are the
-  reporting line.
 - **A solution in the statement.** *Maintain the roll in the system*: the last three words are the product.
+- **A modelling choice stated as a domain rule.** A classification written as though the domain required it.
 - **A qualifier forced or mislabelled.** An emotional concern labelled social, or a qualifier nobody expressed.
-- **Analysis beyond the need.** A topology grown into a full model of the domain's work before the main job is clear;
-  that belongs to job domain analysis.
+- **Analysis beyond the need.** A topology grown into a full model of the domain's work before the main job is clear:
+  relationships classified systematically (job domain analysis's work), or episodes and steps worked out (the job
+  map's).

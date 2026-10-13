@@ -34,21 +34,23 @@ grows throughout; it does not need to be finished.
 **Ask:** What is someone here ultimately trying to get done, true under any process? Who is responsible for it? What
 else do they, and others, do around it? **Skill:** `job-topology`.
 
-**Ready to move on:** the main job, its executor and its principal boundaries are clear enough to map; anything
-unsettled is recorded as open. A small topology is fine.
+**Ready to move on:** the main job, its executor and its principal boundaries are clear enough to map; work that seems
+to make up the main job is recorded as constituent candidates (what was noticed, and a lean), without deciding what
+each is; boundary questions that cannot be settled are recorded as open. A small topology is fine.
 
-## 3. Optional: how the jobs fit together (job domain analysis)
+## 3. Optional: how the jobs relate (job domain analysis)
 
-**Why now, or not at all:** only when the topology's open questions matter to the map, the main job is a continuing
-responsibility with very different kinds of work in it, or several executors' jobs depend on one another
-([extensions](extensions.md), *When the extension is worth it*). It can also come later, when a map exposes a boundary
-problem.
+**Why now, or not at all:** only when a boundary question in the topology matters to the map, or several executors'
+jobs depend on one another in ways the topology's short descriptions do not capture ([extensions](extensions.md),
+*When the extension is worth it*). It can also come later, when a map exposes a problem at the edge of a job. Whether
+parts of the main job are jobs of their own is not a reason for it: the map works that out. Its own ground is seams,
+obligations and boundary tests; identity between jobs is the topology's boundary work done more thoroughly.
 
-**Ask:** Which open classification matters most? Is any part of the main job a job in its own right? **Skill:**
+**Ask:** Which boundary question matters most? How do these jobs depend on each other? **Skill:**
 `job-domain-analysis`.
 
-**Ready to move on:** the classifications the map depends on are settled or tested; any changes to the topology are
-proposed and agreed.
+**Ready to move on:** the boundary questions the map depends on are settled or left open with evidence; any changes to
+the topology are proposed and agreed.
 
 ## 4. The job map
 
@@ -56,10 +58,17 @@ proposed and agreed.
 
 **Ask:** Confirm the job and executor. Then work the stages as questions: what has to be worked out first? Gathered?
 Made ready? Checked? Done? Watched? Put right? Finished? Where does it happen outside any system? What situations and
-particular cases change a step? **Skill:** `job-map`.
+particular cases change a step? As the map takes shape, resolve each of the topology's constituent candidates:
+absorbed (an episode or a step), confirmed as a sub-job if it has a progression and outcomes of its own, or deferred
+with a reason. Report
+each resolution back to the topology; if several sub-jobs appear, ask whether the main job is really a higher-order
+objective. **Skill:** `job-map`.
 
 **Ready to move on:** every stage has been asked about, the steps found are stated as milestones, circumstances and
-edge cases are on the steps they change, and the questions that could change the job's boundary are recorded.
+edge cases are on the steps they change, every constituent candidate is resolved (or deferred, with why) and reported to
+the topology, and the
+questions that could change the job's boundary are recorded. (If a sub-job was confirmed, the topology now lists it;
+map it in turn if it matters to the purpose.)
 
 ## 5. Desired outcomes
 
@@ -83,8 +92,8 @@ then, trace cases by hand and note what breaks.)
 
 ## 7. Next
 
-Offer, depending on the purpose: an opportunity survey on the outcomes (ODI research); mapping a related job or a
-sub-job; a review of any artefact (each skill has one); or stopping here.
+Offer, depending on the purpose: an opportunity survey on the outcomes (ODI research); mapping another job from the topology (a
+related or stakeholder job, or a confirmed sub-job); a review of any artefact (each skill has one); or stopping here.
 
 ## Guiding well
 

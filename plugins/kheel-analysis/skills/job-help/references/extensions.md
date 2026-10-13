@@ -5,7 +5,7 @@
 Anthony Ulwick's Outcome-Driven Innovation provides:
 
 - the **functional job**, stated without solutions, and the **job executor**;
-- **related jobs**, and **emotional and social jobs**;
+- **related jobs** (the executor's other jobs), and **emotional and social jobs**;
 - the **job map**: eight universal stages (Define, Locate, Prepare, Confirm, Execute, Monitor, Modify, Conclude) and
   the steps under them;
 - **desired outcome statements** in the form direction + measure + object + clarifier;
@@ -19,9 +19,11 @@ Ulwick also names **consumption-chain jobs** (buying, installing, learning, main
 | Addition | What it is for | Where |
 |---|---|---|
 | **Job topology** | A compact inventory of jobs, executors and boundaries before mapping; Ulwick does not prescribe one | `job-topology` |
-| **Open classifications** | Recording what the evidence does not settle, instead of forcing it | `job-topology` |
-| **Job domain analysis** | How jobs fit together: identity, sub-jobs, episodes, relationships between executors' jobs, seams, obligations, boundary tests | `job-domain-analysis` |
-| **Sub-jobs** | Parts of a larger job that are jobs in their own right, which can be mapped on their own | `job-domain-analysis`, `job-map` |
+| **Stakeholder jobs** | Naming the jobs of other executors that touch the main job, where they help establish its boundary | `job-topology` |
+| **Constituent candidates** | Recording work that seems to make up the main job, with a lean, for the job map to resolve | `job-topology`, `job-map` |
+| **Open classifications** | Recording boundary questions the evidence does not settle, instead of forcing them | `job-topology` |
+| **Job domain analysis** | How distinct jobs relate: identity between jobs, relationships between executors' jobs, seams, obligations, boundary tests | `job-domain-analysis` |
+| **Sub-jobs** | Constituents the job map confirms as jobs in their own right, mapped on their own | `job-map`, recorded in `job-topology` |
 | **Continuing jobs and episodes** | Mapping a job that never finishes: each episode passes through the stages it needs | `job-topology`, `job-map` |
 | **Circumstances and edge cases** | Recording, on the steps they change, how a situation or a particular kind of thing alters what must be accomplished | `job-map` |
 | **Seams** | Marking where work leaves any system, and in which direction | All three |
@@ -38,16 +40,17 @@ its desired outcomes, perhaps for an opportunity survey.
 
 **Add job domain analysis** when:
 
-- the topology has open classifications that matter (is this one job or several?);
-- the main job is a continuing responsibility with very different kinds of work in it, and you want to know whether
-  some of them are jobs in their own right;
+- the topology has boundary questions that matter (is this part of the main job or beside it? one executor or two?);
 - several executors' jobs depend on or act on one another, and the boundaries between them matter (who decides, who
   records, whose act makes a change real);
 - obligations to outside bodies, or records whose entry has legal effect, complicate the boundary;
-- you want to map parts of a job on their own as sub-jobs.
+- you want a fuller picture of how the domain's jobs depend on one another than the topology's short descriptions give.
+
+Whether parts of a job are jobs in their own right is not a reason for domain analysis: the job map works that out
+when it resolves the topology's constituent candidates.
 
 ## Saying it accurately
 
-When describing the work to others: the topology and job map are **Ulwick-aligned**; job domain analysis, sub-jobs,
-episodes, variants and seams are **this plugin's extension**. Do not call the topology, or the extension, canonical
+When describing the work to others: the topology and job map are **Ulwick-aligned**; stakeholder jobs, constituent
+candidates, job domain analysis, sub-jobs, episodes, variants and seams are **this plugin's extension**. Do not call the topology, or the extension, canonical
 Ulwick.

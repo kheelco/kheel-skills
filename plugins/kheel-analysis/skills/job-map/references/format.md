@@ -13,10 +13,12 @@ disagree are a defect.
 **Job:** Maintain an accurate, current record of who belongs to the club and on what terms, over the life of the club.
 **Executor:** Membership secretary. From the [job topology](../job-topology.md#maintain-the-membership-roll).
 
-**Pre-check:** Mapped over its life (the default): taking in changes, checking the roll and correcting it each pass
-through the stages they need. The topology leaves open whether checking and correcting are jobs of their own; this map
-does not depend on the answer, and either could later be mapped on its own as a sub-job. Providing information about
-membership is an adjacent job and is not mapped here.
+**Pre-check:** Mapped over its life (the default). Constituents from the topology resolved: *take in a change*
+absorbed (an episode passing through Locate, Prepare, Confirm and Execute); *check the roll* absorbed (Monitor; a
+different standard of checking would be an outcome, not a job); *correct the roll* absorbed (Modify); *establish an
+authoritative roll* deferred (it only arises on founding or after a loss, and is not needed here; a candidate for a map
+of its own).
+Reported to the topology. Providing information about membership is a related job and is not mapped here.
 
 ## Circumstances
 
@@ -73,7 +75,7 @@ membership is an adjacent job and is not mapped here.
   - Minimise the time it takes to establish what the roll should say.
   - Minimise the likelihood that a correction hides what the roll said before.
 - **Episodes:** A discrepancy found by the check; an error ordered corrected by a tribunal (same step, another
-  trigger; the tribunal is a related job).
+  trigger; the tribunal is a stakeholder job).
 - **Order:** After Monitor, or whenever an error is found; returns to Confirm where the correction needs authority.
 ````
 
@@ -88,7 +90,8 @@ Three columns, steps in the order an executor would describe them:
 | **Outcomes** | One outcome per line (`<br>` between them), in the standard form. |
 
 Before the table, a **Pre-check** line: how the job is mapped (over its life, the default; or a sub-job on its own),
-how any open classification was handled, and anything sent back to the topology. For a lifecycle map, a **Circumstances** section lists
+how each constituent candidate was resolved (absorbed, and where; confirmed as a sub-job; or deferred, with why), and
+what was reported to the topology. For a lifecycle map, a **Circumstances** section lists
 the circumstances as contextual modifiers (C1, C2, …), and the steps they change say so after their seam (*C3*). After the table, a line listing the types that yielded nothing, and what each suggests about the boundary. A step is
 identified by its statement within its map; restatements keep the old wording in its notes until citations are updated.
 

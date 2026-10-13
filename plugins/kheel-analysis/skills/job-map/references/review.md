@@ -7,8 +7,10 @@ stop.
    - The map's job is not in the topology, or its executor differs from the topology's.
    - Steps with no type, or a type outside the eight.
    - Steps with sub-steps.
-   - No pre-check recorded: the job and how it is mapped not confirmed before steps were typed; an open classification
-     the map depends on neither settled nor tested by mapping the candidates separately.
+   - No pre-check recorded: the job not confirmed in the topology before steps were typed.
+   - Constituent candidates neither resolved nor deferred with a reason, or resolved without being reported to the
+     topology; sub-jobs confirmed without a progression and outcomes of their own; a sub-job's steps or outcomes
+     repeated in the parent's map; several sub-jobs confirmed with no granularity check.
    - A job fragmented into several maps by episode, trigger or source alone; a map whose choice of form was used to
      decide what the jobs are; in a map of a sub-job, steps that leave its one progression.
    - Stages filled for their own sake; steps that read as an operating cycle; circumstances or edge cases given maps of
@@ -29,7 +31,7 @@ stop.
 2. **Steps and outcomes: the checks that need reading.**
    - Steps naming a system, document, screen or hand-off; steps whose verb belongs to a system rather than the
      executor.
-   - Steps accomplished by someone other than the executor: related jobs leaking in.
+   - Steps accomplished by someone other than the executor: stakeholder jobs leaking in.
    - Steps that transcribe glossary activities.
    - Types with several thin steps: the map was filled, not found.
    - Steps whose execution happens in or arrives from the world, unmarked.

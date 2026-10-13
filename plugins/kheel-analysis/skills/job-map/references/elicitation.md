@@ -26,7 +26,7 @@ Harvest first, then ask about the gaps:
 - every **"it always goes wrong when…"**, **"it takes forever to…"**, **"no two people do it the same way"**: an
   outcome (likelihood, time, variability);
 - every **"I need to know that…"** or **"we have to be sure…"**: a Confirm or Monitor step, or an outcome on one;
-- every **other party** who does part of the work: a related job, not a step.
+- every **other party** who does part of the work: a stakeholder job, not a step.
 
 Restate each as verb + glossary noun (a step) or in the outcome form (an outcome) before placing it. Everything
 harvested is at best inferred until a source states it.
