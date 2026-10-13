@@ -123,7 +123,7 @@ A glossary with a renamed base and un-renamed types is worse than one never rena
 The glossary is the language the other analysis is written in. When an artefact and the glossary disagree about a
 word, one of them is corrected deliberately, and never neither. Expect the other work to send terms back:
 
-- **Activity modelling** (the `job-topology` and `job-map` skills) writes what is done as verbs on glossary nouns (*pass a special
+- **Activity modelling** (the `job-topology`, `job-domain-analysis` and `job-map` skills) writes what is done as verbs on glossary nouns (*pass a special
   resolution*), takes its executors from agents, and records who takes part in what; it sends back the nouns its verbs
   act on.
 - **Domain modelling** takes concepts, characteristics and relations as its starting vocabulary and adds what the

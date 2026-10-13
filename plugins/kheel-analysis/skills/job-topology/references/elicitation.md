@@ -10,29 +10,25 @@ One or two questions at a time, each answer shaping the next. Skip any the evide
 2. **Who is responsible for that?** The responsibility, not a title, a department or a seniority; and whether every
    case in scope has someone formally holding it.
 3. **Is it ever finished, or kept in a state?** If kept: **what work is there when nothing new arrives?** (Errors found
-   later, disputes, questions about a past date, reconstruction.) Those, with the work set off by events and cycles, are
-   the job's episodes.
+   later, disputes, questions about a past date, reconstruction.) Note these, with the work set off by events and
+   cycles, as the job's episodes; whether any is a job of its own is for later.
 4. **What edge cases must it cope with?** Cases at the edge of the job's object (for a membership roll: a family
    membership, an honorary member, a suspended member, a move between grades). Do they fit without artificial distinctions?
 5. **What must they have got done before this, and what do they turn to after it?** Candidate adjacent jobs, or
    episodes.
 6. **What do they do alongside it that is a different accomplishment?** More candidates, and the ones most often
    mistaken for steps.
-7. **Who else has a stake?** Who changes what the job is about, checks it, is answerable for it, consumes what it
+7. **Who else has a stake?** Who changes what the job is about, checks it, is answerable for it, uses what it
    produces, governs it, or gets in its way? Candidate related jobs, each with its own executor. Keep those whose
-   relationship helps establish the main job's boundary, group those whose relationship is the same, and note the rest
-   as left out.
+   relationship helps establish the main job's boundary, and note the rest as left out.
 8. **For each candidate, a few tests.**
    - Is it getting their own job done, or helping someone else get theirs done?
-   - Does it change the world, or maintain a representation of it?
-   - Is it a job (a distinct desired outcome), an episode of the main job, or a step that only makes sense inside it?
+   - Is it a job (a distinct desired outcome), an episode, or a step that only makes sense inside another job? If the
+     evidence does not settle it, record it as open.
    - For candidates to merge: do they pursue the same desired outcome, or only stand to the main job the same way?
-   - For an obligation: is meeting it necessary to the executor's desired outcome, or does it serve a distinct one?
-     Which events create it, and does the source say so? If it runs on its own cycle, is its scope the main job's
-     object, or wider?
-   - Does what the candidate is called match what gives it its own lifecycle?
-9. **Does recording anything give it effect?** Whether the executor's act changes the reality outside the record
-   (a registration that completes a change), or only reflects it.
+   - Does what the candidate is called match what makes it distinct?
+9. **Is anything owed to others, or made real by being recorded?** Notices, returns, reports; acts whose recording
+   gives a change its effect. Note them as flags for deeper analysis; do not settle them here.
 10. **When does the job change?** Circumstances in which the executor must do materially different things, and whether
     the desired outcome changes with them.
 11. **How do they want to feel, and how do they want to be seen?** Emotional and social qualifiers, kept apart, and

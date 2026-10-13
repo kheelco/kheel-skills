@@ -46,15 +46,14 @@ be a step of a larger one.
 2. **Confirm the job and executor** from the topology. If either is unsettled, settle it first (with the
    `job-topology` skill): a map of the wrong job is worthless however good. Do not use the step types to decide what
    the job is; a tidier sequence is not evidence of the right job.
-3. **Pre-check: which job, and which kind of map** ([steps](references/steps.md), *Pre-check*). Confirm the
-   topology's unity test (run it first, with `job-topology`, if it was never run). **By default, map the whole job
-   over its life**: one Ulwick job map, with episodes passing through the stages they need (the continuity rule),
-   circumstances (situations of the whole job) and edge cases (kinds of thing it deals with) folded into the steps they
-   change. Only when the user asks for each path as
-   its own flowing map, map the topology's constituent jobs one by one instead. Never split a job by episode, trigger
-   or source unasked. Keep the job statement neutral
-   about whether the change it concerns comes before, during or after it, and for anything that gives assurance,
-   confirm its standard (consistency or correctness).
+3. **Pre-check: which job, and how to map it** ([steps](references/steps.md), *Pre-check*). Confirm the job and its
+   executor in the topology, and take account of its open classifications and any job domain analysis. **By default,
+   map the job over its life**: one Ulwick job map, with episodes passing through the stages they need (the continuity
+   rule), circumstances and edge cases folded into the steps they change. Map a **sub-job** on its own where an
+   analysis records one and the user wants it set out; map candidates separately where a classification is still open.
+   Never split a job by episode, trigger or source alone, and never let the choice of map decide what the jobs are.
+   Keep the job statement neutral about whether the change it concerns comes before, during or after it, and for
+   anything that gives assurance, confirm its standard (consistency or correctness).
 4. **Find the steps.** Work the eight step types as questions about the job, in order, writing down only what is
    found ([elicitation](references/elicitation.md)). Add a step only where it is an accomplishment the job needs,
    never to fill a stage, typically ten to twenty in all; stop at any hand-off to another executor. Modify says where
@@ -84,7 +83,7 @@ scope or the job's altitude are recorded. Opportunity scoring is not part of map
 |---|---|
 | **Restate a step** | Its outcomes, which may no longer fit; scenarios that walk through it. |
 | **Split or merge steps** | Their outcomes, redistributed one by one, not pooled. |
-| **Change the kind of map** | When the user asks for flowing maps per path: the topology divides the job into constituent jobs, and the lifecycle map's steps and outcomes are re-homed one by one into their maps. The reverse folds the constituent maps back into one lifecycle map. |
+| **Map a sub-job** | When an analysis records sub-jobs and the user wants one set out: map it on its own; steps of the larger job's map that belong to it are mirrored, not moved, since the larger map remains a view of the whole. |
 | **Move a step out** | A step that pursues a different ultimate result becomes an adjacent job in the topology; a step belonging to another executor becomes a related job. Its outcomes go with it. |
 | **Restate an outcome** | Keep its direction, measure and object in the standard form; a survey already run against the old wording is no longer comparable. |
 | **Re-state the job** | The map's heading and the topology entry, together. |
@@ -92,6 +91,8 @@ scope or the job's altitude are recorded. Opportunity scoring is not part of map
 ## Alongside other analysis
 
 - **Job topology.** A map opens up one job; steps that are really jobs go back there.
+- **Job domain analysis** (optional). Its decomposition says which sub-jobs may be mapped on their own; a map that
+  exposes an unsettled boundary sends it there.
 - **Glossary.** Steps are verbs on glossary nouns. A step is not a glossary activity: an *Audit* the domain names is a
   term; a step is a milestone in getting this job done. One step may involve several named activities, and one may
   recur across steps and jobs.
@@ -109,4 +110,4 @@ scope or the job's altitude are recorded. Opportunity scoring is not part of map
 | [references/review.md](references/review.md) | Reviewing a map: the checks and reporting |
 | [references/format.md](references/format.md) | The job map document, drafts, syncing, rendering and where it lives |
 
-The job family and its domain model are described in the `job-topology` skill's README.
+The job family and its domain model are described in the `job-help` skill's [README](../job-help/README.md).

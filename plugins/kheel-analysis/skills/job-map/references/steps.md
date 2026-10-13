@@ -20,31 +20,37 @@ A type may yield no step, one, or several. The types are questions about one job
 alongside Execute, and real jobs loop. Record steps in the order an executor would describe them, and say in a step's
 notes where it runs alongside or repeats.
 
-## Pre-check: which job, and which kind of map
+## Pre-check: which job, and how to map it
 
-A job map maps **one job**: its executor and its ultimate desired result. What belongs to it is settled in the
-topology by the **unity test** ([topology](../../job-topology/references/jobs.md), *The unity test*): parts that share
-the executor and serve the same ultimate result are part of the job, whatever their trigger, frequency, size or source.
-A part with a different ultimate result goes back to the topology as an adjacent or related job. If the test was never
-run, run it first with the `job-topology` skill.
+A job map maps **one functional job**, chosen from the job topology (the `job-topology` skill), with its executor and
+its desired result. Confirm the job is in the topology and its executor settled; if not, settle them there first. Take
+account of any open classifications the topology recorded, and of any decomposition a job domain analysis has made
+(the `job-domain-analysis` skill): where a classification the map depends on is still open, settle it there, or map
+the candidates separately and compare (below).
 
-Then confirm which kind of map the topology recorded (*Mapping*), and record it in the map's *Pre-check* line:
+Then choose how to map, and record it in the map's *Pre-check* line. This is the job map's choice, made within the
+boundaries the topology and any analysis have set:
 
-- **A lifecycle map (the default).** One map of the whole job over its life: the Ulwick job map. The eight stages hold
-  the steps the executor must accomplish to get the job done, not one transaction. For a continuing job, a stage's
-  steps may be carried out continuously, periodically or on demand, and each episode passes through only the stages it
+- **One map of the job over its life (the default).** The Ulwick job map: the eight stages hold the steps the executor
+  must accomplish to get the job done, over its whole life, not one transaction. For a continuing job, a stage's steps
+  may be carried out continuously, periodically or on demand, and each episode passes through only the stages it
   needs (**the continuity rule**): a change through those of taking it in, a periodic check through Monitor, a
   correction through Modify. **Circumstances** and **edge cases** are folded into the steps they change (*Circumstances
   and edge cases*, below); neither spawns a map of its own.
-- **Flowing maps per path (on request).** Where the user has asked for each path set out as its own map, the topology
-  divides the main job into **constituent jobs**, and each is mapped as one flowing progression from its beginning to
-  its completion, every step a moment on that path. The main job then has no map of its own. Where the user asks for
-  this and the topology has not yet divided the job, divide it there first.
+- **A map of a sub-job.** Where a job domain analysis records that a larger job is made up of **sub-jobs** (parts with
+  job identity of their own), any sub-job may be mapped on its own, as one progression from its beginning to its
+  completion. The larger job may still have its own map over its life; the two are complementary views, not
+  alternatives that change what the jobs are. Map sub-jobs when the user asks for each part set out on its own, or
+  when the larger job's map would otherwise hide what matters.
+- **Undecided.** Where the topology left open whether something is a job of its own, **map the candidates
+  separately**, as drafts, without presuming the answer, and compare their desired results, sequences and completions.
+  Where one begins inside another's execution and returns to it, it is that job's Monitor or Modify; otherwise report
+  them back (to the topology, or to a job domain analysis) as candidate jobs or sub-jobs.
 
-A job with a beginning and an end (*settle an estate*) is the same either way: its map runs from what starts it to its
-completion.
+A job with a beginning and an end (*settle an estate*) is mapped from what starts it to its completion. Never split a
+job into several maps by episode, trigger or source alone, and never let the choice of map decide what the jobs are.
 
-**Stages are accomplishments, not buckets**, in either kind of map. A step belongs under a stage because it is what
+**Stages are accomplishments, not buckets**, in any map. A step belongs under a stage because it is what
 the executor must accomplish at that point in getting the job done (finding out whether the state has drifted is
 Monitor; putting it right is Modify), not because a stage needed filling or an activity needed a home. An **operating
 cycle** (receive → validate → update → verify → correct, read as the handling of one event) is a workflow, not a job
@@ -59,12 +65,12 @@ Work the eight types as questions about the job and assign each step found to th
   step.
 - **Modify adjusts.** Modify responds to what Monitor or the work itself shows: going back to an earlier step,
   obtaining corrected inputs, resolving conflicting instructions, adjusting what is about to be done, or stopping. In a
-  lifecycle map of a continuing job it also puts the maintained state right where it has drifted. In a flowing map of
-  one path it adjusts that path's execution only; an error that predates the path is handed to the constituent job
+  map of a continuing job over its life it also puts the maintained state right where it has drifted. In a map of a
+  sub-job it adjusts that sub-job's execution only; an error that predates it is handed to the sub-job
   that corrects it. Say what happens next (which step it returns to, or how it ends).
-- **Every step serves the job.** Test each step against the job's desired result (and, in a flowing map, its
-  completion). Where work is handed to another executor (a dispute referred to a tribunal), or, in flowing maps, to
-  another constituent job, the steps stop at the hand-off: identify, document and refer, not settle.
+- **Every step serves the job.** Test each step against the job's desired result (and, in a map of a sub-job,
+  its completion). Where work is handed to another executor (a dispute referred to a tribunal), or, in a map of a
+  sub-job, to another sub-job, the steps stop at the hand-off: identify, document and refer, not settle.
 - **Density.** A job map typically has ten to twenty steps across the eight stages, several under some stages and none
   under others. Fewer usually means steps stated too broadly; many more, a job stated too high.
 - **Confirm before Execute.** Confirm establishes readiness and authority; Execute is the commitment that cannot be
@@ -181,7 +187,7 @@ glossary's activities into the map as steps. A step's nouns should be glossary t
 - **Stages as buckets.** Activities placed under a stage because it needed filling, not because they are what the
   executor must accomplish there.
 - **A step to fill a type.** A step invented, or an episode filed, because a type was empty.
-- **Modify with no next step.** A Modify step that does not say where the work goes after it; in a flowing map, one
+- **Modify with no next step.** A Modify step that does not say where the work goes after it; in a map of a sub-job, one
   that corrects an error predating the path.
 - **Work past the hand-off.** Steps that do the receiving job's work.
 - **An empty type passed over.** No step under a type, with no look at whether the boundary put its work elsewhere.

@@ -7,15 +7,20 @@ description: >-
   job", "main job", "adjacent jobs", "related jobs", "survey the jobs in this domain", "frame the domain", "what
   jobs are there here", "functional job statement", "Ulwick", "ODI", "are these the same executor", or when a domain
   analysis is starting and nothing has been mapped yet. Also trigger when a job map is growing steps that belong to
-  someone else's job.
+  someone else's job. For how jobs decompose, recur and depend on one another, use job-domain-analysis.
 ---
 
 # Job topology
 
-A **job topology** surveys a domain's jobs before any of them is opened up: who is trying to get something done, what
-the core job is, and which other jobs sit around it. It is the inventory, sized and bounded, so that the deep work (a
-job map) is pointed at the right thing. It is the head of the job family: the jobs it names are what job maps open up
-and what scenarios are traced through.
+A **job topology** discovers and bounds a domain's functional jobs before any of them is opened up: who is trying to
+get something done, what the focal job is, and which other jobs sit around it. It is a compact inventory, enough to
+point a job map at the right job. It is the head of the job family and the authoritative list of its jobs and
+executors: job maps open them up, and job domain analysis (optional) examines how they fit together.
+
+This is an **Ulwick-aligned** method for discovering and bounding functional jobs before Outcome-Driven Innovation job
+mapping. Ulwick provides the core functional job, the job executor, related jobs and emotional and social jobs; he does
+not prescribe a topology artefact, and this one is the family's own, kept deliberately light. Analysing how jobs
+decompose, recur and depend on one another goes beyond Ulwick, and is left to the `job-domain-analysis` skill.
 
 *Job* is meant in the Outcome-Driven Innovation sense (Ulwick): a **functional job** the executor is trying to get
 done, stated without reference to any solution, stable across changes in process and technology, and decomposable into
@@ -52,23 +57,17 @@ read as true for an organisation that does the work on paper.
    ([elicitation](references/elicitation.md)).
 4. **Settle the executor and the core job** ([jobs](references/jobs.md)): the executor by capacity (the responsibility
    they carry), split only where the desired outcome changes; the core job as verb + object + contextual clarifier, at
-   an altitude and breadth that pass the tests, with edge cases tried. If it is a continuing job, record its episodes
-   and their triggers.
-5. **Run the unity test** on the main job ([jobs](references/jobs.md)): do its episodes and other proposed parts share
-   its executor and serve its ultimate desired result? If so they are part of it, whatever their trigger, frequency,
-   size or source; only a different ultimate result makes another (adjacent or related) job. **Then the mapping
-   choice**: by default the main job gets one lifecycle job map, with episodes, circumstances and edge cases folded
-   into its stages. Only if the user asks for each path set out as its own flowing map, divide it into **constituent
-   jobs** (before placing related jobs, so they can be linked to the constituent they bear on). Record both on the
-   main job.
-6. **Place the other jobs.** For each candidate: a step, an episode of the main job, or a job? If a job: adjacent
-   (same executor, its own intent and lifecycle) or related (another executor), how it stands to the main job, and its
-   core intent and how that differs from the main job's. Separate jobs that change the world from the job that records
-   it, and name each job from its own executor's side. Include a related job only where its relationship helps
-   establish the main job's boundary, and note those left out; link it to the constituent job it bears on where there
-   is one. Steps go to the job map, not here.
-7. **Frame it.** The core executor and job, execution seams (and their direction), any sub-domain split already
-   evident, and boundary questions left open.
+   an altitude and breadth that pass the tests, with edge cases tried. If it is a continuing job, note its episodes and
+   what sets each off.
+5. **Place the other jobs, selectively.** For each candidate: a step, an episode, or a job? If a job: adjacent (same
+   executor, a distinct desired outcome) or related (another executor), with how it stands to the main job in words
+   and how its intent differs. Name each job from its own executor's side. Include a related job only where it helps
+   establish the main job's boundary, and note those left out. Steps go to the job map.
+6. **Record what cannot be settled.** Wherever a classification is genuinely uncertain (a job or a step; one job or
+   two; part of the main job or beside it), record it as **open**, with the evidence each way, rather than forcing it.
+   A shared higher-level objective is evidence that jobs are related, not that they are one.
+7. **Frame it.** The core executor and job; flags for deeper analysis (seams, obligations, supplying); any sub-domain
+   split already evident; boundary questions left open.
 8. **Check** the structural checks in [review](references/review.md) over what changed and every job that names it, and
    list the open questions.
 9. **Propose, agree, then write**, doing the full ripple of any change (below) in the same sitting.
@@ -76,12 +75,10 @@ read as true for an organisation that does the work on paper.
 
 ### When to stop
 
-A topology is **provisionally complete** when the main executor and main job are settled, each other job is placed
-with its executor and its difference from the main job stated, and every question that could change which job is main,
-or whether a candidate is a job, an episode or a step, is recorded. Three questions in particular are settled or
-recorded as open before mapping: the breadth of the main job's object; what is part of it and how it is mapped (the unity test and the mapping choice); and where changing the world ends and recording it begins ([jobs](references/jobs.md), *Settle the
-topology before mapping*). Then map the main job, without using the step types to answer those questions; the
-topology is revisited as maps send jobs back.
+Stop when the **main job, its executor and its principal boundaries** are clear enough to support a job map, and every
+unresolved classification is recorded as open rather than forced ([jobs](references/jobs.md), *Ready for mapping*). A
+small topology is a good topology. Do not use the step types to settle it, and do not build a full model of the
+domain's work here: that is job domain analysis, taken up only if wanted.
 
 ## Changing a job
 
@@ -89,10 +86,9 @@ topology is revisited as maps send jobs back.
 |---|---|
 | **Restate** | Its job map's heading and every scenario or artefact that cites it. Keep the old wording in its notes until citations are updated. |
 | **Change executor** | Its category (an adjacent whose executor changes becomes related, and the reverse), and every step of its map. |
-| **Demote to a step or episode** | It leaves the topology's jobs: a step goes to the map of the job it belongs to, with its outcomes; an episode goes onto the main job's entry. |
+| **Demote to a step or episode** | It leaves the topology's jobs: a step goes to the map of the job it belongs to, with its outcomes; an episode goes onto the entry of the job it is an occasion of. |
 | **Promote a step** | A step found to have its own intent, lifecycle or outcome becomes an adjacent or related job, and leaves its map. |
-| **To constituent jobs** | When the user asks for flowing maps per path: each path becomes a constituent job row with its own statement, intent and map; the main job's lifecycle map is retired (its steps re-homed one by one); related jobs that bear on one path are re-linked to it. The reverse (back to one lifecycle map) re-homes the constituents' steps into the main job's stages. |
-| **Split off a part** | Only when the unity test shows a part of the main job pursues a different ultimate result: it becomes an adjacent job (same executor) or a related job (another executor), with its own map if it needs one; its steps leave the main job's map. |
+| **Settle an open classification** | Usually proposed by job domain analysis or a job map: a candidate becomes a job (adjacent, related, or recorded as part of the main job), a step or an episode; maps and analysis that cite it are updated. |
 | **Change the main job** | Every other job's category and relation, which are stated against it. Usually means the altitude was wrong; re-test it first. |
 | **Retire** | Only when nothing cites it, and its map (if any) is retired with it. |
 
@@ -100,8 +96,12 @@ topology is revisited as maps send jobs back.
 
 - **Glossary.** Every noun in a job statement should be a glossary term, and executors are agent terms. Topology work
   is one of the main ways new terms are found.
-- **Job map.** Each job may be opened up with a job map (the `job-map` skill), and the main job usually is. A map that
-  grows steps belonging to another executor sends them back here as related jobs.
+- **Job map.** Each job may be opened up with a job map (the `job-map` skill), and the main job usually is. How a job
+  is mapped (over its life, or through parts of it) is the job map's choice. A map that grows steps belonging to
+  another executor sends them back here as related jobs.
+- **Job domain analysis** (optional). The `job-domain-analysis` skill takes up open classifications, decomposes
+  continuing jobs, classifies relationships and settles flagged seams and obligations. It proposes changes to the
+  topology; the topology stays the authoritative list of jobs.
 - **Scenarios.** Scenarios trace concrete cases through jobs and their maps; a scenario that cannot say which job it
   belongs to has found a gap in the topology.
 - **Later work.** Executors are where actors begin; execution seams tell product work what can only be received, not
@@ -112,9 +112,9 @@ topology is revisited as maps send jobs back.
 | File | Holds |
 |---|---|
 | [references/elicitation.md](references/elicitation.md) | The questions to ask, and harvesting jobs from notes |
-| [references/jobs.md](references/jobs.md) | Executors and roles, the core functional job, altitude and breadth, continuing jobs and episodes, the unity test, how the main job is mapped (lifecycle map, or constituent jobs on request), adjacent and related jobs, changing the world against recording it, qualifiers and circumstances, framing, errors to watch for |
+| [references/jobs.md](references/jobs.md) | Executors and roles, the core functional job, altitude and breadth, continuing jobs, open classifications, adjacent and related jobs, flags for deeper analysis, qualifiers and circumstances, framing, ready for mapping, errors to watch for |
 | [references/review.md](references/review.md) | Reviewing a topology: the checks and reporting |
 | [references/format.md](references/format.md) | The topology document, drafts, syncing, rendering and where it lives |
 
-[README.md](README.md) describes the job family and its domain model for people integrating it with other systems; it
+The `job-help` skill's [README](../job-help/README.md) describes the job family and its domain model for people integrating it with other systems; it
 is not needed to use the skill.

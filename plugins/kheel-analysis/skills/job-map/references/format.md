@@ -13,9 +13,10 @@ disagree are a defect.
 **Job:** Maintain an accurate, current record of who belongs to the club and on what terms, over the life of the club.
 **Executor:** Membership secretary. From the [job topology](../job-topology.md#maintain-the-membership-roll).
 
-**Pre-check:** Lifecycle map (the default). Taking in changes, checking the roll and correcting it serve one result,
-an accurate, current roll; each passes through the stages it needs. Providing information about membership serves a
-different result and stays an adjacent job.
+**Pre-check:** Mapped over its life (the default): taking in changes, checking the roll and correcting it each pass
+through the stages they need. The topology leaves open whether checking and correcting are jobs of their own; this map
+does not depend on the answer, and either could later be mapped on its own as a sub-job. Providing information about
+membership is an adjacent job and is not mapped here.
 
 ## Circumstances
 
@@ -86,8 +87,8 @@ Three columns, steps in the order an executor would describe them:
 | **Step** | The step (verb + object, clarifier if needed) in bold, linked to its entry if it has one; then, on a new line (`<br>`), its seam in italics if it has one (*happens in the world: …* or *arrives from the world: …*), followed by the circumstances that change it (*C3*) and the edge cases it has (*edge cases: joint holding*), named only; what each requires is in the entry. |
 | **Outcomes** | One outcome per line (`<br>` between them), in the standard form. |
 
-Before the table, a **Pre-check** line: the kind of map (lifecycle, the default; or a flowing map of one constituent
-job, when asked for), and anything sent back to the topology. For a lifecycle map, a **Circumstances** section lists
+Before the table, a **Pre-check** line: how the job is mapped (over its life, the default; or a sub-job on its own),
+how any open classification was handled, and anything sent back to the topology. For a lifecycle map, a **Circumstances** section lists
 the circumstances as contextual modifiers (C1, C2, …), and the steps they change say so after their seam (*C3*). After the table, a line listing the types that yielded nothing, and what each suggests about the boundary. A step is
 identified by its statement within its map; restatements keep the old wording in its notes until citations are updated.
 
@@ -125,4 +126,4 @@ version or timestamp; check versions before pushing.
 ## Where it lives
 
 In a `job-maps/` folder beside the domain's `job-topology.md`, one document per job, named after the job
-(`job-maps/maintain-the-membership-roll.md`; a constituent job's map is named after it). Ask if that is not evident.
+(`job-maps/maintain-the-membership-roll.md`; a sub-job's map is named after it). Ask if that is not evident.

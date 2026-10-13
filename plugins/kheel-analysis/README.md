@@ -15,7 +15,9 @@ rules a system must enforce:
 | Skill | What it does |
 |---|---|
 | [glossary](skills/glossary/SKILL.md) | Develops and maintains the glossary (language model, conceptual model, vocabulary): terms, their boundaries and relations, rules and variation, reviews, diagrams and syncing. |
-| [job-topology](skills/job-topology/SKILL.md) | Surveys a domain's jobs: executors, the main functional job, and the adjacent and related jobs around it. Head of the job family ([README](skills/job-topology/README.md)). |
+| [job-topology](skills/job-topology/SKILL.md) | Ulwick-aligned discovery of a domain's functional jobs: executors, the main job, the adjacent and related jobs around it, and what is left open. Head of the job family. |
+| [job-domain-analysis](skills/job-domain-analysis/SKILL.md) | Optional extension: how the jobs fit together (identity, sub-jobs, episodes, relationships, seams, obligations, boundary tests). |
 | [job-map](skills/job-map/SKILL.md) | Breaks one job into the steps its executor must accomplish, with the desired outcomes by which each step is judged. |
+| [job-help](skills/job-help/SKILL.md) | Explains the Jobs to be Done model, what is Ulwick and what is the extension, and guides people through modelling a domain's jobs stage by stage. Its [README](skills/job-help/README.md) describes the job family and its generic activity model. |
 
 Each skill is a folder under `skills/` holding a `SKILL.md` and any `references/`, `assets/` or `scripts/` it needs.

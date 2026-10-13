@@ -67,95 +67,40 @@ statement or its clarifier, and let the map follow it.
   executor must keep coherent (for a membership roll: a family membership, an honorary member, a suspended member, a
   member moving between grades). If the executor cannot handle them without artificial distinctions, the object is too
   narrow (*who belongs* where *who belongs and on what terms* is meant). If widening it brings in several independent
-  results, it is too broad. Record the cases tried and what they showed; those the object takes in are carried into the job map as
-  edge cases on the steps they change.
+  results, it is too broad. Record the cases tried and what they showed; those the object takes in become edge cases for the job map.
 
-### Continuing jobs and their episodes
+### Continuing jobs
 
 Some jobs have a beginning, execution and end (*settle an estate*, *run a conference*). Others are **continuing**: they
 keep something in a desired state indefinitely (*keep the fleet roadworthy*, *maintain the membership roll*). A
 continuing job is legitimate, and often the right main job, because its intent is the standing state, not any one
-piece of work. It shows in the work the executor does when nothing new arrives: a fault found on inspection, a
-discrepancy with old records, a dispute, a rebuild after loss, a question about the state at a past date.
+piece of work. Record the recurring and occasional work it involves, each with what sets it off (*a change arrives*,
+*the annual check falls due*, *an error is found*), as **episodes** on the main job's entry.
 
-A continuing job is done through **episodes**: recurring or occasional pieces of work, each with a trigger.
+Do not decide here whether each episode is just an occasion of the main job, a step of it, or a functional job of its
+own that is part of it: that is established from the evidence (the `job-domain-analysis` skill), and a shared
+higher-level objective does not settle it either way. Where it matters, record it as an **open classification**.
 
-| Trigger | Example episode (membership roll) | Example episode (fleet) |
-|---|---|---|
-| **Event-driven**: something arrives | Take in a change to the roll | Deal with a reported fault |
-| **Periodic**: a cycle comes round | Check the roll against its sources | Carry out a scheduled service |
-| **Exceptional**: something is found wrong | Correct the roll | Withdraw a vehicle from use |
+### Open classifications
 
-Episodes are **not separate jobs**: they share the main job's executor and serve its ultimate result. They are
-recorded on the main job's entry with their triggers, and the job map folds them into its stages.
-
-### The unity test: part of the main job, or another job?
-
-Ask of each candidate: **does it share the main job's executor and serve the same ultimate desired result?** If it
-does, it is part of the main job (an episode, a circumstance, an edge case, or a step of its map), however different
-its trigger, frequency or size. Taking in a change, checking the state against its sources and putting it right when
-it is wrong all serve *an accurate, current record*: all part of the main job.
-
-Only a **different ultimate desired result** makes a different job, and then it is an **adjacent job** (same executor)
-or a **related job** (another executor).
-
-- **Do not split by source.** Work started or authorised from a different source (the executor's own finding against a
-  tribunal's order; a driver's report against a manufacturer's recall) serves the same result: it is part of the same
-  job, and the outside source is a related job whose result arrives at a seam.
-- **Do not split by trigger, frequency or size.** Event-driven, periodic and exceptional work on the same result, and a
-  rare, large undertaking toward it (rebuilding the state after a loss), are part of the one job.
-- **Record the test** on the main job's entry (*Unity*): the parts considered, the ultimate result each serves, and the
-  conclusion.
-
-### How the main job is mapped
-
-**By default, one job map over the job's whole life.** This is the Ulwick job map: the eight universal stages, each
-holding the steps the executor must accomplish to get the job done, over the life of the job rather than in one
-transaction. For a continuing job, a stage's steps may be carried out continuously, periodically or on demand, and an
-episode passes through only the stages it needs (**the continuity rule**). Circumstances (a first-time set-up, a
-large organisation, a contested case, a recovery) are contextual modifiers of the stages, not separate maps; edge cases
-are folded into the stages they bear on. This is what the job map skill produces unless asked otherwise.
-
-**On request, constituent jobs and flowing maps.** Where the user asks for each path of the job to be set out as its own
-map, flowing from one beginning to one completion (closer to a process view), the main job is divided into
-**constituent jobs**: one per path, found by comparing the episodes' immediate results and completions.
-
-1. Write each episode's progression in plain words, from what starts it to what finishes it.
-2. Compare their **immediate result** (what that piece of work leaves done) and **completion** (how the executor knows
-   it is finished). All serve the main job's ultimate result; the question is only whether they share a path.
-3. A different trigger or source with the same immediate result and completion is the same path; the same activity
-   started two ways (a mistake put right during the work, against one found long afterwards) may be two.
-4. Each path becomes a **constituent job**: a row with its own statement and its immediate result as its intent, with a
-   flowing map of its own. The main job is the higher job they make up and has no map of its own.
-
-A constituent job is part of the main job, not a different job: same executor, same ultimate result. That
-distinguishes it from an adjacent job, which pursues a different result. Record the choice on the main job's entry
-(*Mapping*: *lifecycle map*, the default, or *constituent jobs*, with the paths compared).
+The topology records what it can establish and marks what it cannot. Wherever a candidate's classification is
+genuinely uncertain (a job or a step; one job or two; part of the main job or a job beside it; one executor or two),
+record it as **open**, with the evidence each way, rather than forcing it into a category. Open classifications are
+taken up by job domain analysis, or by the job map when it reaches them. A topology with open classifications is
+complete enough to map from, so long as the main job and its executor are clear.
 
 ## The other jobs
 
 | Category | What it is | Test |
 |---|---|---|
-| **Main job** | The job being analysed: the one the map will be built for | Exactly one per topology |
-| **Constituent job** | Part of the main job, set out as its own path when constituent maps are requested | Same executor and ultimate result as the main job; its own immediate result and completion; mapped on its own |
-| **Adjacent job** | A distinct job performed by the **same** executor | A **distinct desired outcome**: the executor is after a different result, not just doing something at a different time. Its own trigger, recipient and completion support that, but do not establish it (steps have those too). Otherwise it is a step or an episode |
-| **Related job** | A job performed by **another** executor that touches the main job | Its executor is not the main executor; if it is, it is adjacent, or part of the main job |
+| **Main job** | The job being analysed: the focal job the map will be built for | Exactly one per topology |
+| **Adjacent job** | A distinct job performed by the **same** executor | A **distinct desired outcome**: the executor is after a different result, not just doing something at a different time. Its own trigger, recipient and completion support that, but do not establish it |
+| **Related job** | A job performed by **another** executor that touches the main job | Its executor is not the main executor |
 
-The categories carry the weight: whether a job is the main job, part of it, an independent job of the same executor,
-or another executor's. How a job stands **in time** (*before*, *after*, *alongside*) is useful for an adjacent job, but
-secondary; record it only where it helps.
-
-A related job says **how it stands to the main job** or, where the main job has constituent jobs, to the **constituent
-job it bears on** (a tribunal *governs* correcting the record, not maintaining it in general):
-
-| Relation | Meaning |
-|---|---|
-| **changes** | Alters the state the main job maintains or depends on; its result must be taken in (a member resigning, a vehicle being damaged) |
-| **enables** | Provides something the main job needs, without changing its subject |
-| **constrains** | Sets limits on how the main job may be done |
-| **governs** | Authorises, regulates or oversees it |
-| **consumes** | Uses what the main job produces or maintains |
-| **responds to** | Is set off by it |
+For each adjacent or related job, say **in words how it stands to the main job** (*decides on applications before they
+are recorded*; *uses the roll to check eligibility*). Classifying those relationships systematically is job domain
+analysis's work; here, a clear phrase is enough. How an adjacent job stands **in time** (*before*, *after*,
+*alongside*) may be noted where it helps.
 
 ### Which related jobs to include
 
@@ -175,52 +120,19 @@ another related job already listed.
 - **Record what was left out.** List related jobs considered and excluded in the main job's notes, with why, so the
   next reader does not add them back.
 
-### Changing the world, and recording it
+### Flags for deeper analysis
 
-The commonest misplacement: a job that **changes the reality** (admitting a member, repairing a vehicle, dispensing a
-medicine) put inside, or beside, the job that **maintains a representation** of that reality (the roll, the fleet
-log, the medication record). They are separate jobs, and usually separate executors, even when one person coordinates
-both. Decompose them:
+Some boundaries need more than a topology can give them. Note them in the framing as **flags**, briefly, and leave
+them to job domain analysis:
 
-| Job | Executor | Category |
-|---|---|---|
-| Decide on an application for membership | Committee | Related: governs |
-| Join the club | Applicant | Related: changes |
-| Record the new membership | Membership secretary | An episode of the main job |
-
-Then check the **direction of the seam**. Recording is not always passive: in some domains the act of recording gives
-the change its effect (a membership that begins on entry in the roll; a title that passes on registration). Where it
-does, say so: the main job does not merely receive the change from the world, it takes part in making it. The seam
-then runs both ways, and the job map will have an Execute step with consequences outside the record. Whether recording
-has that effect is a fact about the domain, to be checked against its sources.
-
-### Event-driven and periodic obligations
-
-An obligation triggered by the same event as a piece of the main job's work (notifying a federation when a member
-joins) is not part of that work just because it shares the trigger. Ask the outcome question: **is meeting the
-obligation necessary to achieve the executor's desired outcome, or does it serve a distinct outcome** (keeping another
-body's record current, say)? If necessary, it is a step of the episode, or of the related job that makes the change;
-if distinct, it belongs to a separate job, which may be adjacent or part of a broader one (below). Which events create
-an obligation at all, and with what deadlines, is a fact about the domain to be checked against its sources, not
-assumed. Until both are settled, record the obligation in the framing as an open boundary question, not as a rule
-(*changes may create notification obligations; whether a notification completes the change or belongs to a separate
-reporting job is open*).
-
-An obligation with **its own trigger and lifecycle** (an annual return to a federation) is a candidate job. Before
-calling it adjacent, test its altitude: if its scope is wider than the main job's object (the annual return covers
-officers, finances and facilities as well as members), it belongs to a broader job (*maintain the club's standing with
-its federation*), not beside the main job. Then do not list it as an adjacent job: record a **boundary question** in
-the framing, saying where event-driven and periodic obligations are handled, and leave the broader job to its own
-topology. Only an obligation whose scope is the main job's object, with a lifecycle of its own, is adjacent.
-
-**The statement must match the reason.** A candidate's statement and the signal that makes it distinct must describe
-the same thing. A job stated as one activity (*report membership numbers*) but justified by another's lifecycle (the
-annual return's cycle) is not yet a job: restate it as what actually has that lifecycle, then test that.
-
-**Supplying another job is not a job by itself.** That the main job's record feeds another executor's job is captured
-by that related job (*consumes*). It becomes an adjacent job of the main executor only when supplying pursues a
-desired outcome of its own (satisfying a particular information need, where the main job preserves authoritative
-information), not merely because information flows or each request has a start and end.
+- **Changing the world against recording it.** A job that changes the reality (admitting a member, repairing a vehicle)
+  is a different job from one that maintains a representation of it (the roll, the fleet log), usually with a
+  different executor, even when one person coordinates both. Flag where the two are entangled, and where **recording
+  may itself give the change its effect** (a membership that begins on entry in the roll).
+- **Obligations.** Notices, returns and reports owed to others: whether one completes a piece of the main job's work or
+  belongs to a separate or broader job.
+- **Supplying another job.** Where the main job's record feeds other executors, whether supplying it is a job of the
+  main executor's own (an adjacent job, if it pursues its own result) or simply what the related jobs consume.
 
 ### Rules of method are not facts about the domain
 
@@ -282,21 +194,18 @@ sent there, not forgotten.
 A few lines above the jobs:
 
 - the **core executor** (by capacity) and the **main job**, in full;
-- **execution seams**: what happens outside any system and what crosses back in, and in which direction, including
-  where recording gives a change its effect;
+- **flags** for deeper analysis: seams (where execution leaves any system, and whether recording may give a change its
+  effect), obligations, supplying;
 - any **sub-domain split** already evident, stated as a hypothesis with the signal that prompted it;
-- **boundary questions** left open (an obligation that may belong to a broader job; the breadth of the main job's
-  object).
+- **boundary questions** left open (the breadth of the main job's object; an obligation that may belong to a broader
+  job).
 
-## Settle the topology before mapping
+## Ready for mapping
 
-Three questions shape everything downstream; settle them, or record them as open, before the main job is mapped:
-
-1. **Is the main job's object the right breadth?** (*Altitude and breadth*.)
-2. **What is part of the main job, and how is it mapped?** The unity test (what belongs to it), and the mapping
-   choice: a lifecycle map by default, constituent jobs on request.
-3. **Where does changing the world end and maintaining its representation begin?** (*Changing the world, and recording
-   it*.)
+Stop when the **main job, its executor and its principal boundaries** are clear enough to support a job map: the job
+statement passes the altitude and breadth tests, the executor is settled, the jobs around the main job that shape its
+boundary are placed, and every unresolved classification is recorded as open rather than forced. A small topology is
+fine. Do not use the step types to settle the topology: that designs a workflow instead of finding the job.
 
 ## Errors to watch for
 
@@ -306,40 +215,25 @@ Three questions shape everything downstream; settle them, or record them as open
   bigger, when its desired outcome is the same.
 - **A process as a job.** *Process the application form* names today's mechanism. Ask what the form is for.
 - **A role's coordination as the role's job.** Work done to help another's job recorded as the executor's own job.
-- **Changing the world filed as an adjacent job.** A job that changes what the main job records listed as the main
-  executor's own, instead of as a related job.
-- **An episode as an adjacent job.** *Correct the record* listed beside the main job instead of on it.
-- **A completing step as an adjacent job.** Notifying another body of one change, listed as a job instead of as part of
-  completing the change.
-- **A broader job's obligation as an adjacent job.** A periodic obligation wider than the main job's object, listed
-  beside it instead of recorded as a boundary question.
-- **A statement that does not match its signal.** One activity stated, another's lifecycle used to justify it.
 - **A statement that assumes a sequence.** A job worded as following a change that, in some circumstances, it makes.
 - **An assurance job with no standard.** *Verify the record* with no word on whether consistency or correctness is
   meant.
+- **A forced classification.** A candidate pushed into a category the evidence does not settle, instead of recorded as
+  open; above all, activities merged into one job, or split apart, because they serve the same higher objective.
 - **A topology of everyone.** Related jobs added because an executor touches the main job, not because the
   relationship helps establish its boundary.
 - **Executors merged by relationship.** Different executors folded into one because they stand to the main job the
   same way, though their desired outcomes differ.
-- **A split by source.** Episodes or jobs divided because one is started or authorised from outside and another from
-  inside, though the desired result is the same.
 - **An adjacent job on trigger alone.** A job separated because it has its own trigger or completion, with no distinct
   desired outcome.
 - **A modelling choice stated as a domain rule.** A classification written as though the domain required it.
 - **A job named for its output.** *Issue a membership card*, hiding the consumer's job and the supplier's.
-- **A step promoted to an adjacent job.** *Obtain the committee's approval* has no life outside the change it
-  approves.
-- **A related job swallowed into the main job.** An auditor's verification written as the main executor's Monitor
-  step.
+- **A step promoted to an adjacent job.** *Obtain the committee's approval* has no life outside the change it approves.
 - **The main job at the wrong altitude or breadth.** Too low and the adjacent jobs are steps of a job nobody has
   stated; too high and the map will have forty steps; too narrow and edge cases need artificial distinctions.
 - **An org chart wearing a topology.** One job per department, executors named by title, related jobs that are the
   reporting line.
 - **A solution in the statement.** *Maintain the roll in the system*: the last three words are the product.
 - **A qualifier forced or mislabelled.** An emotional concern labelled social, or a qualifier nobody expressed.
-- **Fragmenting the job unasked.** A continuing job split into several maps, by episode, trigger or source, when the
-  default lifecycle map was wanted.
-- **Constituent jobs mistaken for other jobs.** Parts of the main job, serving its ultimate result, filed as adjacent
-  jobs with results of their own.
-- **Using the map to settle the topology.** Choosing the main job by which version gives a tidier sequence of step
-  types.
+- **Analysis beyond the need.** A topology grown into a full model of the domain's work before the main job is clear;
+  that belongs to job domain analysis.

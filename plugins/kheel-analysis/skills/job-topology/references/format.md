@@ -13,14 +13,15 @@ authoritative and the row summarises it; a row and an entry that disagree are a 
 The **membership secretary**, the person or organisation responsible for the club's record of its members, maintains
 an accurate, current record of who belongs to the club and on what terms, over the life of the club.
 
-Execution seams: applicants join, members resign and subscriptions are paid outside the roll; each arrives at the
-roll to be taken in. Where the club's rules say membership begins on entry in the roll, the seam runs both ways:
-recording takes part in making the change (unverified for this club).
+Flags for deeper analysis: applicants join, members resign and subscriptions are paid outside the roll, and arrive
+at it to be taken in; the club's rules may make membership begin on entry in the roll (unverified), in which case
+recording takes part in making the change. Notices to the federation: whether one completes a change or belongs to a
+separate reporting job.
 
 Sub-domain hypothesis: the roll (what is) and membership planning (what if) differ in intent and lifecycle.
 
 Boundary questions: whether the object covers people who are not members but have rights at the club (guests,
-reciprocal members); whether notices to the federation complete a change or belong to a separate reporting job.
+reciprocal members).
 
 ## Executors
 
@@ -34,14 +35,14 @@ reciprocal members); whether notices to the federation complete a change or belo
 
 ## Jobs
 
-| Job | Category | Executor | Intent and difference from the main job |
+| Job | Category | Executor | How it stands to the main job, and how its intent differs |
 |---|---|---|---|
 | **[Maintain the membership roll](#maintain-the-membership-roll)**<br>an accurate, current record of who belongs to the club and on what terms, over the life of the club | Main | Membership secretary | |
 | **Provide authoritative information about membership** | Adjacent | Membership secretary | Satisfies a particular information need, current or historical, routine or disputed, where the main job preserves the information. Signal: intent. |
-| **Decide on an application** | Related: governs | Committee | A decision on whether, and on what terms, someone joins. Signal: authority. |
-| **Join the club** | Related: changes | Applicant | The applicant's own undertaking; the roll takes its result in. Signal: changing the world against representing it. |
-| **Establish membership before relying on it** | Related: consumes | Relying party | Confidence at a date that someone belongs, for the relying party's own purpose. Signal: intent. |
-| **Forecast membership income** | Related: consumes | Treasurer | *What if* against *what is*; works on forecasts that are thrown away. Signal: lifecycle. |
+| **Decide on an application** | Related | Committee | Decides whether, and on what terms, someone joins, before the change is recorded. Signal: authority. |
+| **Join the club** | Related | Applicant | The applicant's own undertaking; the roll takes its result in. Signal: changing the world against representing it. |
+| **Establish membership before relying on it** | Related | Relying party | Uses the roll to confirm someone belongs, for its own purpose. Signal: intent. |
+| **Forecast membership income** | Related | Treasurer | Uses the roll's numbers to forecast; *what if* against *what is*. Signal: lifecycle. |
 
 ## Entries
 
@@ -51,10 +52,6 @@ reciprocal members); whether notices to the federation complete a change or belo
   the club.
 - **Category:** Main
 - **Executor:** Membership secretary
-- **Unity:** Taking in, checking and correcting all serve an accurate, current roll: part of this job. A correction
-  ordered by a tribunal is the same work with another trigger; the tribunal is a related job. Providing information
-  about membership serves a different result: adjacent.
-- **Mapping:** Lifecycle map (the default): taking in, checking and correcting are folded into the stages of one map.
 - **Episodes:**
   - Take in a change to the roll (event-driven: a member joins, resigns, changes grade or particulars).
   - Check the roll against its sources (periodic).
@@ -63,6 +60,8 @@ reciprocal members); whether notices to the federation complete a change or belo
   different terms) break an object of *who belongs* alone; supports *who belongs and on what terms*.
 - **Qualifiers:** Avoid the anxiety of being blamed when a member is wrongly turned away (emotional).
 - **Circumstances:** The first roll when the club is founded; a national federation at volume, with online joining.
+- **Open classifications:** Open: whether checking the roll and correcting it are jobs of their own, part of
+  maintaining it, or only occasions of it; each has its own completion, but all serve an accurate roll.
 - **Map:** [Job map](job-maps/maintain-the-membership-roll.md)
 - **Source:** Membership secretary interviews, 2026-03.
 - **Notes:** Left out: the club's insurer setting premiums (touches the roll only through *Establish membership*).
@@ -71,7 +70,7 @@ reciprocal members); whether notices to the federation complete a change or belo
 ### The framing
 
 A few paragraphs, as [jobs](jobs.md) (*Framing*) describes: the core executor by capacity and the main job in full;
-execution seams and their direction; sub-domain hypotheses; boundary questions left open.
+flags for deeper analysis (seams, obligations, supplying); sub-domain hypotheses; boundary questions left open.
 
 ### The executors table
 
@@ -80,17 +79,16 @@ they carry), and what was unified or split and why.
 
 ### The jobs table
 
-Four columns, the main job first, then any constituent jobs, then adjacent and related jobs:
+Four columns, the main job first, then adjacent and related jobs:
 
 | Column | Holds |
 |---|---|
 | **Job** | The job's name (verb + object) in bold, linked to its entry if it has one; then, on a new line (`<br>`), its contextual clarifier where it has one. |
-| **Category** | `Main`; `Constituent`; `Adjacent`, optionally with its place in time (`Adjacent: before`, `after`, `alongside`); or `Related: <changes / enables / constrains / governs / consumes / responds to>`, followed by the constituent job it bears on in brackets where it bears on one rather than the main job as a whole. |
+| **Category** | `Main`, `Adjacent` (optionally with its place in time: `Adjacent: before`, `after`, `alongside`) or `Related`. |
 | **Executor** | The executor's name, as in the executors table. |
-| **Intent and difference from the main job** | Its core intent and how it differs, naming the signal (intent, time horizon, lifecycle, authority, language). Empty for the main job. |
+| **How it stands to the main job, and how its intent differs** | In words, how it touches the main job (*decides before the change is recorded*; *uses the roll to…*), its core intent, and the signal that makes it distinct (intent, time horizon, lifecycle, authority, language). Empty for the main job. Classifying relationships systematically is job domain analysis's work. |
 
-Episodes are not rows: they are listed on the main job's entry. Constituent jobs are rows; their intent column holds
-their immediate result. A job is identified by its name; renames keep the old
+Episodes are not rows: they are listed on the entry of the job they belong to. A job is identified by its name; renames keep the old
 name in its notes until citations are updated. A table cell cannot contain `|` or a line break other than `<br>`.
 
 ### The entries
@@ -100,13 +98,10 @@ heading comes its YAML block when synced (see *Syncing*). Then a bullet list, wr
 does not apply:
 
 - **Statement**, **Category**, **Executor** and **Intent and difference**: as the row says.
-- **Unity** (the main job): the parts considered, the ultimate result each serves, and the conclusion, as
-  [jobs](jobs.md) (*The unity test*) describes.
-- **Mapping** (a continuing main job): *lifecycle map* (the default) or *constituent jobs* (when flowing maps per path
-  were asked for, with the paths compared), as [jobs](jobs.md) (*How the main job is mapped*) describes.
-- **Episodes** (a continuing job): each with its trigger, event-driven, periodic or exceptional.
-- **Map** or **Maps**: a link to its job map; for a main job with constituent jobs, *none of its own* (each
-  constituent job has an entry with its own map).
+- **Episodes** (a continuing job): each with what sets it off (event-driven, periodic or exceptional).
+- **Open classifications**: each candidate whose classification the topology could not settle, with the evidence each
+  way (*Open: whether checking the roll is a job of its own or part of maintaining it*).
+- **Map**: a link to its job map, if it has one; a link to the job domain analysis, if one covers it.
 - **Edge cases**: the cases the object's breadth was tested against, and what they showed.
 - **Qualifiers**: emotional and social, each labelled, only where evidence supports them.
 - **Circumstances**: each, with what changes in it.
@@ -152,7 +147,7 @@ version or timestamp; before pushing, check each job's version against the sourc
 |---|---|
 | **Framing and the jobs table** | The standard shape. |
 | **The whole document** | Analysts and review; contested executors or jobs. |
-| **A diagram** | The main job in the centre with its episodes or constituent jobs inside it, adjacent jobs beside it, related jobs outside with their executors and relations. Derived from the document, never drawn separately (Mermaid `flowchart` unless the project uses another). |
+| **A diagram** | The main job in the centre with its episodes inside it, adjacent jobs beside it, related jobs outside with their executors and relations. Derived from the document, never drawn separately (Mermaid `flowchart` unless the project uses another). |
 | **Part of a domain analysis** | Framing and topology first, ahead of the job maps. |
 
 ## Where it lives
