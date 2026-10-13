@@ -8,34 +8,45 @@ adds the rest. Where a step has an entry, the entry is authoritative and the row
 disagree are a defect.
 
 ````markdown
-# Job map: Maintain the record of share ownership
+# Job map: Record a change to the membership roll
 
-**Job:** Maintain an accurate, legally compliant record of who owns the company's shares over the life of the company.
-**Executor:** Company secretary. From the [job topology](../job-topology.md#maintain-the-record-of-share-ownership).
+**Job:** Record a change to who belongs to the club or on what terms.
+**Executor:** Membership secretary. A constituent job of
+[Maintain the membership roll](../job-topology.md#maintain-the-membership-roll).
+
+## Coherence
+
+Progressions compared: taking in a change (a change, or a request for one, reaches the secretary; ends when the roll
+states the position after it); checking the roll (a check falls due; ends with the extent of agreement established and
+each discrepancy referred); correcting the roll (an error is found outside any change; ends with the roll restated and
+the error still visible). Different beginnings, results and completions: three constituent jobs. This map is the
+first; the others are mapped separately.
 
 ## Steps
 
 | Type | Step | Outcomes |
 |---|---|---|
-| Define | **Determine what change to ownership must be recorded** | Minimise the time it takes to establish what a transfer changes<br>Minimise the likelihood that a change affecting several share classes is recorded as one |
-| Confirm | **[Confirm that the transfer is permitted](#confirm-that-the-transfer-is-permitted)**<br>*arrives from the world: the board's approval* | Minimise the likelihood that a transfer breaching a pre-emptive right is recorded<br>Minimise the time it takes to establish which restrictions apply |
-| Execute | **Record the completed transfer** | Increase the likelihood that a transfer is recorded on the day it takes effect |
-| Conclude | **Notify the holders of the change** | Minimise the likelihood that a holder is not told of a change to their holding |
+| Define | **Determine what the change alters** | Minimise the time it takes to establish which memberships and terms a change alters<br>Minimise the likelihood that part of a change is missed (one member of a family membership) |
+| Locate | **Obtain the evidence the change rests on**<br>*arrives from the world: the application, the resignation, the payment* | Minimise the time between a change and its evidence reaching the secretary<br>Minimise the likelihood that a change is taken up on incomplete evidence |
+| Confirm | **[Confirm the change is authorised](#confirm-the-change-is-authorised)**<br>*arrives from the world: the committee's decision* | Minimise the likelihood that a change is entered without the authority it requires |
+| Execute | **Enter the change in the roll** | Minimise the time between the conditions for entry being met and the change being entered<br>Minimise the likelihood that the position before the change can no longer be established |
+| Modify | **Resolve an obstacle to completing the change** | Minimise the time it takes to establish whether a problem lies in this change or in an earlier entry (an earlier entry is handed on for correction) |
+| Conclude | **Establish that the roll states the position after the change** | Minimise the likelihood that a change is left part-entered |
 
-Types that yielded nothing: Locate, Prepare, Monitor, Modify (not yet asked; see notes).
+Types that yielded nothing: Prepare (nothing found; the figures are worked out under Define); Monitor (watching
+pending changes happens across many changes, which suggests it belongs to the higher job).
 
 ## Entries
 
-### Confirm that the transfer is permitted
+### Confirm the change is authorised
 
 - **Type:** Confirm
-- **Seam:** Arrives from the world: the board's approval of the transfer, where the constitution requires it.
+- **Seam:** Arrives from the world: the committee's decision, where the club's rules require one.
 - **Outcomes:**
-  - Minimise the likelihood that a transfer breaching a pre-emptive right is recorded.
-  - Minimise the time it takes to establish which restrictions apply.
-- **Source:** Company secretary interviews, 2026-03.
-- **Notes:** Open: whether the secretary or the board decides that a restriction applies; if the board, this may be
-  part of a related job.
+  - Minimise the likelihood that a change is entered without the authority it requires.
+- **Source:** Membership secretary interviews, 2026-03.
+- **Notes:** Eligibility of the person (are they entitled to the grade?) is a separate question from authority, kept as
+  its own outcomes or step if it proves distinct.
 ````
 
 ### The steps table
@@ -87,4 +98,4 @@ version or timestamp; check versions before pushing.
 ## Where it lives
 
 In a `job-maps/` folder beside the domain's `job-topology.md`, one document per job, named after the job
-(`job-maps/maintain-the-record-of-share-ownership.md`). Ask if that is not evident.
+(`job-maps/record-a-change-to-the-membership-roll.md`). Ask if that is not evident.

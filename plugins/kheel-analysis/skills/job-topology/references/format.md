@@ -8,60 +8,62 @@ what its row says and adds the rest, so a reader has the whole job in one place.
 authoritative and the row summarises it; a row and an entry that disagree are a defect.
 
 ````markdown
-# Share register job topology
+# Membership roll job topology
 
-The **company secretary**, the person or organisation responsible for the company's record of share ownership,
-maintains an accurate, legally compliant record of who owns the company's shares over the life of the company.
+The **membership secretary**, the person or organisation responsible for the club's record of its members, maintains
+an accurate, current record of who belongs to the club and on what terms, over the life of the club.
 
-Execution seams: transfers are agreed, signed and paid for between the parties, and shares are issued under the
-company's authority, outside the record; both arrive at the record to be taken in. Where entry in the register is what
-gives a transfer effect, the seam runs both ways: recording takes part in making the change.
+Execution seams: applicants join, members resign and subscriptions are paid outside the roll; each arrives at the
+roll to be taken in. Where the club's rules say membership begins on entry in the roll, the seam runs both ways:
+recording takes part in making the change (unverified for this club).
 
-Sub-domain hypothesis: the record (what is) and capital planning (what if) differ in intent and lifecycle.
+Sub-domain hypothesis: the roll (what is) and membership planning (what if) differ in intent and lifecycle.
 
-Boundary questions: whether the object is *share ownership* or *share capital and its ownership* (tried against a
-subdivision and a conversion between classes; not yet settled); whether periodic statutory reporting belongs to a
-broader job of maintaining the company's statutory information.
+Boundary questions: whether the object covers people who are not members but have rights at the club (guests,
+reciprocal members); whether notices to the federation complete a change or belong to a separate reporting job.
 
 ## Executors
 
 | Executor | Capacity | Unified or split |
 |---|---|---|
-| **Company secretary** | The person or organisation responsible for the company's record of share ownership | Unified: an appointed secretary, a director doing it themselves and an outsourced provider; a listed company's registry at first too, its differences being circumstances |
-| **Board** | Decides on changes to the company's share capital | |
-| **Company** | Carries out changes to its share capital, through its authorised officers | |
-| **Auditor** | Independently verifies the company's records | |
-| **Chief financial officer** | Plans the company's capital structure | Split from the company secretary: the desired outcome is a plan (*what if*), not the record (*what is*) |
+| **Membership secretary** | The person or organisation responsible for the club's record of its members (a functional role; many clubs appoint no one to it) | Unified: a volunteer secretary, a committee member doing it themselves and a paid administrator; a national federation's office at first too, its differences being circumstances |
+| **Committee** | Decides on applications and on changes to membership terms | |
+| **Applicant** | Seeks to join the club | |
+| **Relying party** | Needs to confirm someone's membership before relying on it (an insurer, a competition organiser, a venue) | |
+| **Treasurer** | Forecasts the club's membership income | Split from the membership secretary: the desired outcome is a forecast (*what if*), not the record (*what is*) |
 
 ## Jobs
 
 | Job | Category | Executor | Intent and difference from the main job |
 |---|---|---|---|
-| **[Maintain the record of share ownership](#maintain-the-record-of-share-ownership)**<br>an accurate, legally compliant record of who owns the company's shares over the life of the company | Main | Company secretary | |
-| **Provide authoritative information about share ownership** | Adjacent | Company secretary | Answers a request, current or historical, routine or disputed, with its own lifecycle; reader-facing rather than keeping the record. Signal: intent. |
-| **Carry out a share issue** | Related: changes | Company | Changes the company's capital and who owns it; the record then takes the result in. Signal: changing the world against representing it. |
-| **Authorise a share issue** | Related: governs | Board | A decision on whether, and on what terms, shares are issued. Signal: authority. |
-| **Verify the share register** | Related: governs | Auditor | Independent assurance that the record is right, at a point in time. Signal: authority. |
-| **Plan a capital raising** | Related: consumes | Chief financial officer | *What if* against *what is*; works on forecasts that are thrown away. Signal: lifecycle. |
+| **[Maintain the membership roll](#maintain-the-membership-roll)**<br>an accurate, current record of who belongs to the club and on what terms, over the life of the club | Main | Membership secretary | |
+| **Provide authoritative information about membership** | Adjacent | Membership secretary | Satisfies a particular information need, current or historical, routine or disputed, where the main job preserves the information. Signal: intent. |
+| **Decide on an application** | Related: governs | Committee | A decision on whether, and on what terms, someone joins. Signal: authority. |
+| **Join the club** | Related: changes | Applicant | The applicant's own undertaking; the roll takes its result in. Signal: changing the world against representing it. |
+| **Establish membership before relying on it** | Related: consumes | Relying party | Confidence at a date that someone belongs, for the relying party's own purpose. Signal: intent. |
+| **Forecast membership income** | Related: consumes | Treasurer | *What if* against *what is*; works on forecasts that are thrown away. Signal: lifecycle. |
 
 ## Entries
 
-### Maintain the record of share ownership
+### Maintain the membership roll
 
-- **Statement:** Maintain an accurate, legally compliant record of who owns the company's shares over the life of the
-  company.
+- **Statement:** Maintain an accurate, current record of who belongs to the club and on what terms, over the life of
+  the club.
 - **Category:** Main
-- **Executor:** Company secretary
+- **Executor:** Membership secretary
 - **Episodes:**
-  - Incorporate a change in share ownership (event-driven: a transfer, an issue or a transmission arrives).
-  - Verify the accuracy of recorded ownership (periodic).
-  - Correct an ownership record (exceptional: an error or a dispute).
-- **Qualifiers:** Avoid the anxiety of being blamed when a deal is held up by the record (emotional).
-- **Circumstances:** A first registration on incorporation; a listed company's registry, at volume and with settlement.
-- **Map:** [Job map](job-maps/maintain-the-record-of-share-ownership.md)
-- **Source:** Company secretary interviews, 2026-03.
+  - Take in a change to the roll (event-driven: a member joins, resigns, changes grade or particulars).
+  - Check the roll against its sources (periodic).
+  - Correct the roll (exceptional: an error found, a dispute).
+- **Candidate constituent jobs:** Rebuild the roll (after records are lost or found unreliable).
+- **Edge cases:** A family membership (several people, one subscription) and a move between grades (same person,
+  different terms) break an object of *who belongs* alone; supports *who belongs and on what terms*.
+- **Qualifiers:** Avoid the anxiety of being blamed when a member is wrongly turned away (emotional).
+- **Circumstances:** The first roll when the club is founded; a national federation at volume, with online joining.
+- **Map:** [Job map](job-maps/record-a-change-to-the-membership-roll.md)
+- **Source:** Membership secretary interviews, 2026-03.
 - **Notes:** Open: whether the episodes hold together as one job, or are constituent jobs of a higher one; to be tested
-  by the map.
+  by the map. Left out: the club's insurer setting premiums (touches the roll only through *Establish membership*).
 ````
 
 ### The framing
@@ -120,7 +122,7 @@ system's `id`, `version` and `lastUpdated` (its last-modified time or ETag), in 
 entry heading:
 
 ````markdown
-### Maintain the record of share ownership
+### Maintain the membership roll
 
 ```yaml
 id: 51c0e2

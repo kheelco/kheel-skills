@@ -10,19 +10,21 @@ explicit as **measurable qualities of successful execution**, not restatements o
 > **Minimise the time** it takes to *determine whether a newly identified obligation applies*.
 > **Minimise the likelihood** that *an applicable obligation is overlooked*.
 > **Minimise the likelihood** that *an obligation is wrongly treated as applicable*.
-> **Minimise the variability** in *how holdings are allocated across share classes*.
-> **Increase the likelihood** that *a transfer is recorded on the day it takes effect*.
+> **Minimise the variability** in *how a fault's severity is judged from one inspector to another*.
+> **Increase the likelihood** that *a change is recorded on the day it takes effect*.
 
-*Minimise the time*, *minimise the likelihood*, *minimise the effort*, *minimise the variability* and *increase the
-likelihood* cover nearly everything. An outcome that needs another opening is worth a second look.
+*Minimise the time*, *minimise the likelihood*, *minimise the variability* and *increase the likelihood* cover nearly
+everything. *Minimise the effort* is allowed, but effort is harder to measure than time or likelihood: where it can be
+restated as one of them (the time spent, the number of times the executor has to go back), do so, and otherwise note
+that its measure needs settling when the outcomes are validated with practitioners. An outcome that needs another
+opening is worth a second look.
 
 A step usually carries two to four outcomes. Harvest them from what goes wrong today: what takes too long, the mistake
 that recurs, the result that varies from person to person. Write the object in glossary nouns, and keep each outcome
 attached to its step; outcomes are never pooled across a map.
 
 **Qualifiers become outcomes.** The emotional and social qualifiers recorded on the job in the topology yield outcomes
-on the steps they bear on, in the same form: *minimise the likelihood that a late filing is attributed to the company
-secretary*.
+on the steps they bear on, in the same form: *minimise the likelihood that a late filing is attributed to the executor*.
 
 ## What an outcome is not
 
@@ -30,20 +32,20 @@ Not a feature, a requirement, an acceptance criterion, a KPI, a business objecti
 The test: **is it a quality of the step's execution the executor would recognise as their own standard, and could it
 be measured?**
 
-- *Minimise the time it takes to issue a share certificate* is an outcome.
-- *Certificates are generated automatically* is a feature.
-- *Ninety per cent of certificates issued within a day* is a KPI: a target set on an outcome, a later act.
+- *Minimise the time it takes to issue a membership card* is an outcome.
+- *Cards are generated automatically* is a feature.
+- *Ninety per cent of cards issued within a day* is a KPI: a target set on an outcome, a later act.
 - *Record the transaction accurately* is the step with an adverb. Ask what *accurately* would be measured by.
 
 ## Checking each outcome
 
-Five questions for every outcome, after it is written:
+Six questions for every outcome, after it is written:
 
-1. **Does it measure success, or specify a solution?** *Minimise the likelihood that a class is not provided for in the
-   record* reads as a requirement on how the record is built. Restate it as the executor's judgement of the step (*…
-   that a characteristic of the shares that must be kept is not established*).
+1. **Does it measure success, or specify a solution?** *Minimise the likelihood that a category is not provided for in
+   the record* reads as a requirement on how the record is built. Restate it as the executor's judgement of the step
+   (*… that a characteristic that must be kept is not established*).
 2. **Which of its nouns are the domain's, and which are an implementation's?** Some concepts are unavoidable because
-   they are part of the job's object (where the record is itself what the law requires, its entries may be). Others
+   they are part of the job's object (where the record is itself what the domain requires, its entries may be). Others
    assume a solution (a database row, a workflow state). Keep the first, and restate around the second.
 3. **Is it within the executor's reach?** An outcome measures something the executor's execution can affect.
    *Minimise the likelihood that a change is made without the executor learning of it* may be beyond them; *minimise
@@ -53,8 +55,12 @@ Five questions for every outcome, after it is written:
 4. **Does a time outcome have a measure?** *Within the time it must be* depends on a deadline that may not exist.
    Measure the time from the conditions being met to the step being done; record a statutory deadline separately, as a
    rule, once its source is checked.
-5. **Does it measure this job's success, or another job's?** *Minimise the likelihood that a holder is unaware of a
-   change to their holding* measures communicating with holders. Unless that result is necessary to this job's desired
+5. **Is it an invariant in disguise?** A rule that must always hold (totals that must agree, a balance that must not go
+   negative) is domain knowledge, and belongs to the glossary's rules or the business rules. It is a useful input to an
+   outcome, not an outcome: the outcome is about the executor's execution, *minimise the likelihood that a change is
+   completed in a way that leaves the totals in disagreement*, not *minimise the likelihood that the totals disagree*.
+6. **Does it measure this job's success, or another job's?** *Minimise the likelihood that a member is unaware of a
+   change to their membership* measures communicating with members. Unless that result is necessary to this job's desired
    result, the outcome, and often the step it sits on, belongs to another job: note it and send it to the topology.
 
 ## The opportunity survey
@@ -80,3 +86,5 @@ survey is quantitative research built on a finished map, not part of mapping. If
 - **Another job's outcomes**: success measured for a result this job does not pursue.
 - **Outcomes out of reach**: measuring what the executor cannot affect, or the resolution of work handed on.
 - **Deadlines with no measure**: *within the time it must be*, with no deadline established.
+- **Invariants as outcomes**: a rule about the state, not a measure of the executor's execution.
+- **Effort with no measure**: *minimise the effort* where time or likelihood would say it more precisely.

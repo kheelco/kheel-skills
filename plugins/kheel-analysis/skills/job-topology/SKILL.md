@@ -29,7 +29,7 @@ read as true for an organisation that does the work on paper.
 
 - **The domain, not the system.** Jobs, executors and steps are stated so they survive the system's absence. No
   features, screens, workflows, org structures or mechanisms in a job statement.
-- **Written in the glossary's words.** A job is a verb on glossary nouns: *maintain the register of members*. A noun
+- **Written in the glossary's words.** A job is a verb on glossary nouns: *maintain the membership roll*. A noun
   the glossary does not hold is either badly chosen or a missing term; send it to the `glossary` skill.
 - **Evidence, not inference.** While drafting, mark each job, executor and relation *attested* (a source says so),
   *inferred* (concluded from evidence; say from what) or *proposed* (a modelling choice awaiting agreement). Never

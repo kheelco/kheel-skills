@@ -5,15 +5,15 @@
 One or two questions at a time, each answer shaping the next. Skip any the evidence already answers.
 
 1. **What are they ultimately trying to get done?** Push up until the answer would still be true in twenty years and
-   under a different process. *Process transfer forms* is not it; *maintain an accurate, legally compliant record of
-   who owns the company's shares* is.
+   under a different process. *Process application forms* is not it; *maintain an accurate, current record of who
+   belongs to the club and on what terms* is.
 2. **Who is responsible for that?** The responsibility, not a title, a department or a seniority; and whether every
    case in scope has someone formally holding it.
 3. **Is it ever finished, or kept in a state?** If kept: **what work is there when nothing new arrives?** (Errors found
    later, disputes, questions about a past date, reconstruction.) Those, with the work set off by events and cycles, are
    the job's episodes.
-4. **What edge cases must it cope with?** Cases at the edge of the job's object (for shares: a subdivision, a
-   conversion, partly paid shares, a cancellation). Do they fit without artificial distinctions?
+4. **What edge cases must it cope with?** Cases at the edge of the job's object (for a membership roll: a family
+   membership, an honorary member, a suspended member, a move between grades). Do they fit without artificial distinctions?
 5. **What must they have got done before this, and what do they turn to after it?** Candidate adjacent jobs, or
    episodes.
 6. **What do they do alongside it that is a different accomplishment?** More candidates, and the ones most often
@@ -32,7 +32,7 @@ One or two questions at a time, each answer shaping the next. Skip any the evide
      object, or wider?
    - Does what the candidate is called match what gives it its own lifecycle?
 9. **Does recording anything give it effect?** Whether the executor's act changes the reality outside the record
-   (registration completing a transfer), or only reflects it.
+   (a registration that completes a change), or only reflects it.
 10. **When does the job change?** Circumstances in which the executor must do materially different things, and whether
     the desired outcome changes with them.
 11. **How do they want to feel, and how do they want to be seen?** Emotional and social qualifiers, kept apart, and
@@ -46,7 +46,7 @@ Record each answer's source so the job can be marked attested.
 
 Given interviews, transcripts or documents, harvest first and ask about the gaps:
 
-- every **verb-object phrase** someone says they have to get done (*we have to keep the register right*);
+- every **verb-object phrase** someone says they have to get done (*we have to keep the roll right*);
 - every **"before that we…"** and **"and then it goes to…"**: candidate adjacent jobs, episodes or steps;
 - every **"when X happens, we…"**, **"every year we…"** and **"if we find a mistake…"**: candidate episodes, with their
   triggers;

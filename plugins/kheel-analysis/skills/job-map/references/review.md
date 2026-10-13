@@ -28,9 +28,15 @@ stop.
      outcomes that measure another job's result.
    - A job statement that assumes whether the change comes before, during or after the job.
    - Monitor or Modify steps that can also be started on their own, absorbed rather than tested as candidate jobs.
+   - Modify steps that correct the object rather than adjust the job's execution, or say nothing of what execution
+     does next.
+   - An assurance job with no named standard, or one that compares with sources and claims correctness without
+     testing whether the evidence is sufficient.
+   - Separation of jobs justified by the stage test alone, without a distinct desired result and completion.
    - Steps that do not advance the job's completion, or that do a receiving job's work past the hand-off.
    - Steps whose outcomes answer different questions (authority and eligibility) with neither split nor grouping.
-   - Outcomes beyond the executor's reach, or owning the resolution of work handed on; time outcomes with no measure.
+   - Outcomes beyond the executor's reach, or owning the resolution of work handed on; time outcomes with no measure;
+     invariants stated as outcomes; effort outcomes that time or likelihood would state more precisely.
    - Steps stated as operations rather than what is accomplished; types filled by nearest category; empty types with
      no note of what they suggest about the boundary.
    - Where a seam runs both ways: Confirm steps that assume the change has already happened; no test against a case

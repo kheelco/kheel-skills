@@ -51,11 +51,13 @@ be a step of a larger one.
    and compare their beginnings, desired results and completions. If they are one progression, map the job. If not, or
    in doubt, map the candidates separately and compare, without presuming the answer; constituent jobs go back to the
    topology. Never infer that a job holds together because its episodes can all be placed somewhere in the step types.
-   Where an activity can arise both during the job and on its own, keep the first as a step and test the second as a
-   candidate job. Keep the job statement neutral about whether the change it concerns comes before, during or after it.
+   Decide on distinct beginnings, desired results and completions; the stage test only supports. Where an activity can
+   arise both during the job and on its own, keep the first as a step and test the second as a candidate job. For a job
+   that gives assurance, confirm its standard (consistency or correctness) and map to it. Keep the job statement neutral about whether the change it concerns comes before, during or after it.
 4. **Find the steps** of that one progression. Work the eight step types as questions about it, in order, writing down
    only what is found ([elicitation](references/elicitation.md)). Add a step only where it is a necessary
    accomplishment that advances the job's completion, never to fill a type, and stop at any hand-off to another job.
+   Modify adjusts the job's execution (and says where it goes next); it does not correct the object.
    Where a type yields nothing, ask what that says about the boundary.
 5. **State each step as a milestone**: what the executor has accomplished once it is done, verb + object, in the
    executor's words, no mechanism. Mark its execution seam, if it has one.

@@ -19,7 +19,7 @@ words of the domain's glossary.
 
 They sit beside the `glossary` skill:
 
-- jobs and steps are **verbs on glossary nouns** (*maintain the record of share ownership*), and executors are agent
+- jobs and steps are **verbs on glossary nouns** (*maintain the membership roll*), and executors are agent
   terms;
 - the glossary holds the nouns, and only those acts the domain names as things in their own right (*Audit*); the doing
   is modelled here.
@@ -62,6 +62,7 @@ classDiagram
         position [0..1]
         intent [0..1]
         trigger [0..1]
+        standard [0..1]
         source [0..1]
         notes [0..1]
     }
@@ -127,7 +128,7 @@ classDiagram
 | Element | Notes |
 |---|---|
 | **ActivityModel** | One document: a topology or a job map. `profile` says which, and so which labels and constraints apply. `focus` is the activity the model is about: the main job of a topology, the job a map opens up. `framing` is the opening prose; `coherence` records the coherence test (the progressions compared and the conclusion); `subDomainHypotheses` (each with the signal that prompted it) and `boundaryQuestions` (left open on purpose, such as whether an obligation completes a change or belongs to a separate job) are kept as lists so they can be found and counted. |
-| **Activity** | The generic unit. `name` identifies it within its model (verb + glossary noun); `statement` is the full form. `category` is a value from the profile's classification. `position` orders it among its siblings where order matters, loosely. `intent` is the result its performer is pursuing: the desired outcome of the activity as a whole (not to be confused with a `Criterion`, which judges how well a part of it is done). Intent is what distinguishes activities and performers: two activities with the same performer are separate jobs only if their intents differ, and two performers are one only if they pursue the same intent. `trigger` says what sets it off (event-driven, periodic, exceptional) where the profile asks. |
+| **Activity** | The generic unit. `name` identifies it within its model (verb + glossary noun); `statement` is the full form. `category` is a value from the profile's classification. `position` orders it among its siblings where order matters, loosely. `intent` is the result its performer is pursuing: the desired outcome of the activity as a whole (not to be confused with a `Criterion`, which judges how well a part of it is done). Intent is what distinguishes activities and performers: two activities with the same performer are separate jobs only if their intents differ, and two performers are one only if they pursue the same intent. `trigger` says what sets it off (event-driven, periodic, exceptional) where the profile asks. `standard` is required on an activity whose result is assurance: `Consistency` (agrees with the evidence available) or `Correctness` (the underlying state is right, on sufficient evidence). |
 | **partOf** | Decomposition. An activity in one model may be part of an activity in another: a map's steps are part of a job in the topology. Profiles limit the depth. |
 | **Performer** | Who performs an activity, by capacity (the responsibility carried), not title; should resolve to an agent term in the glossary, which marks a coined name as a functional role. `rationale` records what was unified or split, and on what intent. Performers are unified when they pursue the same intent, however different their scale; never because they stand to another activity the same way. |
 | **actsOn** | The glossary nouns an activity's statement uses. In the documents these are words in the statement, not a separate field; drift checks compare them with the glossary. |
@@ -136,7 +137,7 @@ classDiagram
 | **Qualifier** | An emotional or social dimension of the activity; a profile may require qualifiers to be turned into criteria on its parts. |
 | **Circumstance** | A situation in which the activity is materially different, without its intent changing (a change of intent means a different activity). |
 | **EdgeCase** | A case used to test the breadth of an activity's object, and what it showed. In a topology, on the main job. |
-| **Seam** | Where execution leaves any system: it `happensInWorld`, `arrivesFromWorld`, or runs `bothWays` (the act inside gives the change outside its effect, as when registration completes a transfer). |
+| **Seam** | Where execution leaves any system: it `happensInWorld`, `arrivesFromWorld`, or runs `bothWays` (the act inside gives the change outside its effect, as when entry in a record is what gives a change effect). |
 | **SyncBinding** | Present only when synced with an external system; never invented. In the documents it is the YAML block under the entry's heading. |
 | **Evidence** | Not in the model: status belongs to drafts (a claim resting on a source not yet read is *proposed*). Open questions are text in `notes`, prefixed `Open:`; related jobs considered and left out are listed in the focus activity's notes. |
 
