@@ -61,8 +61,9 @@ Made ready? Checked? Done? Watched? Put right? Finished? Where does it happen ou
 particular cases change a step? Place each step by what it contributes, not when it happens; the steps need not
 form a sequence. Classify the topology's constituent candidates as they surface (covered, separately mappable, outside
 scope, unresolved; covered and separately mappable can both hold), without holding the map up for them, and report
-each to the topology. Then try each circumstance against the map: is there work it does not hold? If several
-candidates are separately mappable, ask whether the main job is really a higher-order objective. **Skill:** `job-map`.
+each to the topology. Then try each circumstance against the map: is there work it does not hold? Judge the
+main job's granularity by its objective, not by how many candidates are separately mappable; a higher-order job it is
+one means to is noted for the topology, not used to restate it. **Skill:** `job-map`.
 
 **Ready to move on:** every stage has been asked about, the steps found are stated as milestones, circumstances and
 edge cases are on the steps they change, coverage has been tested against each circumstance, every constituent candidate is

@@ -119,7 +119,7 @@ domain's work here: that is job domain analysis, taken up only if wanted.
 | File | Holds |
 |---|---|
 | [references/elicitation.md](references/elicitation.md) | The questions to ask, and harvesting jobs from notes |
-| [references/jobs.md](references/jobs.md) | Executors and roles, the core functional job, altitude and breadth, continuing jobs, constituents of the main job, the five tests, open classifications, related and stakeholder jobs, flags for deeper analysis, qualifiers and circumstances, framing, ready for mapping, errors to watch for |
+| [references/jobs.md](references/jobs.md) | Executors and roles, the core functional job, altitude and breadth, continuing jobs, constituents of the main job, the five tests, open classifications, related and stakeholder jobs, a different job or not (objective, motivation, circumstance, higher-order job), delegation, flags for deeper analysis, qualifiers and circumstances, framing, ready for mapping, errors to watch for |
 | [references/review.md](references/review.md) | Reviewing a topology: the checks and reporting |
 | [references/format.md](references/format.md) | The topology document, drafts, syncing, rendering and where it lives |
 

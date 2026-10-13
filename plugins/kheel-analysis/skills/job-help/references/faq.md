@@ -29,6 +29,10 @@ nobody does it for its own sake.
 distinct objective worth mapping on its own, it can also be mapped as a sub-job, at a finer level, while staying
 covered by the main map. The topology notes such work as constituent candidates; the map classifies it.
 
+**Someone else does the work for them. Is it still their job?** Yes. An executor who engages a lawyer, agent or
+registrar still pursues the job, and the work done for them is still its steps. Whose objective is achieved decides,
+not who performs the action; the professional's own job may be recorded as a stakeholder job.
+
 **Why does the executor's title not matter?** Because the same job is done by people with different titles, and people
 with the same title do different jobs. The executor is defined by the responsibility they carry.
 

@@ -66,8 +66,8 @@ be a step of a larger one.
 6. **Classify constituents as they surface** ([steps](references/steps.md), *Constituents, and jobs found while
    mapping*): **covered** (by which steps), **separately mappable**, **outside scope** or **unresolved**; covered and
    separately mappable may both hold. Judge separate mappability by objective, never by a sequence of its own. Do not
-   hold the map up for them; report each to the topology. If several are separately mappable, check whether the focal
-   job is a higher-order objective.
+   hold the map up for them; report each to the topology. Judge the focal job's granularity by its objective, never by how many
+   steps separately mappable candidates cover.
 7. **Test coverage across circumstances** ([steps](references/steps.md), *Coverage across circumstances*): for each
    circumstance and significant edge case, does the map contain the functional work needed? Record gaps, ambiguous
    boundaries and circumstances that may be other jobs. Do not draw a workflow for each.

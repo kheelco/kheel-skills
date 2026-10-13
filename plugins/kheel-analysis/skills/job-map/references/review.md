@@ -24,7 +24,8 @@ finding because it does not follow the one before it, or because an occasion of 
 2. **Functional coverage and placement.** Has the map found the work the job needs, and is each step where its
    function puts it?
    - **Coverage across circumstances**: for each circumstance and significant edge case, work the job needs there that
-     no step holds; boundaries left ambiguous; circumstances that may be other jobs, not reported to the topology.
+     no step holds; boundaries left ambiguous; circumstances that may be other jobs, not reported to the topology; a
+     circumstance proposed as another job because the motivation differs, though the functional objective is the same.
    - **Placement**: steps placed by when they happen, what they are called or a resemblance to the stage, rather than
      their functional purpose; Conclude steps that are not functional accomplishments the job needs: *what happens when the object ends* where
      that is not part of this job, or an ending added because every map is expected to have one;
@@ -33,15 +34,18 @@ finding because it does not follow the one before it, or because an occasion of 
      job or map because it has its own sequence, trigger, source, completion or success criterion.
    - **Constituents**: a candidate forced to covered or to separately mappable where both hold; separate mappability
      claimed without a distinct functional objective; separate mappability rejected merely because a finer map
-     would overlap with this one; several separately mappable with no granularity check; the map held up for unresolved candidates.
+     would overlap with this one; granularity judged by counting steps or candidates rather than by the focal job's objective; the map held up for unresolved candidates.
    - Stages filled for their own sake; several thin steps under one stage; steps that read as an operating cycle;
      empty stages with no note of what they suggest about the boundary.
    - Steps naming a system, document, screen or hand-off; steps whose verb belongs to a system rather than the
      executor; steps stated as operations rather than what is accomplished.
-   - Steps accomplished by someone other than the executor: stakeholder jobs leaking in. Steps that do a receiving
+   - Steps accomplished by someone other than the executor for their own objective: stakeholder jobs leaking in. Or
+     the reverse: delegated work removed from the map, or restated as *confirm it has happened*, only because an agent
+     or professional performs it. Steps that do a receiving
      job's work past the hand-off; steps that do not serve the job's desired result.
    - Steps that transcribe glossary activities.
-   - Checks inside Execute, or commitments inside Confirm.
+   - Steps placed in Execute because they are irreversible, costly to undo or consequential, rather than because they
+     accomplish the job; checks inside Execute; Confirm required to precede Execute in every circumstance.
    - Steps whose execution happens in or arrives from the world, unmarked. Where a seam runs both ways: Confirm steps
      that assume the change has already happened; no test against a case where the entry makes the change.
    - A job statement that assumes whether the change comes before, during or after the job; an assurance job with no
@@ -57,6 +61,8 @@ finding because it does not follow the one before it, or because an occasion of 
    - Outcomes beyond the executor's capacity, or inconsistent with the domain's causal rules (who decides, what makes
      a change take effect), or owning the resolution of work handed on; time outcomes with no measure;
      invariants stated as outcomes; effort outcomes that time or likelihood would state more precisely.
+   - Outcomes in tension resolved by the analyst rather than recorded; outcomes encoding a decision strategy not marked
+     for validation.
    - Qualifiers on the job that yielded no outcome.
    - Where outcomes have been researched with practitioners: significant steps still with none.
 4. **Drafts.** Steps or outcomes marked attested with no source. In the agreed map: open questions waiting a long time.

@@ -66,6 +66,11 @@ decides; having its own trigger and end does not make something a job (steps hav
 criterion (checking for consistency, or for correctness) is an outcome, not a job. The topology uses the tests lightly,
 at its boundary and to form a lean; the job map applies them in full.
 
+**A different job, or not?** A different functional objective is a different job. A different motivation for the
+same job (buying to live in or to let), a different circumstance (an auction), or a higher-order job the focal job is
+one means to (*secure a place to live*) is not a restatement of it. Ask what the executor is trying to get done, not
+why. (`job-topology`, *A different job, or not?*.)
+
 **Open classification.** A question at the edge of the main job that the tests genuinely split on (is this part of the
 main job, or a job beside it?), recorded with the evidence each way instead of being forced.
 
@@ -76,8 +81,8 @@ due, an error is found. In a job map, each episode uses the steps it needs.
 **Sub-job.** A constituent the job map finds worth mapping on its own, because it has a distinct functional objective:
 *service a vehicle* within *keep the fleet roadworthy*. Its work can be covered by the larger job's map and still be
 mapped on its own at a finer level; having its own sequence is not enough. It is added to the topology and mapped
-alongside the larger job's map. If several turn up, the larger job may be a higher-order objective rather than a job to
-map. (`job-map`.)
+alongside the larger job's map. Separately mappable parts do not, by their number, make the larger job the wrong unit: that is judged by its
+objective. (`job-map`.)
 
 **Circumstances and edge cases.** A **circumstance** is a situation the whole job is done in (a first set-up, a large
 organisation, a dispute); an **edge case** is a particular kind of thing the job deals with (a family membership, a

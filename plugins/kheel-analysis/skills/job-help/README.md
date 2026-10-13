@@ -56,8 +56,9 @@ noticed and a provisional lean, without deciding what it is. Mapping is where th
 discovered, as in Ulwick's iterative mapping: the job map classifies each candidate as **covered** (its work is
 represented by the map's steps), **separately mappable** (a distinct functional objective worth a map of its own, at a
 finer level), **outside scope** or **unresolved**, and reports back to the topology. Covered and separately mappable
-can both hold, and nothing has to be settled before the map proceeds. If several candidates are separately mappable,
-the map asks whether the main job is really a **higher-order objective**.
+can both hold, and nothing has to be settled before the map proceeds. The focal job's granularity is judged by the
+distinctness and coherence of its objective, never by how many steps separately mappable parts cover; a **higher-order
+job**, which the focal job is one means to, is a different objective, noted for the topology.
 
 **A job map is an inventory, not a workflow.** Its steps are organised by the stage their function belongs to, not by
 order of execution; one occasion of the job may use only some of them. Its completeness is judged by coverage of the

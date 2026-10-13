@@ -33,6 +33,13 @@ the practice manager's job. Ask, of each thing the executor does: **is this gett
 else get theirs done?** Help given to another job is, at most, a step of the executor's own job (*confirm the delivery
 has been authorised*) or a sign of a stakeholder job.
 
+The converse also holds: **delegating does not move the job.** An executor who engages an agent, a professional or a
+service provider to carry out part of the work (a lawyer acting on a transfer, a registrar keeping a register) still
+pursues the job, and the work done for them is still part of it. Distinguish **responsibility for achieving the
+result** from **the activities supporting actors perform**: the supporting actor may have a job of their own (a
+stakeholder job, pursuing their own professional objective), but the accomplishment they contribute stays in the
+executor's job. Whose objective is achieved decides, not who performs the action.
+
 ## The core functional job
 
 State it as **verb + object + contextual clarifier**: *Maintain* *the record of who belongs to the club and on what
@@ -272,8 +279,25 @@ Record one only where the evidence supports it. A topology with no qualifiers is
 slot is not.
 
 **Circumstances.** Situations in which the executor must do materially different things: first-time against routine,
-contested against agreed, a large organisation against a small one. Record them on the job. A circumstance that
-changes the desired outcome, not just the steps or the scale, is a sign of a different job.
+contested against agreed, a large organisation against a small one. Record them on the job. A circumstance is a sign
+of a different job only where the functional objective itself changes, not where the motivation or the criteria for
+choosing do (*A different job, or not?*, below).
+
+### A different job, or not?
+
+Four things are easily mistaken for one another. Only the first is a different job:
+
+| What differs | Example | What it is |
+|---|---|---|
+| **The functional objective** | Acquiring a property against letting one | A different job |
+| **The motivation** for doing the same job | Buying to live in against buying to let: both acquire ownership; the investor's return comes later, from owning and letting | The same job; the motivation shows in the executor's success criteria and outcomes, and often as a circumstance |
+| **The circumstance** it is done in | An auction against a private sale; a first purchase | The same job, a circumstance on the steps it changes |
+| **A higher-order job** the focal job is one means to | *Secure a place for the household to live*, which buying or renting may achieve | A different job, above this one: not a more abstract statement of it. The focal job stays a job in its own right where it is also pursued for other ends |
+
+Ask what the executor is trying to **get done**, not why they are doing it, and the four come apart: a different
+answer is a different job; the same answer for a different reason is the same job. A higher-order job is recorded for
+the topology (as a boundary question, or as the main job if the analysis's purpose lies there), not used to restate
+the focal job.
 
 ## The jobs left out
 
@@ -311,7 +335,8 @@ fine. Do not use the step types to settle the topology: that designs a workflow 
   personal representative and an attorney both act for someone else, but not necessarily towards the same result.
 - **A process as a job.** *Process the application form* names today's mechanism. Ask what the form is for.
 - **A compound statement.** A job joined with *and*, hiding two jobs or a job and one of its steps.
-- **A role's coordination as the role's job.** Work done to help another's job recorded as the executor's own job.
+- **A role's coordination as the role's job.** Work done to help another's job recorded as the executor's own job;
+  or the reverse, work delegated to an agent removed from the executor's job because someone else performs it.
 - **A statement that assumes a sequence.** A job worded as following a change that, in some circumstances, it makes.
 - **An assurance job with no standard.** *Verify the record* with no word on whether consistency or correctness is
   meant.
@@ -330,6 +355,9 @@ fine. Do not use the step types to settle the topology: that designs a workflow 
 - **A related job on trigger alone.** A job of the main executor separated because it has its own trigger or
   completion, with no distinct desired outcome; or a step promoted to one (*obtain the committee's approval* has no
   life outside the change it approves).
+- **Motivation taken for a job.** A job split because executors do it for different reasons (to live in, to let),
+  though what they are trying to get done is the same; or a higher-order job treated as a more abstract statement of
+  the focal job.
 - **A job named for its output.** *Issue a membership card*, hiding the consumer's job and the supplier's.
 - **The main job at the wrong altitude or breadth.** Too low and the related jobs are steps of a job nobody has
   stated; too high and the map will have forty steps; too narrow and edge cases need artificial distinctions.

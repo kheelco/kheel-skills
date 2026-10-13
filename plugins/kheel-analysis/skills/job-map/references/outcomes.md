@@ -23,6 +23,13 @@ A step usually carries two to four outcomes once they have been researched. Harv
 what takes too long, the mistake that recurs, the result that varies from person to person. Write the object in glossary nouns, and keep each outcome
 attached to its step; outcomes are never pooled across a map.
 
+**Tensions are recorded, not resolved.** Outcomes on a step may pull against each other (not overpaying, and not
+losing the property to a competing offer). Record both as the executor states them, and note the tension; do not
+choose between them, or reword one to favour a strategy. Which matters more is for executors to say, through
+validation and the opportunity survey, not for the analyst to optimise. Watch for an outcome that **encodes a
+decision strategy** (*… that a property the purchaser would have paid more for is lost*): it may be legitimate, but
+mark it for validation.
+
 **Qualifiers become outcomes.** The emotional and social qualifiers recorded on the job in the topology yield outcomes
 on the steps they bear on, in the same form: *minimise the likelihood that a late filing is attributed to the executor*.
 
@@ -104,6 +111,8 @@ survey is quantitative research built on a finished map, not part of mapping. If
 
 ## Errors to watch for
 
+- **Trade-offs resolved by the analyst.** Outcomes in tension reworded or dropped so one wins, or an outcome that
+  encodes a decision strategy presented as settled.
 - **Completeness conflated.** A step questioned because its outcomes are incomplete, or a step added because a new
   outcome was found.
 - **Outcomes duplicated.** Two outcomes on one step that measure the same thing in different words.

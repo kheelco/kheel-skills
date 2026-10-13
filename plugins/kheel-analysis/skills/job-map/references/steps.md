@@ -36,7 +36,7 @@ questions to ask about any job, not eight boxes to fill.
 | **Locate** | gather the inputs, information, resources or items required | What do they have to have to hand, and where does it come from? |
 | **Prepare** | arrange or ready what is needed | What has to be set up, structured or made ready? |
 | **Confirm** | verify readiness, assumptions, conditions or prerequisites | What do they check before committing? Who has to have agreed? |
-| **Execute** | perform the central activity of the job | What is the act that, once done, cannot be undone cheaply? |
+| **Execute** | perform the central activity of the job: the actions that accomplish it | What do they do that actually gets the job done? |
 | **Monitor** | assess progress, state, performance or emerging conditions | What do they watch, and how do they find out whether things are as they should be? |
 | **Modify** | adjust in response to a problem that has been found | What goes wrong, and how do they put it right? |
 | **Conclude** | complete the job, or a piece of work within it, and establish the resulting state | How do they know it is finished, and what is left behind? |
@@ -66,8 +66,15 @@ name. Most placements are obvious and need no justification; take care with thes
   step: **is it a functional accomplishment the job needs** (the resulting state established, work handed over, a
   record left that the job depends on), **or an ending added because maps are expected to have one?** A continuing job
   may have Conclude steps for pieces of its work, or none; an empty Conclude stage is better than a forced one.
-- **Confirm before Execute.** Confirm establishes readiness and authority; Execute is the commitment that cannot be
-  undone cheaply. Keep checks out of Execute and commitments out of Confirm.
+- **Execute** holds the steps that perform the job's central activity: what actually accomplishes it (*enter each
+  change in the roll*, *complete the purchase*). Assign a step to Execute by that contribution, not because it is
+  irreversible, costly to undo or consequential: those are properties of a step, not its function. A commitment is in
+  Execute only where committing is part of accomplishing the job; otherwise it sits where its function puts it.
+- **Confirm** verifies readiness, conditions, authority or assumptions. It does not have to come before Execute in
+  every circumstance: commitment, confirmation and completion may happen in different orders under different
+  circumstances (a conditional agreement signed before the checks it depends on are done), and the map need not
+  resolve them into one sequence. Record the circumstance on the steps it changes. Keep checks out of Execute: a check
+  is Confirm or Monitor, wherever it happens.
 
 **Where placement is ambiguous, say so.** Holding back a change whose conditions are not met may be Confirm
 (establishing the conditions before committing) or Modify (responding to a failed confirmation), depending on how the
@@ -137,9 +144,13 @@ mappable*; *unresolved: not examined*), where the candidate's status is updated.
 revise the topology, not proof that it was wrong. An undertaking found while mapping that the topology never listed
 goes back as a new candidate.
 
-**The granularity check.** If several candidates are separately mappable and together account for most of the map,
-ask whether the focal job is the right unit for a job map at all, or a **higher-order objective** containing several
-mappable jobs. If it is, say so: the topology may restate it.
+**The granularity check.** Assess the focal job's granularity by the **distinctness and coherence of its functional
+objective**: does it have an objective of its own, do the steps contribute to it, and is its boundary useful for the
+analysis in hand? Never by the number or proportion of steps that separately mappable candidates cover: a parent job
+can legitimately contain substantial subordinate jobs, and overlap with them is permissible. Record separately
+mappable undertakings without, on that account, changing the focal job's boundary. Where a **higher-order job**
+appears (one the focal job is a possible means to), note it for the topology; it is a different objective, not a
+restatement of this one (`job-topology`, *A different job, or not?*).
 
 Never split a job into several maps by episode, trigger, source, sequence or success criterion alone, and never let
 the convenience of a map decide what the jobs are.
@@ -162,9 +173,13 @@ milestone.
   output, marked as such, never in the step statement itself.
 - **Verb + object**, in the executor's own language, the object a glossary noun, with a clarifier only where two steps
   would otherwise read alike.
-- **The job's executor.** Every step is accomplished by the executor of the job. A step that someone else accomplishes
-  is part of their job: a stakeholder job in the topology. The executor may depend on others (a committee's approval arrives);
-  the step is then what the executor must accomplish about it (*confirm the change has been approved*).
+- **The job's executor.** Every step is an accomplishment of the job's executor. Work someone else does **for their
+  own objective** is part of their job: a stakeholder job in the topology. The executor may depend on others (a
+  committee's approval arrives); the step is then what the executor must accomplish about it (*confirm the change has
+  been approved*). But work **delegated** to an agent or professional (a lawyer completing a transfer for the
+  purchaser) stays a step of this job, stated as the accomplishment (*complete the purchase*), not restated as
+  *confirm it has happened*: whose objective is achieved decides, not who performs the action. The supporting actor's
+  own professional job may still appear in the topology as a stakeholder job.
 - **One question per step.** A step whose outcomes answer different questions (whether the action is authorised;
   whether the people and things affected are eligible for it) may be two steps. Split it where that makes the map
   clearer, or keep one step with its outcomes plainly grouped; either way, do not let one question stand in for the
@@ -227,6 +242,8 @@ needed to get the job done in this case?** The question is not *which steps happ
 
 Record what each test finds, briefly: covered (by which steps, or which cases on them), a **missing step** (add it, or
 record the gap), an **ambiguous boundary**, or a sign that the circumstance is **another job** (back to the topology).
+It is another job only where the functional objective changes; a different motivation for the same job (buying to
+let rather than to live in) is not one (`job-topology`, *A different job, or not?*).
 Do not construct a workflow for each circumstance.
 
 ## Execution seams
@@ -274,8 +291,12 @@ glossary's activities into the map as steps. A step's nouns should be glossary t
 - **Candidates forced.** A candidate made either covered or separately mappable when both hold; a classification the
   evidence does not support; the map held up until every candidate is settled; classifications not reported to the
   topology.
+- **Granularity by counting.** The focal job judged too high or too low by how many of its steps separately mappable
+  candidates cover, instead of by its objective.
 - **Rejected for overlap.** Separate mappability refused because a finer map would overlap with this one, without
   asking whether the candidate has a distinct objective. (Only a map that would add nothing at all is redundant.)
+- **Execute by irreversibility.** A step placed in Execute because it cannot be undone cheaply or is consequential,
+  rather than because it accomplishes the job; or Confirm required to precede Execute in every circumstance.
 - **Placed by timing or name.** A step put under a stage because of when it happens, what it is called or how it
   resembles the stage; Conclude used for *what happens when the object ends*, or added as a universal ending the job does not need; an
   ambiguous placement forced silently.
