@@ -14,7 +14,8 @@ explicit as **measurable qualities of successful execution**, not restatements o
 > **Increase the likelihood** that *a change is recorded on the day it takes effect*.
 
 *Minimise the time*, *minimise the likelihood*, *minimise the variability* and *increase the likelihood* cover nearly
-everything. *Minimise the effort* is allowed, but effort is harder to measure than time or likelihood: where it can be
+everything; *minimise the number* (a count: properties viewed, reports paid for) is allowed where a count is what the
+executor judges by. *Minimise the effort* is allowed, but effort is harder to measure than time or likelihood: where it can be
 restated as one of them (the time spent, the number of times the executor has to go back), do so, and otherwise note
 that its measure needs settling when the outcomes are validated with practitioners. An outcome that needs another
 opening is worth a second look.

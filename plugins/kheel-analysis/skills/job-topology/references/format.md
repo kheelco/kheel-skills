@@ -91,7 +91,7 @@ Four columns, the main job first, then related and stakeholder jobs:
 | **Job** | The job's name (verb + object) in bold, linked to its entry if it has one; then, on a new line (`<br>`), its contextual clarifier where it has one. |
 | **Category** | `Main`, `Sub-job` (a constituent the job map found separately mappable, once agreed worth mapping), `Related` (optionally with its place in time: `Related: before`, `after`, `alongside`) or `Stakeholder`. |
 | **Executor** | The executor's name, as in the executors table. |
-| **How it stands to the main job, and how its intent differs** | In words, how it touches the main job (*decides before the change is recorded*; *uses the roll to…*), its core intent, and the signal that makes it distinct (intent, time horizon, lifecycle, authority, language). Empty for the main job. Classifying relationships systematically is job domain analysis's work. |
+| **How it stands to the main job, and how its intent differs** | In words, how it touches the main job (for a higher-order job: *the main job is one means to it*) (*decides before the change is recorded*; *uses the roll to…*), its core intent, and the signal that makes it distinct (intent, time horizon, lifecycle, authority, language). Empty for the main job. Classifying relationships systematically is job domain analysis's work. |
 
 Constituent candidates are not rows: they are listed on the main job's entry, and only there (a related job that is
 mapped has none to take in). A constituent the job map finds separately
@@ -130,7 +130,9 @@ does not apply:
 A draft has the same shape, kept apart from the agreed topology (`job-topology.draft.md`, or the console). In a draft,
 each job's name ends with its status, `[attested]`, `[inferred]` or `[proposed]`, and any other claim (an executor, a
 category, a relation) whose status differs ends with its own mark. When the user agrees jobs into the topology they
-move across without their marks; material doubt stays as an open question.
+move across without their marks; material doubt stays as an open question. Jobs proposed by a job map (its focus job
+where it was made first, a higher-order job, a stakeholder job it found) are taken up the same way: proposed until
+agreed here.
 
 ## Syncing
 

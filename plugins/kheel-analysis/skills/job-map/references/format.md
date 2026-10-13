@@ -101,9 +101,12 @@ found in, and within a stage in the order an executor would describe them:
 
 Before the table, a **Pre-check** line: how the job is mapped (over its life, the default; or a sub-job on its own),
 how each constituent candidate was classified (covered, and by which steps; separately mappable; outside scope; or
-unresolved, with why; covered and separately mappable may both hold), and what was reported to the topology. For a lifecycle map, a **Circumstances** section lists
+unresolved, with why; covered and separately mappable may both hold), any other jobs the map proposes to the domain
+(a higher-order job the focus job is one means to; stakeholder jobs found), and what was reported to the topology.
+Where no topology exists, the job and executor are stated at the top and are proposed jobs of the domain until a
+topology agrees them. For a lifecycle map, a **Circumstances** section lists
 the circumstances as contextual modifiers (C1, C2, …), and the steps they change say so after their seam (*C3*). After the table, a line listing the stages that yielded nothing, and what each suggests about the boundary; then a
-**Coverage** section: for each circumstance (and any significant edge case), the steps that cover it and the finding
+**Coverage** section: for each circumstance (and each significant edge case), the steps that cover it and the finding
 (covered; a gap; an ambiguous boundary; possibly another job). It records findings, not a workflow per circumstance. A step is
 identified by its statement within its map; restatements keep the old wording in its notes until citations are updated.
 
@@ -111,7 +114,9 @@ identified by its statement within its map; restatements keep the old wording in
 
 `## Entries` holds a `###` section per step that has one, headed by its statement, in table order. Directly under the
 heading comes its YAML block when synced. Then a bullet list, written `**Name:**`, leaving out what does not apply:
-**Type**, **Covers** (what the step spans, where it spans several things), **Seam**, **Outcomes** (a nested list, as in the row), **Episodes** (for a continuing job, which episodes use the step), **Circumstances** and **Edge cases** (each a nested item `<case>: <what the step must accomplish in that case>`, with any outcome of its own; see [steps](steps.md), *Circumstances and edge cases*), **Order** (where it helps to say that the step runs
+**Type**, **Covers** (what the step spans, where it spans several things), **Seam**, **Outcomes** (a nested list, as in the row; an outcome may carry a short note after it, in brackets, that survives
+agreement: *to validate*, *derived from a qualifier*, *measure to settle*), **Episodes** (for a continuing job, which episodes use the step), **Circumstances** and **Edge cases** (each a nested item `<case>: <what the step must accomplish in that case>`, where several cases sharing
+one statement may be named together, comma-separated, with any outcome of its own; see [steps](steps.md), *Circumstances and edge cases*), **Order** (where it helps to say that the step runs
 alongside another, repeats or is done on demand; never required), **Source**, **Notes** (open questions start with
 *Open:*; competing readings of an ambiguous stage placement; parts sent back to the topology; survey results).
 

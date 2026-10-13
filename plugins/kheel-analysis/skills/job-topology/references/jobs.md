@@ -295,9 +295,9 @@ Four things are easily mistaken for one another. Only the first is a different j
 | **A higher-order job** the focal job is one means to | *Secure a place for the household to live*, which buying or renting may achieve | A different job, above this one: not a more abstract statement of it. The focal job stays a job in its own right where it is also pursued for other ends |
 
 Ask what the executor is trying to **get done**, not why they are doing it, and the four come apart: a different
-answer is a different job; the same answer for a different reason is the same job. A higher-order job is recorded for
-the topology (as a boundary question, or as the main job if the analysis's purpose lies there), not used to restate
-the focal job.
+answer is a different job; the same answer for a different reason is the same job. A higher-order job is recorded in
+the topology as a job of its own, related or stakeholder by its executor, with a link saying the main job is one means
+to it (or as the main job, if the analysis's purpose lies there); it is not used to restate the focal job.
 
 ## The jobs left out
 
