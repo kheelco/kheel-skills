@@ -19,6 +19,11 @@ and every job that names it, and stop.
    - The main job failing an altitude test; its object's breadth untested against edge cases.
    - Jobs that change the world filed as the main executor's adjacent jobs, or folded into the main job.
    - Episodes of the main job listed as adjacent jobs; obligations that complete a particular change listed as jobs.
+   - Adjacent jobs whose scope is wider than the main job's object (a broader job's obligation), or whose statement
+     does not match the signal given for them.
+   - Episodes at different altitudes: an undertaking with its own beginning and end listed beside routine episodes.
+   - Related jobs that do not help establish the main job's boundary; executors with the same relationship not grouped;
+     no note of related jobs left out.
    - Adjacent jobs with no intent, trigger or lifecycle of their own: steps or episodes in disguise.
    - Jobs named for an output, conflating a consumer's job with a supplier's.
    - Work the executor does to help another's job recorded as their own job.

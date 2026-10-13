@@ -95,15 +95,16 @@ heading comes its YAML block when synced (see *Syncing*). Then a bullet list, wr
 does not apply:
 
 - **Statement**, **Category**, **Executor** and **Intent and difference**: as the row says.
-- **Episodes** (a continuing job): each with its trigger, event-driven, periodic or exceptional.
+- **Episodes** (a continuing job): each with its trigger, event-driven, periodic or exceptional; and, separately,
+  any **candidate constituent jobs** (undertakings too large to be episodes), until mapping tests them.
 - **Edge cases**: the cases the object's breadth was tested against, and what they showed.
 - **Qualifiers**: emotional and social, each labelled, only where evidence supports them.
 - **Circumstances**: each, with what changes in it.
 - **Seams**: where this job's execution leaves any system, and in which direction, if the framing does not already
   say.
 - **Map**: a link to its job map, if it has one.
-- **Source**, and **Notes** (open questions start with *Open:*; candidates rejected as steps or episodes; executor
-  questions).
+- **Source**, and **Notes** (open questions start with *Open:*; candidates rejected as steps or episodes; related
+  jobs considered and left out, with why, on the main job; executor questions).
 
 ### Drafts
 

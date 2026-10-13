@@ -54,7 +54,8 @@ read as true for an organisation that does the work on paper.
 5. **Place the other jobs.** For each candidate: a step, an episode of the main job, or a job? If a job: adjacent
    (same executor, its own intent and lifecycle) or related (another executor), how it stands to the main job, and its
    core intent and how that differs from the main job's. Separate jobs that change the world from the job that records
-   it, and name each job from its own executor's side. Steps go to the job map, not here.
+   it, and name each job from its own executor's side. Include a related job only where its relationship helps
+   establish the main job's boundary, and note those left out. Steps go to the job map, not here.
 6. **Frame it.** The core executor and job, execution seams (and their direction), any sub-domain split already
    evident, and boundary questions left open.
 7. **Check** the structural checks in [review](references/review.md) over what changed and every job that names it, and

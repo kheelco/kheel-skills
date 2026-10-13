@@ -19,13 +19,17 @@ One or two questions at a time, each answer shaping the next. Skip any the evide
 6. **What do they do alongside it that is a different accomplishment?** More candidates, and the ones most often
    mistaken for steps.
 7. **Who else has a stake?** Who changes what the job is about, checks it, is answerable for it, consumes what it
-   produces, governs it, or gets in its way? Candidate related jobs, each with its own executor.
+   produces, governs it, or gets in its way? Candidate related jobs, each with its own executor. Keep those whose
+   relationship helps establish the main job's boundary, group those whose relationship is the same, and note the rest
+   as left out.
 8. **For each candidate, a few tests.**
    - Is it getting their own job done, or helping someone else get theirs done?
    - Does it change the world, or maintain a representation of it?
    - Is it a job (its own intent, trigger and lifecycle), an episode of the main job, or a step that only makes sense
      inside it?
-   - For an obligation: does it arise to complete a particular change, or on its own cycle?
+   - For an obligation: does it arise to complete a particular change, or on its own cycle? If on its own cycle, is
+     its scope the main job's object, or wider?
+   - Does what the candidate is called match what gives it its own lifecycle?
 9. **Does recording anything give it effect?** Whether the executor's act changes the reality outside the record
    (registration completing a transfer), or only reflects it.
 10. **When does the job change?** Circumstances in which the executor must do materially different things, and whether

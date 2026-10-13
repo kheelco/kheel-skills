@@ -6,7 +6,8 @@ Define the executor by their **capacity**: the responsibility they carry in gett
 organisation responsible for maintaining the company's record of share ownership*), not a title, office, department,
 seniority or persona. Give the executor a convenient **name** (*Company secretary*), an agent term in the glossary, but
 do not let the name assume a formal office the domain does not always have: many companies have no appointed secretary,
-and the job is still done.
+and the job is still done. Where no existing word fits and a name is coined for the capacity, its glossary entry says
+it names a functional role, not a formal or statutory office, so readers do not take it for one.
 
 - **Unify when the desired outcome is the same.** People getting the same job done, trying to achieve the same result,
   are one executor, however different their scale, volume, infrastructure, frequency, seniority or obligations. An
@@ -67,7 +68,13 @@ trigger.
 | **Exceptional**: something is found wrong | Correct an ownership record |
 
 Episodes are **not separate jobs**. They have the main job's executor and intent, and they are recorded on the main
-job's entry, each with its trigger. Whether they hold together as one job is tested when the job is mapped: if its map
+job's entry, each with its trigger.
+
+**Keep episodes at one altitude.** Episodes are the recurring or occasional modes of keeping the state, each a modest
+piece of work. An exceptional undertaking big enough to have its own beginning, execution and end (rebuilding the state
+from scratch, recovering after a loss, migrating to a new basis) is not an episode beside them, however exceptional its
+trigger: record it as a **candidate constituent job**, or as a circumstance, until mapping tests it. Having several
+episodes does not by itself show that a job can be mapped as one. Whether they hold together as one job is tested when the job is mapped: if its map
 can be read as one coherent sequence (with episodes running through it), the job stands; if it needs several
 independent cycles, each with its own beginning, end and outcomes, the job is really a higher-level job whose episodes
 are **constituent jobs**, each mapped separately. Record that as an open question until the map settles it, and do not
@@ -97,6 +104,19 @@ A related job says **how it stands to the main job**:
 | **consumes** | Uses what the main job produces or maintains |
 | **responds to** | Is set off by it |
 
+### Which related jobs to include
+
+Many executors touch any main job; a topology that lists them all stops being useful. **Include a related job when
+its result changes, constrains, validates or materially depends on the main job's object, and understanding that
+relationship is needed to establish the main job's boundary** (what it must take in, what it must provide, who may
+decide what it holds). Leave out jobs that merely use the main job's result in passing, or touch it only through
+another related job already listed.
+
+- **Group executors whose relationship is the same.** Lenders, acquirers and advisers relying on who holds the shares
+  are one related job (*establish title before relying on it*) with one executor (*relying party*), not three.
+- **Record what was left out.** List related jobs considered and excluded in the main job's notes, with why, so the
+  next reader does not add them back.
+
 ### Changing the world, and recording it
 
 The commonest misplacement: a job that **changes the reality** (issuing shares, transferring them, buying them back)
@@ -118,10 +138,21 @@ job map will have an Execute step with consequences outside the record.
 
 An obligation that arises **to complete a particular change** (notifying a registry of a change to capital) is part
 of completing that change: a step of the episode, or of the related job that makes the change, not a job of its own.
-An obligation with **its own trigger and lifecycle** (an annual return) can be an adjacent job. Then test its altitude:
-an annual return covers more than share ownership, so it may belong to a broader job (*maintain the company's statutory
-information*) of which the main job is one part. Where that is unclear, record it as a **boundary question** in the
-framing rather than deciding it.
+
+An obligation with **its own trigger and lifecycle** (an annual return) is a candidate job. Before calling it adjacent,
+test its altitude: if its scope is wider than the main job's object (an annual return covers far more than share
+ownership), it belongs to a broader job (*maintain the company's statutory information*), not beside the main job.
+Then do not list it as an adjacent job: record a **boundary question** in the framing, saying where event-driven and
+periodic obligations are handled, and leave the broader job to its own topology. Only an obligation whose scope is
+the main job's object, with a lifecycle of its own, is adjacent.
+
+**The statement must match the reason.** A candidate's statement and the signal that makes it distinct must describe
+the same thing. A job stated as one activity (*report shareholding information*) but justified by another's lifecycle
+(the annual return's cycle) is not yet a job: restate it as what actually has that lifecycle, then test that.
+
+**Supplying another job is not a job by itself.** That the main job's record feeds another executor's job is captured
+by that related job (*consumes*). It becomes an adjacent job of the main executor only when supplying has an intent
+and lifecycle of its own (answering requests, each with its own start and end), not merely because information flows.
 
 ### Naming a job from its executor's side
 
@@ -203,6 +234,13 @@ Three questions shape everything downstream; settle them, or record them as open
 - **An episode as an adjacent job.** *Correct the register* listed beside the main job instead of on it.
 - **A completing step as an adjacent job.** Notifying a registry of one change, listed as a job instead of as part of
   completing the change.
+- **A broader job's obligation as an adjacent job.** A periodic obligation wider than the main job's object, listed
+  beside it instead of recorded as a boundary question.
+- **A statement that does not match its signal.** One activity stated, another's lifecycle used to justify it.
+- **An undertaking among the episodes.** A recovery or rebuild with its own beginning and end, listed beside routine
+  episodes.
+- **A topology of everyone.** Related jobs added because an executor touches the main job, not because the
+  relationship helps establish its boundary.
 - **A job named for its output.** *Evidence a holding*, hiding the consumer's job and the supplier's.
 - **A step promoted to an adjacent job.** *Obtain board approval* has no life outside the transaction it approves.
 - **A related job swallowed into the main job.** The auditor's verification written as the main executor's Monitor
