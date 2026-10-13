@@ -34,7 +34,10 @@ read as true for an organisation that does the work on paper.
 - **Evidence, not inference.** While drafting, mark each job, executor and relation *attested* (a source says so),
   *inferred* (concluded from evidence; say from what) or *proposed* (a modelling choice awaiting agreement). Never
   invent an adjacent or related job to make the survey look complete: a topology with a main job and nothing else is a
-  finding (nobody has looked around), not a gap to fill.
+  finding (nobody has looked around), not a gap to fill. A source cited but not read (a provision recalled, a document
+  not checked) supports nothing yet: a claim resting on one is *proposed*, noted as unverified with its citation, until
+  the source is checked. And a classification the skill's tests produce is a proposal about this domain, not a fact
+  about it ([jobs](references/jobs.md), *Rules of method are not facts about the domain*).
 - **Draft freely; commit by agreement.** Drafts can be written without asking. Changes to the agreed topology are
   proposed in the conversation, with why, and written once the user agrees. Agreement settles what the topology says,
   not what the evidence establishes: material doubt stays in the job's notes as an open question.

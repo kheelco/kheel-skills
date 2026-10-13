@@ -46,7 +46,9 @@ Two tests keep it there:
   more useful than the definition. An entry that marks its boundaries turns a word list into a map.
 - **Evidence, not inference.** Every claim an entry makes (its definition, kind, example, each relation and rule) is
   *attested* (a source or practitioner says so), *inferred* (you concluded it from evidence, and say from what) or
-  *proposed* (a modelling choice awaiting agreement). Status is tracked in drafts: a term is marked by its
+  *proposed* (a modelling choice awaiting agreement). A source cited but not read (a provision recalled, a document not
+  checked) supports nothing yet: a claim resting on one is *proposed*, noted as unverified with its citation, until the
+  source is checked. Status is tracked in drafts: a term is marked by its
   definition's status, and any other claim that differs is marked. The agreed glossary carries no status; a claim
   agreed in while still unconfirmed keeps an open question in the term's notes ([terms](references/terms.md),
   *Evidence*). Never mark something attested that no source

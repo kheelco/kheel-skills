@@ -34,6 +34,8 @@ be a step of a larger one.
   found is better than one with eight where two were invented.
 - **Evidence, not inference.** While drafting, mark each step and outcome *attested*, *inferred* (say from what) or
   *proposed*. Outcomes harvested from complaints are the executor's; outcomes the agent reasons its way to are inferred.
+  A source cited but not read supports nothing yet: a claim resting on one is *proposed*, noted as unverified with its
+  citation, until the source is checked.
 - **Draft freely; commit by agreement.** Changes to an agreed map are proposed, with why, and written once the user
   agrees. Agreement settles what the map says, not what the evidence establishes: material doubt stays in notes.
 

@@ -18,13 +18,15 @@ and every job that names it, and stop.
    - Job statements containing a feature, system, document or mechanism.
    - The main job failing an altitude test; its object's breadth untested against edge cases.
    - Jobs that change the world filed as the main executor's adjacent jobs, or folded into the main job.
-   - Episodes of the main job listed as adjacent jobs; obligations that complete a particular change listed as jobs.
+   - Episodes of the main job listed as adjacent jobs; obligations classified as steps or jobs without the outcome
+     question answered, or stated as domain rules without the source checked.
    - Adjacent jobs whose scope is wider than the main job's object (a broader job's obligation), or whose statement
      does not match the signal given for them.
    - Episodes at different altitudes: an undertaking with its own beginning and end listed beside routine episodes.
-   - Related jobs that do not help establish the main job's boundary; executors with the same relationship not grouped;
-     no note of related jobs left out.
-   - Adjacent jobs with no intent, trigger or lifecycle of their own: steps or episodes in disguise.
+   - Related jobs that do not help establish the main job's boundary; no note of related jobs left out.
+   - Executors or jobs merged because they stand to the main job the same way, though their desired outcomes differ.
+   - Adjacent jobs justified by trigger, recipient or completion alone, with no distinct desired outcome.
+   - Classifications written as domain assertions; claims marked inferred that rest on sources not yet read.
    - Jobs named for an output, conflating a consumer's job with a supplier's.
    - Work the executor does to help another's job recorded as their own job.
    - Two executors whose desired outcomes are the same, split on scale, volume or infrastructure.

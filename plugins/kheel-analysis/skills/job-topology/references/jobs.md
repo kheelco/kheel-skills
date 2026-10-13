@@ -86,7 +86,7 @@ use the step types to settle it in advance: that designs a workflow instead of f
 |---|---|---|
 | **Main job** | The job being analysed: the one the map will be built for | Exactly one per topology |
 | **Constituent job** | Part of the main job: one of its episodes found, in mapping, to need its own map | Same executor and intent as the main job; its result is part of the main job's |
-| **Adjacent job** | A distinct job performed by the **same** executor | Its own intent, trigger and lifecycle; otherwise it is a step or an episode |
+| **Adjacent job** | A distinct job performed by the **same** executor | A **distinct desired outcome**: the executor is after a different result, not just doing something at a different time. Its own trigger, recipient and completion support that, but do not establish it (steps have those too). Otherwise it is a step or an episode |
 | **Related job** | A job performed by **another** executor that touches the main job | Its executor is not the main executor; if it is, it is adjacent or constituent |
 
 The categories carry the weight: whether a job is the main job, part of it, an independent job of the same executor,
@@ -112,8 +112,13 @@ relationship is needed to establish the main job's boundary** (what it must take
 decide what it holds). Leave out jobs that merely use the main job's result in passing, or touch it only through
 another related job already listed.
 
-- **Group executors whose relationship is the same.** Lenders, acquirers and advisers relying on who holds the shares
-  are one related job (*establish title before relying on it*) with one executor (*relying party*), not three.
+- **Merge only what is the same job.** Executors are merged into one, with one related job, only when they pursue the
+  same desired outcome, by the same rule as the main executor (*Unify when the desired outcome is the same*). Lenders,
+  acquirers and advisers who each need to establish who holds the shares before relying on it pursue one outcome: one
+  related job (*establish title before relying on it*), one executor (*relying party*). A transferor disposing of
+  shares, a transferee acquiring them and a personal representative administering an estate stand in the same
+  relationship to the main job (each changes who holds the shares) but pursue different outcomes: three related jobs.
+  A shared relationship may be shown by grouping their rows together, never by merging their executors or jobs.
 - **Record what was left out.** List related jobs considered and excluded in the main job's notes, with why, so the
   next reader does not add them back.
 
@@ -136,8 +141,15 @@ job map will have an Execute step with consequences outside the record.
 
 ### Event-driven and periodic obligations
 
-An obligation that arises **to complete a particular change** (notifying a registry of a change to capital) is part
-of completing that change: a step of the episode, or of the related job that makes the change, not a job of its own.
+An obligation triggered by the same event as a piece of the main job's work (notifying a registry when a change is
+made) is not part of that work just because it shares the trigger. Ask the outcome question: **is meeting the
+obligation necessary to achieve the executor's desired outcome, or does it serve a distinct outcome** (keeping a
+regulator's record current, say)? If necessary, it is a step of the episode, or of the related job that makes the
+change; if distinct, it belongs to a separate job, which may be adjacent or part of a broader one (below). Which
+events create an obligation at all, and with what deadlines, is a fact about the domain to be checked against its
+sources, not assumed. Until both are settled, record the obligation in the framing as an open boundary question, not
+as a rule (*changes may create notification obligations; whether a notification completes the change or belongs to a
+separate reporting job is open*).
 
 An obligation with **its own trigger and lifecycle** (an annual return) is a candidate job. Before calling it adjacent,
 test its altitude: if its scope is wider than the main job's object (an annual return covers far more than share
@@ -151,8 +163,18 @@ the same thing. A job stated as one activity (*report shareholding information*)
 (the annual return's cycle) is not yet a job: restate it as what actually has that lifecycle, then test that.
 
 **Supplying another job is not a job by itself.** That the main job's record feeds another executor's job is captured
-by that related job (*consumes*). It becomes an adjacent job of the main executor only when supplying has an intent
-and lifecycle of its own (answering requests, each with its own start and end), not merely because information flows.
+by that related job (*consumes*). It becomes an adjacent job of the main executor only when supplying pursues a
+desired outcome of its own (satisfying a particular information need, where the main job preserves authoritative
+information), not merely because information flows or each request has a start and end.
+
+### Rules of method are not facts about the domain
+
+The tests in this file decide how to classify what the evidence shows. A classification they produce (this obligation
+is a step, these executors are one) is a **proposal about this domain**, held with the evidence behind it, not a
+general truth about the domain. Do not write one into the topology as a domain assertion (*each change must be
+notified; that notification completes it*) unless the evidence has established both the facts and the boundary. Where
+it has not, state the facts as open and the classification as proposed. The same applies to feedback taken from a
+review: apply it as a test, not as a conclusion.
 
 ### Naming a job from its executor's side
 
@@ -241,6 +263,11 @@ Three questions shape everything downstream; settle them, or record them as open
   episodes.
 - **A topology of everyone.** Related jobs added because an executor touches the main job, not because the
   relationship helps establish its boundary.
+- **Executors merged by relationship.** Different executors folded into one because they stand to the main job the
+  same way, though their desired outcomes differ.
+- **An adjacent job on trigger alone.** A job separated because it has its own trigger or completion, with no distinct
+  desired outcome.
+- **A modelling choice stated as a domain rule.** A classification written as though the domain required it.
 - **A job named for its output.** *Evidence a holding*, hiding the consumer's job and the supplier's.
 - **A step promoted to an adjacent job.** *Obtain board approval* has no life outside the transaction it approves.
 - **A related job swallowed into the main job.** The auditor's verification written as the main executor's Monitor

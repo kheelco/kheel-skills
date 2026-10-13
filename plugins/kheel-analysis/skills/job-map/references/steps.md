@@ -29,10 +29,20 @@ the executor must accomplish to keep the state, and the episodes run through the
 through Define, Confirm, Execute and Conclude; a periodic one through Monitor and Modify). Note on each step which
 episodes pass through it.
 
-The map is also the test of whether the job holds together. If its steps can be read as one coherent sequence, with
-the episodes running through it, the job stands. If they fall into several **independent cycles**, each with its own
-beginning, end and outcomes and sharing few steps, stop and report it to the topology: the episodes are constituent
-jobs of a higher job, each to be mapped on its own. Do not force them into one map.
+The map is also the test of whether the job holds together, and it must be a real test, not a confirmation. If its
+steps can be read as one coherent sequence, with the episodes running through it, the job stands. If they fall into
+several **independent cycles**, each with its own beginning, end and outcomes and sharing few steps, stop and report
+it to the topology: the episodes are constituent jobs of a higher job, each to be mapped on its own. Do not force
+them into one map.
+
+Two signs the test is being failed quietly:
+
+- **An operating cycle.** Steps that read as the handling of one kind of event (receive a change → validate it →
+  update → verify → correct) describe a workflow, not the executor's desired progress, and usually presuppose a
+  particular mechanism. Restate each step as what the executor must accomplish, whatever started the episode.
+- **Episodes with nowhere to go.** If the steps cannot be stated without presupposing the event that starts one
+  episode, and the other episodes (a periodic check, where nothing has arrived) find no steps of their own, that is
+  evidence the job is an overarching responsibility containing several jobs. Report it; do not bend the map to fit.
 
 ## Step rules
 
