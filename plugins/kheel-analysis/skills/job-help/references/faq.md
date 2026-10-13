@@ -1,7 +1,9 @@
 # Common questions
 
-**Is this a process map?** No. A job map says what the executor must accomplish, not how or in what system. If a map
-only makes sense with a screen in mind, it has become a workflow.
+**Is this a process map?** No. A job map is an inventory of what the executor must accomplish, organised by stage,
+not how, in what order or in what system. Its steps need not form one sequence, and one occasion of the job may use
+only some of them. If a map only makes sense with a screen in mind, or reads as the handling of one case from start
+to finish, it has become a workflow.
 
 **Is this Ulwick?** The topology and job map together are Ulwick-aligned: an ODI practitioner will recognise the
 functional job, executor, eight-stage map and outcomes. The topology artefact itself, stakeholder jobs, constituent
@@ -22,9 +24,10 @@ The topology is usually short; it is there to make sure the map is pointed at th
 judges; a step only makes sense inside a job, on the way to its result. *Obtain the committee's approval* is a step:
 nobody does it for its own sake.
 
-**My job never finishes. How do I map it?** Map it over its life: each kind of work (a change arriving, a periodic
-check, a correction) passes through the stages it needs. If some of that work turns out to be a job in its own right,
-it can also be mapped on its own as a sub-job. The topology notes such work as constituent candidates; the map decides.
+**My job never finishes. How do I map it?** Map it over its life: one map holding the steps every kind of work needs
+(a change arriving, a periodic check, a correction), each using the steps it needs. If some of that work has a
+distinct objective worth mapping on its own, it can also be mapped as a sub-job, at a finer level, while staying
+covered by the main map. The topology notes such work as constituent candidates; the map classifies it.
 
 **Why does the executor's title not matter?** Because the same job is done by people with different titles, and people
 with the same title do different jobs. The executor is defined by the responsibility they carry.

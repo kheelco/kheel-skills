@@ -14,17 +14,21 @@ and every job that names it, and stop.
      pushed); two entries with the same `id`.
 2. **Jobs: the checks that need reading.**
    - Job statements containing a feature, system, document or mechanism, or assuming whether a change comes before,
-     during or after the job; assurance jobs (verify, check, reconcile) that name no standard; statements joined with *and*.
+     during or after the job; assurance jobs (verify, check, reconcile) that name no standard; statements joined with *and*; statements carrying
+     scope or success criteria (quality words, lists of what the object covers) that belong in their own fields.
    - The main job failing an altitude test; its object's breadth untested against edge cases.
    - **Constituents decided early**: constituent candidates called jobs, or argued into a classification, before a job
-     map has examined them; leans stated as verdicts; constituents with no record of what was noticed; resolved
-     constituents whose status does not say where they went; deferred constituents with no reason.
+     map has examined them; leans stated as verdicts; constituents sought out to complete a decomposition (one per stage, or covering the whole
+     job) rather than recorded as discovery found them; constituents with no record of what was noticed; covered
+     constituents whose status does not say by which steps; unresolved constituents with no reason; covered and
+     separately mappable treated as exclusive.
    - **Boundary judged on one test**: a candidate placed beside the main job, or within it, on a trigger and completion,
      the same executor, a shared higher objective or a different success criterion alone; boundary questions left open
      where the tests clearly point one way, or forced where they split.
    - Constituents named for the failure that triggers them, where a stable objective names them better.
    - Jobs that change the world folded into the job that records it, with no flag.
-   - Stakeholder jobs that do not help establish the main job's boundary; no note of stakeholder jobs left out.
+   - Related or stakeholder jobs that mark no material boundary or interface (consumers of the main job's result whose
+     use shapes nothing it must do); no note of jobs left out.
    - Executors or jobs merged because they stand to the main job the same way, though their desired outcomes differ.
    - Related jobs justified by trigger, recipient or completion alone, with no distinct desired outcome.
    - Jobs named for an output, conflating a consumer's job with a supplier's.
@@ -47,4 +51,4 @@ and every job that names it, and stop.
    - Scenarios that name no job.
 
 Report findings, not fixes, and offer fixes as proposals grouped by the change they imply (restate, change executor,
-demote to a step or episode, promote, resolve a constituent, settle an open classification, change the main job, retire).
+demote to a step or episode, promote, record a constituent's classification, settle an open classification, change the main job, retire).

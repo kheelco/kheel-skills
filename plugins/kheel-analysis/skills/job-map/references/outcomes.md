@@ -19,12 +19,24 @@ restated as one of them (the time spent, the number of times the executor has to
 that its measure needs settling when the outcomes are validated with practitioners. An outcome that needs another
 opening is worth a second look.
 
-A step usually carries two to four outcomes. Harvest them from what goes wrong today: what takes too long, the mistake
-that recurs, the result that varies from person to person. Write the object in glossary nouns, and keep each outcome
+A step usually carries two to four outcomes once they have been researched. Harvest them from what goes wrong today:
+what takes too long, the mistake that recurs, the result that varies from person to person. Write the object in glossary nouns, and keep each outcome
 attached to its step; outcomes are never pooled across a map.
 
 **Qualifiers become outcomes.** The emotional and social qualifiers recorded on the job in the topology yield outcomes
 on the steps they bear on, in the same form: *minimise the likelihood that a late filing is attributed to the executor*.
+
+## Two kinds of completeness
+
+Keep two questions apart, and review them separately:
+
+- **Functional completeness**: has the map found the work that must be accomplished? That is the steps' question
+  ([steps](steps.md), *Coverage across circumstances*).
+- **Outcome completeness**: has the map found the ways the executor measures each step's success?
+
+A step is sound even while its outcomes are incomplete, and finding another outcome does not mean another step is
+needed. Initial mapping records the outcomes the evidence offers; it need not discover them exhaustively. Outcomes are
+refined with practitioners, through interviews and iteration, and their completeness is judged then.
 
 ## What an outcome is not
 
@@ -39,7 +51,15 @@ be measured?**
 
 ## Checking each outcome
 
-Six questions for every outcome, after it is written:
+First, a quick check of the wording:
+
+- **Measurable**: could it be measured, as time, likelihood, variability or a count?
+- **Solution-independent**: does it hold whatever the means of doing the step?
+- **A result, not a method**: does it say what the executor wants, rather than how to get it?
+- **Specific**: are its object and context specific enough that two people would measure the same thing?
+- **Distinct**: does it say something the step's other outcomes do not?
+
+Then six deeper questions:
 
 1. **Does it measure success, or specify a solution?** *Minimise the likelihood that a category is not provided for in
    the record* reads as a requirement on how the record is built. Restate it as the executor's judgement of the step
@@ -77,6 +97,9 @@ survey is quantitative research built on a finished map, not part of mapping. If
 
 ## Errors to watch for
 
+- **Completeness conflated.** A step questioned because its outcomes are incomplete, or a step added because a new
+  outcome was found.
+- **Outcomes duplicated.** Two outcomes on one step that measure the same thing in different words.
 - **Outcomes that restate the step.**
 - **Outcomes that are features**: anything that names a mechanism, or could be shipped.
 - **Outcomes that are targets**: a number in it is a KPI.

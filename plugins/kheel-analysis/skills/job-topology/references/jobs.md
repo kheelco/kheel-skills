@@ -35,9 +35,24 @@ has been authorised*) or a sign of a stakeholder job.
 
 ## The core functional job
 
-State it as **verb + object + contextual clarifier**: *Maintain* an accurate, current *record of who belongs to the
-club and on what terms* *over the life of the club*. The verb and object, without the clarifier, are the job's
-**name**, which identifies it (*Maintain the membership roll*).
+State it as **verb + object + contextual clarifier**: *Maintain* *the record of who belongs to the club and on what
+terms* *over the life of the club*. The verb and object, without the clarifier, are the job's **name**, which
+identifies it (*Maintain the membership roll*).
+
+**Keep the statement concise; record the rest beside it.** The statement is the job's identity, and should stay true
+as understanding of the job grows. What discovery finds out about the job goes in fields of its own on the job's
+entry, not into the statement:
+
+- **Scope**: what the object takes in and what it leaves out (members of every grade, past and present; not guests),
+  with the edge cases that settled it;
+- **Success criteria**: how the executor judges the job as a whole done well, in a phrase or two (*accurate and
+  current*), with the **standard** for an assurance job (below). These are not desired outcomes: the job map writes
+  those, step by step, in the outcome form.
+
+Quality words (*accurate*, *timely*, *complete*, *efficiently*) are success criteria, not part of the job: two
+executors who want different qualities are still doing the same job. A clarifier earns its place only where it changes
+what the job is (*over the life of the club*, against a single transaction), not where it describes how well it is
+done.
 
 It must be free of any solution, independent of current technology, stable enough to outlive any process, stated from
 the executor's perspective, and about something they are trying to accomplish.
@@ -59,7 +74,8 @@ A job whose result is **assurance** (to verify, check, validate, audit or reconc
 
 Agreement with sources does not establish correctness: sources can be missing, wrong, in conflict, or copied from the
 record they are checked against. The two are different results, and may be different jobs. Name the standard in the
-statement or its clarifier, and let the map follow it.
+job's success criteria (or in the statement, where the standard is what makes it a distinct job), and let the map
+follow it.
 
 ### Altitude and breadth
 
@@ -71,7 +87,8 @@ statement or its clarifier, and let the map follow it.
   executor must keep coherent (for a membership roll: a family membership, an honorary member, a suspended member, a
   member moving between grades). If the executor cannot handle them without artificial distinctions, the object is too
   narrow (*who belongs* where *who belongs and on what terms* is meant). If widening it brings in several independent
-  results, it is too broad. Record the cases tried and what they showed; those the object takes in become edge cases for the job map.
+  results, it is too broad. Record the cases tried and what they showed in the job's **scope**, not its statement;
+those the object takes in become edge cases for the job map.
 
 ### Continuing jobs
 
@@ -86,16 +103,17 @@ Surveying a domain usually turns up work that seems to **make up** the main job:
 against its sources, putting it right, setting it up in the first place. That is useful discovery, and the topology
 records it, as **constituent candidates** on the main job's entry, as input for the job map.
 
-A constituent candidate is a hypothesis, not a classification. When the job is mapped, each one turns out to be one of:
+**Constituent candidates are observations, not a decomposition.** Record what discovery turned up and what made it
+look like part of the main job; do not go looking for more to complete the list, cover every stage, or account for
+everything the job involves. The list is not exhaustive and need not be balanced: two candidates, or none, is fine.
+The job map finds the job's structure, and will find work no candidate anticipated.
 
-- an **episode**: an occasion on which the main job is done, passing through some of its map's steps (*take in a
-  change*);
-- a **step**, or part of one (*correct an error found while recording a change*);
-- a **sub-job**: a job in its own right, with a progression and outcomes of its own, that is part of the main job and
-  gets its own map (*establish the register*, on formation or after a loss).
-
-The topology does not settle which: the evidence that settles it is the job's actual progression, which only the job
-map examines. It records, for each candidate:
+A constituent candidate is a hypothesis, not a classification. Its work may turn out to be an **episode** of the
+main job (an occasion on which the job is done, using some of its map's steps: *take in a change*), a **step** or part
+of one (*correct an error found while recording a change*), or a **sub-job** worth a map of its own (*establish the
+register*, on formation or after a loss); and these are not exclusive: work covered by the main map may also be worth
+mapping on its own, at a finer level. The topology does not settle which; the job map classifies each candidate as it
+maps the job. The topology records, for each candidate:
 
 - **what sets it off** (*a change arrives*, *the annual check falls due*, *an error is found*);
 - **what was noticed**: the evidence from discovery (it is done when nothing else is under way; it has its own
@@ -103,11 +121,17 @@ map examines. It records, for each candidate:
 - **a lean**: *likely an episode*, *likely a step*, *possibly a job of its own*, or *unclear*, formed lightly from the
   tests below. The lean is provisional and does not bind the map; do not call a candidate a job here.
 
-When the map resolves a candidate, the topology records the result (*absorbed: episode passing through Locate,
-Confirm and Execute*, or *confirmed: sub-job, see its map*), and a confirmed sub-job becomes a row in the jobs table. A
-candidate the map chooses not to examine yet (rare, large, or not needed for the purpose in hand) is recorded as
-*deferred*, with the reason; it stays a hypothesis until a later map takes it up. A candidate's status is thus *open*,
-*deferred*, *absorbed* or *confirmed*.
+A candidate's **status** is *open* until a map has looked at it, then the map's classification (`job-map`,
+*Constituents, and jobs found while mapping*):
+
+- *covered*: its work is represented in the map, with the steps it uses (*covered: Locate to Execute*);
+- *separately mappable*: it appears to have a distinct functional objective worth mapping on its own; it may be
+  covered as well;
+- *outside scope*: its objective belongs to another job, which goes into the jobs table as a related or stakeholder job;
+- *unresolved*: still uncertain, or not yet examined, with which and why.
+
+A separately mappable candidate becomes a row in the jobs table, with category `Sub-job`, once it is agreed to be
+worth mapping. None of this has to be settled before the map proceeds.
 
 **Name a candidate for its stable objective, not for the failure that triggers it.** *Establish an authoritative
 register* (on formation, or after records are lost) is more stable than *Reconstruct the register*, which is named for
@@ -133,8 +157,8 @@ Five tests help judge whether something is a job of its own. **No single test de
 
 **Where the topology uses them.** At the **boundary**, to decide whether a candidate is part of the main job (a
 constituent candidate) or a job beside it (related or stakeholder); and lightly, to form a constituent candidate's
-**lean**. Whether a constituent is a job of its own is decided by the job map, which applies the tests in full with the
-progression in view.
+**lean**. Whether a constituent is worth mapping on its own is judged by the job map, which weighs the tests in full, by
+objective rather than by any sequence of its own.
 
 ### Open classifications
 
@@ -161,13 +185,23 @@ are recorded*; *uses the roll to check eligibility*). Classifying those relation
 analysis's work; here, a clear phrase is enough. How a related job stands **in time** (*before*, *after*,
 *alongside*) may be noted where it helps.
 
-### Which stakeholder jobs to include
+### Which other jobs to include
 
-Many executors touch any main job; a topology that lists them all stops being useful. **Include a stakeholder job when
-its result changes, constrains, validates or materially depends on the main job's object, and understanding that
-relationship is needed to establish the main job's boundary** (what it must take in, what it must provide, who may
-decide what it holds). Leave out jobs that merely use the main job's result in passing, or touch it only through
-another stakeholder job already listed.
+Many jobs touch any main job; a topology that lists them all stops being useful. **Include material boundaries and
+interfaces, not every job that touches the main job.** A related or stakeholder job is included when it marks where
+the main job begins or ends, or crosses it in a way that shapes it:
+
+- it **changes** what the main job's object holds, or supplies what the main job must take in (*join the club*);
+- it **decides, governs or constrains** what the main job may hold or do (*decide on an application*);
+- it **depends on** the main job in a way that shapes what the main job must provide (*establish membership before
+  relying on it*, where relying parties need membership on a past date);
+- for a related job, it could otherwise be **mistaken for part of the main job** (*provide authoritative information
+  about membership*).
+
+Leave out jobs that merely **consume** the main job's result: using the record, reading a report, relying on an
+answer, where nothing about the use shapes what the main job must do. Consumers are usually many; include one only
+where its need sets a requirement on the main job, and then as one job for every consumer with the same need. Leave
+out, too, jobs that touch the main job only through another job already listed.
 
 - **Merge only what is the same job.** Executors are merged into one, with one stakeholder job, only when they pursue the
   same desired outcome, by the same rule as the main executor (*Unify when the desired outcome is the same*). An
@@ -284,12 +318,14 @@ fine. Do not use the step types to settle the topology: that designs a workflow 
 - **A job on one test.** A candidate made a job, or kept out of one, on a trigger and completion, a shared higher
   objective, the same executor or a different success criterion alone (consistency and correctness; speed and
   accuracy), instead of weighed on the five tests and, where they split, recorded as open.
+- **Constituents as a decomposition.** Candidates sought out to complete a list, one per stage or covering
+  everything the job involves, instead of recorded as discovery turned them up.
 - **Constituents decided early.** A constituent candidate called a job, or argued into a classification, before the
   job map has examined it; a lean stated as a verdict; a candidate named for the failure that triggers it
   (*Reconstruct the register* where the stable objective is *establish an authoritative register*).
 - **Open as a way out.** A boundary question left open where the tests clearly point one way.
-- **A topology of everyone.** Stakeholder jobs added because an executor touches the main job, not because the
-  relationship helps establish its boundary; or an org chart wearing a topology: one job per department, executors
+- **A topology of everyone.** Related or stakeholder jobs added because they touch the main job or consume its
+  result, not because they mark a material boundary or interface; or an org chart wearing a topology: one job per department, executors
   named by title, stakeholder jobs that are the reporting line.
 - **A related job on trigger alone.** A job of the main executor separated because it has its own trigger or
   completion, with no distinct desired outcome; or a step promoted to one (*obtain the committee's approval* has no

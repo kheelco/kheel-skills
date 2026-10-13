@@ -10,8 +10,9 @@ not want a membership database; they want *an accurate, current record of who be
 same while the tools come and go, which is why it is a stable thing to understand and to design for.
 
 **Functional job.** The practical accomplishment at the centre of the analysis, stated as **verb + object + contextual
-clarifier**: *Maintain* an accurate, current *record of who belongs to the club and on what terms*, *over the life of
-the club*. It contains no solution, technology or process. (`job-topology`, *The core functional job*.)
+clarifier**: *Maintain* *the record of who belongs to the club and on what terms*, *over the life of the club*. It
+contains no solution, technology or process, and is kept concise: how well the job must be done (*accurate and
+current*) and what its object covers are recorded beside it, as its success criteria and scope. (`job-topology`, *The core functional job*.)
 
 **Job executor.** The person or organisation trying to get the job done, defined by the **responsibility** they carry,
 not their title: *the person or organisation responsible for the club's record of its members*. A volunteer secretary,
@@ -24,8 +25,10 @@ each for a different result (*provide information about membership*). (`job-topo
 wrongly turned away*) and be seen (*be seen as a dependable keeper of the club's records*) while doing the job.
 Recorded as qualifiers on the job, and later turned into outcomes. (`job-topology`, *Qualifiers and circumstances*.)
 
-**Job map.** The job broken into what the executor must accomplish, using eight universal **stages**: Define, Locate,
-Prepare, Confirm, Execute, Monitor, Modify, Conclude. The stages are questions to ask about any job (what has to be
+**Job map.** An inventory of what the executor must accomplish to get the job done, organised by eight universal
+**stages**: Define, Locate, Prepare, Confirm, Execute, Monitor, Modify, Conclude. A step sits under a stage for what it
+contributes, not for when it happens, so the steps need not form one sequence, and one occasion of the job may use only
+some of them. The stages are questions to ask about any job (what has to be
 worked out first? gathered? checked?), not boxes to fill. A typical map has ten to twenty steps. It is not a process
 map: it says what must be accomplished, not how. (`job-map`.)
 
@@ -54,7 +57,8 @@ main job's boundary. (`job-topology`, *The other jobs*.)
 
 **Constituent candidates.** Work the topology finds that seems to make up the main job (taking in changes, checking,
 correcting, setting up), recorded with what was noticed and a provisional lean, but not yet classified. The job map
-decides what each one is, with the job's progression in view, and reports back.
+classifies each one as it maps the job (covered by its steps, worth a map of its own, outside the job, or unresolved)
+and reports back.
 
 **Job, episode or step?** Five tests are weighed: an independent objective, an independent completion, the executor,
 whether it makes sense outside another job's work, and whether it would survive a change of tools. No single test
@@ -67,10 +71,11 @@ main job, or a job beside it?), recorded with the evidence each way instead of b
 
 **Continuing job and episodes.** Some jobs never finish: they keep something in a state (*maintain the roll*, *keep
 the fleet roadworthy*). They are done through **episodes**, each set off by something: a change arrives, a check falls
-due, an error is found. In a job map, each episode passes through the stages it needs.
+due, an error is found. In a job map, each episode uses the steps it needs.
 
-**Sub-job.** A constituent the job map confirms as a job in its own right, because it has a progression and outcomes of
-its own: *service a vehicle* within *keep the fleet roadworthy*. It is added to the topology and mapped on its own,
+**Sub-job.** A constituent the job map finds worth mapping on its own, because it has a distinct functional objective:
+*service a vehicle* within *keep the fleet roadworthy*. Its work can be covered by the larger job's map and still be
+mapped on its own at a finer level; having its own sequence is not enough. It is added to the topology and mapped
 alongside the larger job's map. If several turn up, the larger job may be a higher-order objective rather than a job to
 map. (`job-map`.)
 

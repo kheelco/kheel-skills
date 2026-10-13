@@ -9,8 +9,8 @@ This analysis works **between** jobs: whether two candidates are one job or two,
 main job or beside it, whether two people are one executor, and whether the boundaries the topology drew hold up.
 
 What happens **inside** a job (whether a piece of work is a step, an episode, or a sub-job with its own map) is
-discovered by the job map, which resolves the topology's constituent candidates with the job's progression in view
-(`job-map`, *Resolving constituents*). This analysis does not repeat that work; where it needs to know a job's internal
+discovered by the job map, which classifies the topology's constituent candidates as it maps the job (`job-map`,
+*Constituents, and jobs found while mapping*). This analysis does not repeat that work; where it needs to know a job's internal
 structure, it reads the map.
 
 ## Identity between jobs

@@ -10,15 +10,14 @@ disagree are a defect.
 ````markdown
 # Job map: Maintain the membership roll
 
-**Job:** Maintain an accurate, current record of who belongs to the club and on what terms, over the life of the club.
+**Job:** Maintain the record of who belongs to the club and on what terms, over the life of the club.
 **Executor:** Membership secretary. From the [job topology](../job-topology.md#maintain-the-membership-roll).
 
-**Pre-check:** Mapped over its life (the default). Constituents from the topology resolved: *take in a change*
-absorbed (an episode passing through Locate, Prepare, Confirm and Execute); *check the roll* absorbed (Monitor; a
-different standard of checking would be an outcome, not a job); *correct the roll* absorbed (Modify); *establish an
-authoritative roll* deferred (it only arises on founding or after a loss, and is not needed here; a candidate for a map
-of its own).
-Reported to the topology. Providing information about membership is a related job and is not mapped here.
+**Pre-check:** Mapped over its life (the default). Constituents from the topology: *take in a change* covered
+(Locate, Prepare, Confirm and Execute) and separately mappable (a finer map of taking in a change would find steps and
+outcomes this one does not hold; not made now); *check the roll* covered (Monitor; a different standard of checking
+would be an outcome, not a job); *correct the roll* covered (Modify); *establish an authoritative roll* unresolved (not
+examined; see C1 and C4 under Coverage). Reported to the topology. Providing information about membership is a related job and is not mapped here.
 
 ## Circumstances
 
@@ -41,6 +40,15 @@ Reported to the topology. Providing information about membership is a related jo
 | Conclude | **Establish that the roll states the current position** | Minimise the likelihood that the roll is relied on while a change is part-entered |
 
 (A real map would have ten to twenty steps; this example shows one or two per stage.)
+
+## Coverage
+
+| Circumstance | Covered by | Finding |
+|---|---|---|
+| C1 Founding | Define (*C1*), Execute | Covered for setting up the first roll's grades and terms; establishing its first members may be *establish an authoritative roll* (unresolved) |
+| C2 Volume | Locate, Execute | Covered: the steps hold whether changes arrive by post or online |
+| C3 Contested | Confirm (*C3*), Modify (*C3*) | Covered up to the hand-off to the tribunal |
+| C4 Recovery | Monitor (*C4*) | Gap: no step establishes what the roll should say when its sources are lost; reported to the topology with *establish an authoritative roll* |
 
 ## Entries
 
@@ -76,7 +84,8 @@ Reported to the topology. Providing information about membership is a related jo
   - Minimise the likelihood that a correction hides what the roll said before.
 - **Episodes:** A discrepancy found by the check; an error ordered corrected by a tribunal (same step, another
   trigger; the tribunal is a stakeholder job).
-- **Order:** After Monitor, or whenever an error is found; returns to Confirm where the correction needs authority.
+- **Order:** Done whenever an error is found, by the check or otherwise; a correction that needs authority also
+  passes Confirm.
 ````
 
 ### The steps table
@@ -85,22 +94,25 @@ Three columns, steps in the order an executor would describe them:
 
 | Column | Holds |
 |---|---|
-| **Type** | One of the eight step types. |
+| **Type** | One of the eight stages, chosen by the step's functional purpose ([steps](steps.md), *Placing a step in a stage*). |
 | **Step** | The step (verb + object, clarifier if needed) in bold, linked to its entry if it has one; then, on a new line (`<br>`), its seam in italics if it has one (*happens in the world: …* or *arrives from the world: …*), followed by the circumstances that change it (*C3*) and the edge cases it has (*edge cases: joint holding*), named only; what each requires is in the entry. |
 | **Outcomes** | One outcome per line (`<br>` between them), in the standard form. |
 
 Before the table, a **Pre-check** line: how the job is mapped (over its life, the default; or a sub-job on its own),
-how each constituent candidate was resolved (absorbed, and where; confirmed as a sub-job; or deferred, with why), and
-what was reported to the topology. For a lifecycle map, a **Circumstances** section lists
-the circumstances as contextual modifiers (C1, C2, …), and the steps they change say so after their seam (*C3*). After the table, a line listing the types that yielded nothing, and what each suggests about the boundary. A step is
+how each constituent candidate was classified (covered, and by which steps; separately mappable; outside scope; or
+unresolved, with why; covered and separately mappable may both hold), and what was reported to the topology. For a lifecycle map, a **Circumstances** section lists
+the circumstances as contextual modifiers (C1, C2, …), and the steps they change say so after their seam (*C3*). After the table, a line listing the stages that yielded nothing, and what each suggests about the boundary; then a
+**Coverage** section: for each circumstance (and any significant edge case), the steps that cover it and the finding
+(covered; a gap; an ambiguous boundary; possibly another job). It records findings, not a workflow per circumstance. A step is
 identified by its statement within its map; restatements keep the old wording in its notes until citations are updated.
 
 ### The entries
 
 `## Entries` holds a `###` section per step that has one, headed by its statement, in table order. Directly under the
 heading comes its YAML block when synced. Then a bullet list, written `**Name:**`, leaving out what does not apply:
-**Type**, **Covers** (what the step spans, where it spans several things), **Seam**, **Outcomes** (a nested list, as in the row), **Episodes** (for a continuing job, which episodes pass through the step), **Circumstances** and **Edge cases** (each a nested item `<case>: <what the step must accomplish in that case>`, with any outcome of its own; see [steps](steps.md), *Circumstances and edge cases*), **Order** (where the step runs alongside another or
-repeats), **Source**, **Notes** (open questions start with *Open:*; parts sent back to the topology; survey results).
+**Type**, **Covers** (what the step spans, where it spans several things), **Seam**, **Outcomes** (a nested list, as in the row), **Episodes** (for a continuing job, which episodes use the step), **Circumstances** and **Edge cases** (each a nested item `<case>: <what the step must accomplish in that case>`, with any outcome of its own; see [steps](steps.md), *Circumstances and edge cases*), **Order** (where it helps to say that the step runs
+alongside another, repeats or is done on demand; never required), **Source**, **Notes** (open questions start with
+*Open:*; competing readings of an ambiguous stage placement; parts sent back to the topology; survey results).
 
 ### Drafts
 

@@ -5,8 +5,8 @@
 One or two questions at a time, each answer shaping the next. Skip any the evidence already answers.
 
 1. **What are they ultimately trying to get done?** Push up until the answer would still be true in twenty years and
-   under a different process. *Process application forms* is not it; *maintain an accurate, current record of who
-   belongs to the club and on what terms* is.
+   under a different process. *Process application forms* is not it; *maintain the record of who belongs to the club
+   and on what terms* is. Keep how well they want it done (*accurate*, *current*) for its success criteria.
 2. **Who is responsible for that?** The responsibility, not a title, a department or a seniority; and whether every
    case in scope has someone formally holding it.
 3. **Is it ever finished, or kept in a state?** If kept: **what work is there when nothing new arrives?** (Errors found
@@ -19,8 +19,8 @@ One or two questions at a time, each answer shaping the next. Skip any the evide
 6. **What do they do alongside it that is a different accomplishment?** More candidates, and the ones most often
    mistaken for steps.
 7. **Who else has a stake?** Who changes what the job is about, checks it, is answerable for it, uses what it
-   produces, governs it, or gets in its way? Candidate stakeholder jobs, each with its own executor. Keep those whose
-   relationship helps establish the main job's boundary, and note the rest as left out.
+   produces, governs it, or gets in its way? Candidate stakeholder jobs, each with its own executor. Keep those that mark a
+   material boundary or interface, not every one that uses the result, and note the rest as left out.
 8. **For each candidate, a few tests.**
    - Is it getting their own job done, or helping someone else get theirs done?
    - Is it part of the main job, or a job beside it? If part of it, record it as a constituent candidate with a lean,

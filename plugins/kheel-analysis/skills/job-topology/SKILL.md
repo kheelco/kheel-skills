@@ -58,17 +58,19 @@ read as true for an organisation that does the work on paper.
 3. **Gather candidates.** Harvest from what is to hand, then ask about the gaps one or two questions at a time
    ([elicitation](references/elicitation.md)).
 4. **Settle the executor and the core job** ([jobs](references/jobs.md)): the executor by capacity (the responsibility
-   they carry), split only where the desired outcome changes; the core job as verb + object + contextual clarifier, at
-   an altitude and breadth that pass the tests, with edge cases tried.
+   they carry), split only where the desired outcome changes; the core job as a concise verb + object + contextual clarifier, at
+   an altitude and breadth that pass the tests, with edge cases tried. Record its **scope** and **success criteria**
+   beside the statement, not in it.
 5. **Place the other jobs, selectively.** For each candidate, first the boundary: is it part of the main job, or a job
    beside it? If beside it: related (same executor, a distinct desired outcome) or stakeholder (another executor), with how it stands to the main job in words
-   and how its intent differs. Name each job from its own executor's side. Include a stakeholder job only where it helps
-   establish the main job's boundary, and note those left out. Steps go to the job map.
+   and how its intent differs. Name each job from its own executor's side. Include a job only where it marks a material
+   boundary or interface (it changes, supplies, decides on or shapes the main job), not every job that consumes its
+   result, and note those left out. Steps go to the job map.
 6. **Record the main job's constituents** ([jobs](references/jobs.md), *Constituents of the main job*). Work that
    seems to make up the main job is recorded as **constituent candidates**, each with what sets it off, what was
    noticed, and a provisional **lean** (likely an episode, likely a step, possibly a job of its own, unclear), formed
-   lightly from the five tests. Do not decide here whether a constituent is a job: the job map does, with the
-   progression in view, and the result comes back here. Name each for its stable objective, not the failure that
+   lightly from the five tests. They are observations from discovery, not a decomposition: do not complete the list. Do not decide here whether a constituent is a job: the job map classifies it, and the
+   result comes back here. Name each for its stable objective, not the failure that
    triggers it. Record a **boundary** question the tests cannot settle as an open classification.
 7. **Frame it.** The core executor and job; flags for deeper analysis (seams, obligations, supplying); any sub-domain
    split already evident; boundary questions left open.
@@ -91,8 +93,8 @@ domain's work here: that is job domain analysis, taken up only if wanted.
 | **Restate** | Its job map's heading and every scenario or artefact that cites it. Keep the old wording in its notes until citations are updated. |
 | **Change executor** | Its category (a related job whose executor changes becomes a stakeholder job, and the reverse), and every step of its map. |
 | **Demote to a step or episode** | It leaves the topology's jobs: a step goes to the map of the job it belongs to, with its outcomes; an episode goes onto the entry of the job it is an occasion of. |
-| **Promote a step** | A step found to pursue a result of its own leaves its map: within the main job's object it comes back as a constituent candidate for the map to resolve; beside it, as a related job (the same executor) or a stakeholder job (another). Its outcomes go with it. |
-| **Resolve a constituent** | Proposed by the job map: a constituent candidate is *absorbed* (an episode or step of the main job's map, recorded with where it went), *confirmed* as a sub-job (a row in the jobs table, with its own map) or *deferred* (not examined yet, with why; it stays a hypothesis). |
+| **Promote a step** | A step found to pursue a result of its own leaves its map: within the main job's object it comes back as a constituent candidate for the map to classify; beside it, as a related job (the same executor) or a stakeholder job (another). Its outcomes go with it. |
+| **Record a constituent's classification** | Reported by the job map: *covered* (with the steps), *separately mappable* (alone or with covered; a `Sub-job` row once agreed worth mapping), *outside scope* (the job it belongs to goes into the table) or *unresolved* (with why). None of these has to wait for the others. |
 | **Settle an open classification** | A boundary question settled (often by job domain analysis): the candidate becomes part of the main job, or a related or stakeholder job; maps and analysis that cite it are updated. |
 | **Change the main job** | Every other job's category and relation, which are stated against it. Usually means the altitude was wrong; re-test it first. |
 | **Retire** | Only when nothing cites it, and its map (if any) is retired with it. |
@@ -102,8 +104,8 @@ domain's work here: that is job domain analysis, taken up only if wanted.
 - **Glossary.** Every noun in a job statement should be a glossary term, and executors are agent terms. Topology work
   is one of the main ways new terms are found.
 - **Job map.** Each job may be opened up with a job map (the `job-map` skill), and the main job usually is. A job is
-  mapped over its life by default; the map resolves the main job's constituent candidates and reports each resolution
-  back here. A map that grows steps belonging to another executor sends them back here as stakeholder jobs.
+  mapped over its life by default; the map classifies the main job's constituent candidates and reports each
+  classification back here. A map that grows steps belonging to another executor sends them back here as stakeholder jobs.
 - **Job domain analysis** (optional). The `job-domain-analysis` skill takes up open boundary questions, classifies the
   relationships between jobs and settles flagged seams and obligations; it does not decide a job's internal structure.
   It proposes changes to the topology; the topology stays the authoritative list of jobs.

@@ -58,17 +58,16 @@ the topology are proposed and agreed.
 
 **Ask:** Confirm the job and executor. Then work the stages as questions: what has to be worked out first? Gathered?
 Made ready? Checked? Done? Watched? Put right? Finished? Where does it happen outside any system? What situations and
-particular cases change a step? As the map takes shape, resolve each of the topology's constituent candidates:
-absorbed (an episode or a step), confirmed as a sub-job if it has a progression and outcomes of its own, or deferred
-with a reason. Report
-each resolution back to the topology; if several sub-jobs appear, ask whether the main job is really a higher-order
-objective. **Skill:** `job-map`.
+particular cases change a step? Place each step by what it contributes, not when it happens; the steps need not
+form a sequence. Classify the topology's constituent candidates as they surface (covered, separately mappable, outside
+scope, unresolved; covered and separately mappable can both hold), without holding the map up for them, and report
+each to the topology. Then try each circumstance against the map: is there work it does not hold? If several
+candidates are separately mappable, ask whether the main job is really a higher-order objective. **Skill:** `job-map`.
 
 **Ready to move on:** every stage has been asked about, the steps found are stated as milestones, circumstances and
-edge cases are on the steps they change, every constituent candidate is resolved (or deferred, with why) and reported to
-the topology, and the
-questions that could change the job's boundary are recorded. (If a sub-job was confirmed, the topology now lists it;
-map it in turn if it matters to the purpose.)
+edge cases are on the steps they change, coverage has been tested against each circumstance, every constituent candidate is
+classified (unresolved is fine) and reported to the topology, and the questions that could change the job's boundary
+are recorded. (A candidate found separately mappable can be mapped in turn if it matters to the purpose.)
 
 ## 5. Desired outcomes
 
@@ -77,8 +76,10 @@ map it in turn if it matters to the purpose.)
 **Ask:** For each step, how do they know it went well? What takes too long, goes wrong, or varies from person to
 person? **Skill:** `job-map` (*outcomes*).
 
-**Ready to move on:** each significant step has two to four outcomes in the standard form, each checked as the
-executor's own standard, measurable and free of solutions.
+**Ready to move on:** the outcomes the evidence offers are recorded in the standard form, each checked as the
+executor's own standard, measurable, free of solutions and distinct from the step's others. Outcome completeness is
+judged separately from the steps', and usually needs practitioner research; two to four per significant step is
+typical once that is done.
 
 ## 6. Test it
 
@@ -93,7 +94,7 @@ then, trace cases by hand and note what breaks.)
 ## 7. Next
 
 Offer, depending on the purpose: an opportunity survey on the outcomes (ODI research); mapping another job from the topology (a
-related or stakeholder job, or a confirmed sub-job); a review of any artefact (each skill has one); or stopping here.
+related or stakeholder job, or a sub-job); a review of any artefact (each skill has one); or stopping here.
 
 ## Guiding well
 

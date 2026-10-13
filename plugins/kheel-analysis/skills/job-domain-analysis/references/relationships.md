@@ -18,7 +18,7 @@ A relationship runs between two jobs of different executors, or two jobs of the 
 | **responds to** | Is set off by it |
 
 A relation outside these is usually one of them in other words. Link a relationship to the most specific job it bears on:
-where the main job has a confirmed sub-job (from its job map), link to the sub-job; otherwise to the main job, noting
+where the main job has a sub-job in the topology (found separately mappable by its job map), link to the sub-job; otherwise to the main job, noting
 which part of it the relationship bears on (a tribunal *governs* the roll where a correction is disputed).
 
 A shared relationship is not a shared job: a member resigning, an applicant joining and the executor of a deceased

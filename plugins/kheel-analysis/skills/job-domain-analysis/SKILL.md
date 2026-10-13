@@ -22,7 +22,7 @@ boundary questions it could not settle, when a map exposes a problem at the edge
 of how the domain's jobs fit together is wanted.
 
 It works **between** jobs. What happens **inside** a job (whether a piece of work is a step, an episode or a sub-job
-with its own map) is discovered by the job map, which resolves the topology's constituent candidates.
+with its own map) is discovered by the job map, which classifies the topology's constituent candidates.
 
 **It enriches the topology; it does not redefine it.** The topology remains the authoritative inventory of jobs and
 executors. This analysis refers to its jobs by name and adds what the topology deliberately leaves out. Where the
