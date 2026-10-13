@@ -1,6 +1,6 @@
 {
   "name": "kheel-analysis",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Agent skills for requirements analysis at various levels of detail: developing a glossary (ontology), modelling activities as jobs to be done, modelling the domain, and capturing use cases, stories, business rules and constraints.",
   "author": {
     "name": "Kheel"

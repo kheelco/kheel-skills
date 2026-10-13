@@ -24,9 +24,15 @@ and every job that names it, and stop.
    - Adjacent jobs whose scope is wider than the main job's object (a broader job's obligation), or whose statement
      does not match the signal given for them.
    - Episodes at different altitudes: an undertaking with its own beginning and end listed beside routine episodes.
+   - No unity test or mapping choice recorded on a continuing main job; parts that serve the main job's ultimate result
+     filed as adjacent jobs; a job split into several maps (by episode, trigger or source) without constituent maps
+     having been asked for; constituent jobs with no statement or immediate result of their own; a main job that keeps
+     its own map alongside constituent maps.
+   - Related jobs linked to the main job that bear only on one constituent job.
    - Related jobs that do not help establish the main job's boundary; no note of related jobs left out.
    - Executors or jobs merged because they stand to the main job the same way, though their desired outcomes differ.
    - Adjacent jobs justified by trigger, recipient or completion alone, with no distinct desired outcome.
+   - Episodes or jobs split by the source of their instruction or authority, with the same desired result.
    - Classifications written as domain assertions; claims marked inferred that rest on sources not yet read.
    - Jobs named for an output, conflating a consumer's job with a supplier's.
    - Work the executor does to help another's job recorded as their own job.
@@ -44,8 +50,8 @@ and every job that names it, and stop.
    - Nouns in job statements that the glossary does not hold (vocabulary drift); executors that are not agent terms.
    - Jobs mapped against jobs not mapped: where the deep work has and has not gone.
    - Steps in job maps whose executor is not the job's: related jobs leaking into maps.
-   - A main job whose map needs several independent cycles: constituent jobs not yet recognised.
+   - Constituent jobs multiplying past a handful (re-test altitude).
    - Scenarios that name no job.
 
 Report findings, not fixes, and offer fixes as proposals grouped by the change they imply (restate, change executor,
-demote to a step or episode, promote, episode to constituent job, change the main job, retire).
+demote to a step or episode, promote, to constituent jobs, split off a part, change the main job, retire).

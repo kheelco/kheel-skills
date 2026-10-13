@@ -54,25 +54,32 @@ read as true for an organisation that does the work on paper.
    they carry), split only where the desired outcome changes; the core job as verb + object + contextual clarifier, at
    an altitude and breadth that pass the tests, with edge cases tried. If it is a continuing job, record its episodes
    and their triggers.
-5. **Place the other jobs.** For each candidate: a step, an episode of the main job, or a job? If a job: adjacent
+5. **Run the unity test** on the main job ([jobs](references/jobs.md)): do its episodes and other proposed parts share
+   its executor and serve its ultimate desired result? If so they are part of it, whatever their trigger, frequency,
+   size or source; only a different ultimate result makes another (adjacent or related) job. **Then the mapping
+   choice**: by default the main job gets one lifecycle job map, with episodes, circumstances and edge cases folded
+   into its stages. Only if the user asks for each path set out as its own flowing map, divide it into **constituent
+   jobs** (before placing related jobs, so they can be linked to the constituent they bear on). Record both on the
+   main job.
+6. **Place the other jobs.** For each candidate: a step, an episode of the main job, or a job? If a job: adjacent
    (same executor, its own intent and lifecycle) or related (another executor), how it stands to the main job, and its
    core intent and how that differs from the main job's. Separate jobs that change the world from the job that records
    it, and name each job from its own executor's side. Include a related job only where its relationship helps
-   establish the main job's boundary, and note those left out. Steps go to the job map, not here.
-6. **Frame it.** The core executor and job, execution seams (and their direction), any sub-domain split already
+   establish the main job's boundary, and note those left out; link it to the constituent job it bears on where there
+   is one. Steps go to the job map, not here.
+7. **Frame it.** The core executor and job, execution seams (and their direction), any sub-domain split already
    evident, and boundary questions left open.
-7. **Check** the structural checks in [review](references/review.md) over what changed and every job that names it, and
+8. **Check** the structural checks in [review](references/review.md) over what changed and every job that names it, and
    list the open questions.
-8. **Propose, agree, then write**, doing the full ripple of any change (below) in the same sitting.
-9. **Render or sync** in the shape the reader needs ([format](references/format.md)).
+9. **Propose, agree, then write**, doing the full ripple of any change (below) in the same sitting.
+10. **Render or sync** in the shape the reader needs ([format](references/format.md)).
 
 ### When to stop
 
 A topology is **provisionally complete** when the main executor and main job are settled, each other job is placed
 with its executor and its difference from the main job stated, and every question that could change which job is main,
 or whether a candidate is a job, an episode or a step, is recorded. Three questions in particular are settled or
-recorded as open before mapping: the breadth of the main job's object; whether it is one job or a higher job with
-constituent jobs; and where changing the world ends and recording it begins ([jobs](references/jobs.md), *Settle the
+recorded as open before mapping: the breadth of the main job's object; what is part of it and how it is mapped (the unity test and the mapping choice); and where changing the world ends and recording it begins ([jobs](references/jobs.md), *Settle the
 topology before mapping*). Then map the main job, without using the step types to answer those questions; the
 topology is revisited as maps send jobs back.
 
@@ -84,7 +91,8 @@ topology is revisited as maps send jobs back.
 | **Change executor** | Its category (an adjacent whose executor changes becomes related, and the reverse), and every step of its map. |
 | **Demote to a step or episode** | It leaves the topology's jobs: a step goes to the map of the job it belongs to, with its outcomes; an episode goes onto the main job's entry. |
 | **Promote a step** | A step found to have its own intent, lifecycle or outcome becomes an adjacent or related job, and leaves its map. |
-| **Episode to constituent job** | When mapping shows an episode is an independent cycle, it becomes a constituent job with a map of its own, and the main job is restated as the higher job they make up. |
+| **To constituent jobs** | When the user asks for flowing maps per path: each path becomes a constituent job row with its own statement, intent and map; the main job's lifecycle map is retired (its steps re-homed one by one); related jobs that bear on one path are re-linked to it. The reverse (back to one lifecycle map) re-homes the constituents' steps into the main job's stages. |
+| **Split off a part** | Only when the unity test shows a part of the main job pursues a different ultimate result: it becomes an adjacent job (same executor) or a related job (another executor), with its own map if it needs one; its steps leave the main job's map. |
 | **Change the main job** | Every other job's category and relation, which are stated against it. Usually means the altitude was wrong; re-test it first. |
 | **Retire** | Only when nothing cites it, and its map (if any) is retired with it. |
 
@@ -104,7 +112,7 @@ topology is revisited as maps send jobs back.
 | File | Holds |
 |---|---|
 | [references/elicitation.md](references/elicitation.md) | The questions to ask, and harvesting jobs from notes |
-| [references/jobs.md](references/jobs.md) | Executors and roles, the core functional job, altitude and breadth, continuing jobs and episodes, constituent, adjacent and related jobs, changing the world against recording it, qualifiers and circumstances, framing, errors to watch for |
+| [references/jobs.md](references/jobs.md) | Executors and roles, the core functional job, altitude and breadth, continuing jobs and episodes, the unity test, how the main job is mapped (lifecycle map, or constituent jobs on request), adjacent and related jobs, changing the world against recording it, qualifiers and circumstances, framing, errors to watch for |
 | [references/review.md](references/review.md) | Reviewing a topology: the checks and reporting |
 | [references/format.md](references/format.md) | The topology document, drafts, syncing, rendering and where it lives |
 

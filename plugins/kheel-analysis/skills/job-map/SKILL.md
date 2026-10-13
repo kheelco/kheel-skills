@@ -46,19 +46,19 @@ be a step of a larger one.
 2. **Confirm the job and executor** from the topology. If either is unsettled, settle it first (with the
    `job-topology` skill): a map of the wrong job is worthless however good. Do not use the step types to decide what
    the job is; a tidier sequence is not evidence of the right job.
-3. **Establish the execution boundary.** Before any step is typed, run the coherence test
-   ([steps](references/steps.md), *The coherence test*): write each principal episode's progression in plain words
-   and compare their beginnings, desired results and completions. If they are one progression, map the job. If not, or
-   in doubt, map the candidates separately and compare, without presuming the answer; constituent jobs go back to the
-   topology. Never infer that a job holds together because its episodes can all be placed somewhere in the step types.
-   Decide on distinct beginnings, desired results and completions; the stage test only supports. Where an activity can
-   arise both during the job and on its own, keep the first as a step and test the second as a candidate job. For a job
-   that gives assurance, confirm its standard (consistency or correctness) and map to it. Keep the job statement neutral about whether the change it concerns comes before, during or after it.
-4. **Find the steps** of that one progression. Work the eight step types as questions about it, in order, writing down
-   only what is found ([elicitation](references/elicitation.md)). Add a step only where it is a necessary
-   accomplishment that advances the job's completion, never to fill a type, and stop at any hand-off to another job.
-   Modify adjusts the job's execution (and says where it goes next); it does not correct the object.
-   Where a type yields nothing, ask what that says about the boundary.
+3. **Pre-check: which job, and which kind of map** ([steps](references/steps.md), *Pre-check*). Confirm the
+   topology's unity test (run it first, with `job-topology`, if it was never run). **By default, map the whole job
+   over its life**: one Ulwick job map, with episodes passing through the stages they need (the continuity rule),
+   circumstances (situations of the whole job) and edge cases (kinds of thing it deals with) folded into the steps they
+   change. Only when the user asks for each path as
+   its own flowing map, map the topology's constituent jobs one by one instead. Never split a job by episode, trigger
+   or source unasked. Keep the job statement neutral
+   about whether the change it concerns comes before, during or after it, and for anything that gives assurance,
+   confirm its standard (consistency or correctness).
+4. **Find the steps.** Work the eight step types as questions about the job, in order, writing down only what is
+   found ([elicitation](references/elicitation.md)). Add a step only where it is an accomplishment the job needs,
+   never to fill a stage, typically ten to twenty in all; stop at any hand-off to another executor. Modify says where
+   the work goes next. Where a type yields nothing, ask what that says about the boundary.
 5. **State each step as a milestone**: what the executor has accomplished once it is done, verb + object, in the
    executor's words, no mechanism. Mark its execution seam, if it has one.
 6. **Find each step's outcomes**: how the executor knows it went well, and what takes too long, goes wrong or varies
@@ -72,8 +72,8 @@ be a step of a larger one.
 
 ### When to stop
 
-A map is **provisionally complete** when its execution boundary has been established by the coherence test (or the
-candidates compared and reported), every step type has been asked about, each step found is stated as a
+A map is **provisionally complete** when the pre-check has confirmed the job and the kind of map, every step type has
+been asked about, each step found is stated as a
 milestone with its type and seam, each significant step has outcomes, and the questions that could change a step's
 scope or the job's altitude are recorded. Opportunity scoring is not part of mapping (see
 [outcomes](references/outcomes.md)).
@@ -84,8 +84,8 @@ scope or the job's altitude are recorded. Opportunity scoring is not part of map
 |---|---|
 | **Restate a step** | Its outcomes, which may no longer fit; scenarios that walk through it. |
 | **Split or merge steps** | Their outcomes, redistributed one by one, not pooled. |
-| **Split the job** | When the coherence test or a later finding shows several progressions: each becomes a constituent job with its own map, reported to the topology; steps and outcomes are re-homed one by one. |
-| **Move a step out** | A step with its own intent, lifecycle or outcome becomes a job in the topology; a step belonging to another executor becomes a related job. Its outcomes go with it. |
+| **Change the kind of map** | When the user asks for flowing maps per path: the topology divides the job into constituent jobs, and the lifecycle map's steps and outcomes are re-homed one by one into their maps. The reverse folds the constituent maps back into one lifecycle map. |
+| **Move a step out** | A step that pursues a different ultimate result becomes an adjacent job in the topology; a step belonging to another executor becomes a related job. Its outcomes go with it. |
 | **Restate an outcome** | Keep its direction, measure and object in the standard form; a survey already run against the old wording is no longer comparable. |
 | **Re-state the job** | The map's heading and the topology entry, together. |
 
@@ -104,7 +104,7 @@ scope or the job's altitude are recorded. Opportunity scoring is not part of map
 | File | Holds |
 |---|---|
 | [references/elicitation.md](references/elicitation.md) | The questions to ask, and harvesting steps and outcomes from notes |
-| [references/steps.md](references/steps.md) | The eight step types, step rules, seams, and errors to watch for |
+| [references/steps.md](references/steps.md) | The pre-check and the two forms of map, the eight step types, step rules, circumstances and edge cases, seams, assurance, and errors to watch for |
 | [references/outcomes.md](references/outcomes.md) | The outcome statement, what an outcome is not, qualifiers, and the opportunity survey |
 | [references/review.md](references/review.md) | Reviewing a map: the checks and reporting |
 | [references/format.md](references/format.md) | The job map document, drafts, syncing, rendering and where it lives |

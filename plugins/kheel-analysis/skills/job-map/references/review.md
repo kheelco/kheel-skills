@@ -7,11 +7,19 @@ stop.
    - The map's job is not in the topology, or its executor differs from the topology's.
    - Steps with no type, or a type outside the eight.
    - Steps with sub-steps.
-   - No record of the coherence test: the principal progressions not written and compared before steps were typed.
-   - A conclusion that the job holds together resting on coverage (every episode found a step) rather than on one
-     shared beginning, desired result and completion.
-   - For a continuing job: episodes that could each be given a Define-to-Conclude progression of their own, mapped as
-     stages; steps falling into independent cycles (constituent jobs not reported to the topology).
+   - No pre-check recorded: the topology's unity test and the kind of map not confirmed before steps were typed.
+   - A job fragmented into several maps (by episode, trigger or source) when flowing maps were not asked for; a main
+     job with constituent jobs given a map of its own as well; in a flowing map, steps that leave its one path.
+   - Stages filled for their own sake; steps that read as an operating cycle; circumstances or edge cases given maps of
+     their own instead of being folded into the stages.
+   - Circumstances recorded as edge cases or the reverse; cases on steps they do not change; cases not written as
+     `<case>: <what the step must accomplish>`; edge cases named in words the glossary does not hold; the same case
+     named two ways; circumstances not in the map's list; edge cases tried in the topology that no step takes up.
+   - Steps spanning several things with no **Covers**, or with sub-steps where Covers or separate steps were meant.
+   - Fewer than about ten steps (stated too broadly) or far more than twenty (job too high); checks inside Execute or
+     commitments inside Confirm; systems, products or instruments named in step statements.
+   - Jobs split by source or trigger alone; a part with a different ultimate result kept in the map instead of
+     reported to the topology.
    - Two steps with the same statement.
    - Significant steps with no outcomes.
    - Outcomes not in the standard form (direction + measure + object + clarifier).
@@ -27,12 +35,13 @@ stop.
    - Outcomes that restate their step, name a mechanism, or contain a target; outcomes that are design requirements;
      outcomes that measure another job's result.
    - A job statement that assumes whether the change comes before, during or after the job.
-   - Monitor or Modify steps that can also be started on their own, absorbed rather than tested as candidate jobs.
-   - Modify steps that correct the object rather than adjust the job's execution, or say nothing of what execution
-     does next.
+   - Monitor or Modify steps that are activities filed under a stage, not what the executor must accomplish there.
+   - Modify steps that say nothing of where the work goes next.
    - An assurance job with no named standard, or one that compares with sources and claims correctness without
      testing whether the evidence is sufficient.
    - Separation of jobs justified by the stage test alone, without a distinct desired result and completion.
+   - Jobs split, or reclassified, because the instruction or authority comes from a different source, though the
+     desired result and completion are the same.
    - Steps that do not advance the job's completion, or that do a receiving job's work past the hand-off.
    - Steps whose outcomes answer different questions (authority and eligibility) with neither split nor grouping.
    - Outcomes beyond the executor's reach, or owning the resolution of work handed on; time outcomes with no measure;

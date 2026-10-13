@@ -51,19 +51,21 @@ reciprocal members); whether notices to the federation complete a change or belo
   the club.
 - **Category:** Main
 - **Executor:** Membership secretary
+- **Unity:** Taking in, checking and correcting all serve an accurate, current roll: part of this job. A correction
+  ordered by a tribunal is the same work with another trigger; the tribunal is a related job. Providing information
+  about membership serves a different result: adjacent.
+- **Mapping:** Lifecycle map (the default): taking in, checking and correcting are folded into the stages of one map.
 - **Episodes:**
   - Take in a change to the roll (event-driven: a member joins, resigns, changes grade or particulars).
   - Check the roll against its sources (periodic).
-  - Correct the roll (exceptional: an error found, a dispute).
-- **Candidate constituent jobs:** Rebuild the roll (after records are lost or found unreliable).
+  - Correct the roll (exceptional: an error found by the secretary, or ordered by a tribunal).
 - **Edge cases:** A family membership (several people, one subscription) and a move between grades (same person,
   different terms) break an object of *who belongs* alone; supports *who belongs and on what terms*.
 - **Qualifiers:** Avoid the anxiety of being blamed when a member is wrongly turned away (emotional).
 - **Circumstances:** The first roll when the club is founded; a national federation at volume, with online joining.
-- **Map:** [Job map](job-maps/record-a-change-to-the-membership-roll.md)
+- **Map:** [Job map](job-maps/maintain-the-membership-roll.md)
 - **Source:** Membership secretary interviews, 2026-03.
-- **Notes:** Open: whether the episodes hold together as one job, or are constituent jobs of a higher one; to be tested
-  by the map. Left out: the club's insurer setting premiums (touches the roll only through *Establish membership*).
+- **Notes:** Left out: the club's insurer setting premiums (touches the roll only through *Establish membership*).
 ````
 
 ### The framing
@@ -78,16 +80,17 @@ they carry), and what was unified or split and why.
 
 ### The jobs table
 
-Four columns, the main job first, then constituent, adjacent and related jobs:
+Four columns, the main job first, then any constituent jobs, then adjacent and related jobs:
 
 | Column | Holds |
 |---|---|
 | **Job** | The job's name (verb + object) in bold, linked to its entry if it has one; then, on a new line (`<br>`), its contextual clarifier where it has one. |
-| **Category** | `Main`; `Constituent`; `Adjacent`, optionally with its place in time (`Adjacent: before`, `after`, `alongside`); or `Related: <changes / enables / constrains / governs / consumes / responds to>`. |
+| **Category** | `Main`; `Constituent`; `Adjacent`, optionally with its place in time (`Adjacent: before`, `after`, `alongside`); or `Related: <changes / enables / constrains / governs / consumes / responds to>`, followed by the constituent job it bears on in brackets where it bears on one rather than the main job as a whole. |
 | **Executor** | The executor's name, as in the executors table. |
 | **Intent and difference from the main job** | Its core intent and how it differs, naming the signal (intent, time horizon, lifecycle, authority, language). Empty for the main job. |
 
-Episodes are not rows: they are listed on the main job's entry. A job is identified by its name; renames keep the old
+Episodes are not rows: they are listed on the main job's entry. Constituent jobs are rows; their intent column holds
+their immediate result. A job is identified by its name; renames keep the old
 name in its notes until citations are updated. A table cell cannot contain `|` or a line break other than `<br>`.
 
 ### The entries
@@ -97,14 +100,18 @@ heading comes its YAML block when synced (see *Syncing*). Then a bullet list, wr
 does not apply:
 
 - **Statement**, **Category**, **Executor** and **Intent and difference**: as the row says.
-- **Episodes** (a continuing job): each with its trigger, event-driven, periodic or exceptional; and, separately,
-  any **candidate constituent jobs** (undertakings too large to be episodes), until mapping tests them.
+- **Unity** (the main job): the parts considered, the ultimate result each serves, and the conclusion, as
+  [jobs](jobs.md) (*The unity test*) describes.
+- **Mapping** (a continuing main job): *lifecycle map* (the default) or *constituent jobs* (when flowing maps per path
+  were asked for, with the paths compared), as [jobs](jobs.md) (*How the main job is mapped*) describes.
+- **Episodes** (a continuing job): each with its trigger, event-driven, periodic or exceptional.
+- **Map** or **Maps**: a link to its job map; for a main job with constituent jobs, *none of its own* (each
+  constituent job has an entry with its own map).
 - **Edge cases**: the cases the object's breadth was tested against, and what they showed.
 - **Qualifiers**: emotional and social, each labelled, only where evidence supports them.
 - **Circumstances**: each, with what changes in it.
 - **Seams**: where this job's execution leaves any system, and in which direction, if the framing does not already
   say.
-- **Map**: a link to its job map, if it has one.
 - **Source**, and **Notes** (open questions start with *Open:*; candidates rejected as steps or episodes; related
   jobs considered and left out, with why, on the main job; executor questions).
 

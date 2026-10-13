@@ -49,9 +49,9 @@ Six questions for every outcome, after it is written:
    assume a solution (a database row, a workflow state). Keep the first, and restate around the second.
 3. **Is it within the executor's reach?** An outcome measures something the executor's execution can affect.
    *Minimise the likelihood that a change is made without the executor learning of it* may be beyond them; *minimise
-   the time between a change and its evidence reaching them* is not. Likewise, a job that hands work on cannot own its
-   resolution: a verification can minimise the likelihood that a discrepancy goes unidentified, undocumented or
-   unreferred, not that it goes unresolved.
+   the time between a change and its evidence reaching them* is not. Likewise, work handed to another executor is not the
+   job's to resolve: where a dispute goes to a tribunal, the job can minimise the likelihood that it goes
+   unidentified, undocumented or unreferred, not that it goes unresolved.
 4. **Does a time outcome have a measure?** *Within the time it must be* depends on a deadline that may not exist.
    Measure the time from the conditions being met to the step being done; record a statutory deadline separately, as a
    rule, once its source is checked.

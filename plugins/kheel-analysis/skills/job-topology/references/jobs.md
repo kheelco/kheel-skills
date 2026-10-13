@@ -67,7 +67,8 @@ statement or its clarifier, and let the map follow it.
   executor must keep coherent (for a membership roll: a family membership, an honorary member, a suspended member, a
   member moving between grades). If the executor cannot handle them without artificial distinctions, the object is too
   narrow (*who belongs* where *who belongs and on what terms* is meant). If widening it brings in several independent
-  results, it is too broad. Record the cases tried and what they showed.
+  results, it is too broad. Record the cases tried and what they showed; those the object takes in are carried into the job map as
+  edge cases on the steps they change.
 
 ### Continuing jobs and their episodes
 
@@ -77,8 +78,7 @@ continuing job is legitimate, and often the right main job, because its intent i
 piece of work. It shows in the work the executor does when nothing new arrives: a fault found on inspection, a
 discrepancy with old records, a dispute, a rebuild after loss, a question about the state at a past date.
 
-A continuing job is done through **episodes**: recurring or exceptional executions of part of the job, each with a
-trigger.
+A continuing job is done through **episodes**: recurring or occasional pieces of work, each with a trigger.
 
 | Trigger | Example episode (membership roll) | Example episode (fleet) |
 |---|---|---|
@@ -86,35 +86,67 @@ trigger.
 | **Periodic**: a cycle comes round | Check the roll against its sources | Carry out a scheduled service |
 | **Exceptional**: something is found wrong | Correct the roll | Withdraw a vehicle from use |
 
-Episodes are **not separate jobs** while they share the main job's executor and intent; they are recorded on the main
-job's entry, each with its trigger.
+Episodes are **not separate jobs**: they share the main job's executor and serve its ultimate result. They are
+recorded on the main job's entry with their triggers, and the job map folds them into its stages.
 
-**Keep episodes at one altitude.** Episodes are the recurring or occasional modes of keeping the state, each a modest
-piece of work. An exceptional undertaking big enough to have its own beginning, execution and end (rebuilding the state
-from scratch, recovering after a loss, moving to a new basis or a new keeper) is not an episode beside them, however
-exceptional its trigger: record it as a **candidate constituent job**, or as a circumstance, until mapping tests it.
+### The unity test: part of the main job, or another job?
 
-Whether the episodes hold together as one job is tested by the job map's **coherence test**: do they share one
-beginning, desired result and completion, as one progression? If so, the job stands; if they are several
-progressions, the job is a higher-level job whose episodes are **constituent jobs**, each mapped separately. That a set
-of steps can be found for every episode is not evidence either way. Treat a continuing main job as a **hypothesis** of
-a single job until that test is run, record the question as open, and do not use the step types to settle it: that
-designs a workflow instead of finding the job.
+Ask of each candidate: **does it share the main job's executor and serve the same ultimate desired result?** If it
+does, it is part of the main job (an episode, a circumstance, an edge case, or a step of its map), however different
+its trigger, frequency or size. Taking in a change, checking the state against its sources and putting it right when
+it is wrong all serve *an accurate, current record*: all part of the main job.
+
+Only a **different ultimate desired result** makes a different job, and then it is an **adjacent job** (same executor)
+or a **related job** (another executor).
+
+- **Do not split by source.** Work started or authorised from a different source (the executor's own finding against a
+  tribunal's order; a driver's report against a manufacturer's recall) serves the same result: it is part of the same
+  job, and the outside source is a related job whose result arrives at a seam.
+- **Do not split by trigger, frequency or size.** Event-driven, periodic and exceptional work on the same result, and a
+  rare, large undertaking toward it (rebuilding the state after a loss), are part of the one job.
+- **Record the test** on the main job's entry (*Unity*): the parts considered, the ultimate result each serves, and the
+  conclusion.
+
+### How the main job is mapped
+
+**By default, one job map over the job's whole life.** This is the Ulwick job map: the eight universal stages, each
+holding the steps the executor must accomplish to get the job done, over the life of the job rather than in one
+transaction. For a continuing job, a stage's steps may be carried out continuously, periodically or on demand, and an
+episode passes through only the stages it needs (**the continuity rule**). Circumstances (a first-time set-up, a
+large organisation, a contested case, a recovery) are contextual modifiers of the stages, not separate maps; edge cases
+are folded into the stages they bear on. This is what the job map skill produces unless asked otherwise.
+
+**On request, constituent jobs and flowing maps.** Where the user asks for each path of the job to be set out as its own
+map, flowing from one beginning to one completion (closer to a process view), the main job is divided into
+**constituent jobs**: one per path, found by comparing the episodes' immediate results and completions.
+
+1. Write each episode's progression in plain words, from what starts it to what finishes it.
+2. Compare their **immediate result** (what that piece of work leaves done) and **completion** (how the executor knows
+   it is finished). All serve the main job's ultimate result; the question is only whether they share a path.
+3. A different trigger or source with the same immediate result and completion is the same path; the same activity
+   started two ways (a mistake put right during the work, against one found long afterwards) may be two.
+4. Each path becomes a **constituent job**: a row with its own statement and its immediate result as its intent, with a
+   flowing map of its own. The main job is the higher job they make up and has no map of its own.
+
+A constituent job is part of the main job, not a different job: same executor, same ultimate result. That
+distinguishes it from an adjacent job, which pursues a different result. Record the choice on the main job's entry
+(*Mapping*: *lifecycle map*, the default, or *constituent jobs*, with the paths compared).
 
 ## The other jobs
 
 | Category | What it is | Test |
 |---|---|---|
 | **Main job** | The job being analysed: the one the map will be built for | Exactly one per topology |
-| **Constituent job** | Part of the main job: one of its episodes found, in mapping, to need its own map | Same executor as the main job; its result is part of the main job's |
+| **Constituent job** | Part of the main job, set out as its own path when constituent maps are requested | Same executor and ultimate result as the main job; its own immediate result and completion; mapped on its own |
 | **Adjacent job** | A distinct job performed by the **same** executor | A **distinct desired outcome**: the executor is after a different result, not just doing something at a different time. Its own trigger, recipient and completion support that, but do not establish it (steps have those too). Otherwise it is a step or an episode |
-| **Related job** | A job performed by **another** executor that touches the main job | Its executor is not the main executor; if it is, it is adjacent or constituent |
+| **Related job** | A job performed by **another** executor that touches the main job | Its executor is not the main executor; if it is, it is adjacent, or part of the main job |
 
 The categories carry the weight: whether a job is the main job, part of it, an independent job of the same executor,
 or another executor's. How a job stands **in time** (*before*, *after*, *alongside*) is useful for an adjacent job, but
 secondary; record it only where it helps.
 
-A related job says **how it stands to the main job**:
+A related job says **how it stands to the main job** or, where the main job has constituent jobs, to the **constituent
+job it bears on** (a tribunal *governs* correcting the record, not maintaining it in general):
 
 | Relation | Meaning |
 |---|---|
@@ -261,7 +293,8 @@ A few lines above the jobs:
 Three questions shape everything downstream; settle them, or record them as open, before the main job is mapped:
 
 1. **Is the main job's object the right breadth?** (*Altitude and breadth*.)
-2. **Is it one job, or a higher job with constituent jobs?** Recorded as open and tested by the map.
+2. **What is part of the main job, and how is it mapped?** The unity test (what belongs to it), and the mapping
+   choice: a lifecycle map by default, constituent jobs on request.
 3. **Where does changing the world end and maintaining its representation begin?** (*Changing the world, and recording
    it*.)
 
@@ -284,12 +317,12 @@ Three questions shape everything downstream; settle them, or record them as open
 - **A statement that assumes a sequence.** A job worded as following a change that, in some circumstances, it makes.
 - **An assurance job with no standard.** *Verify the record* with no word on whether consistency or correctness is
   meant.
-- **An undertaking among the episodes.** A recovery or rebuild with its own beginning and end, listed beside routine
-  episodes.
 - **A topology of everyone.** Related jobs added because an executor touches the main job, not because the
   relationship helps establish its boundary.
 - **Executors merged by relationship.** Different executors folded into one because they stand to the main job the
   same way, though their desired outcomes differ.
+- **A split by source.** Episodes or jobs divided because one is started or authorised from outside and another from
+  inside, though the desired result is the same.
 - **An adjacent job on trigger alone.** A job separated because it has its own trigger or completion, with no distinct
   desired outcome.
 - **A modelling choice stated as a domain rule.** A classification written as though the domain required it.
@@ -304,5 +337,9 @@ Three questions shape everything downstream; settle them, or record them as open
   reporting line.
 - **A solution in the statement.** *Maintain the roll in the system*: the last three words are the product.
 - **A qualifier forced or mislabelled.** An emotional concern labelled social, or a qualifier nobody expressed.
+- **Fragmenting the job unasked.** A continuing job split into several maps, by episode, trigger or source, when the
+  default lifecycle map was wanted.
+- **Constituent jobs mistaken for other jobs.** Parts of the main job, serving its ultimate result, filed as adjacent
+  jobs with results of their own.
 - **Using the map to settle the topology.** Choosing the main job by which version gives a tidier sequence of step
   types.
