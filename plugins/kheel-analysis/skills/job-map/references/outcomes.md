@@ -37,7 +37,7 @@ be measured?**
 
 ## Checking each outcome
 
-Three questions for every outcome, after it is written:
+Five questions for every outcome, after it is written:
 
 1. **Does it measure success, or specify a solution?** *Minimise the likelihood that a class is not provided for in the
    record* reads as a requirement on how the record is built. Restate it as the executor's judgement of the step (*…
@@ -45,7 +45,15 @@ Three questions for every outcome, after it is written:
 2. **Which of its nouns are the domain's, and which are an implementation's?** Some concepts are unavoidable because
    they are part of the job's object (where the record is itself what the law requires, its entries may be). Others
    assume a solution (a database row, a workflow state). Keep the first, and restate around the second.
-3. **Does it measure this job's success, or another job's?** *Minimise the likelihood that a holder is unaware of a
+3. **Is it within the executor's reach?** An outcome measures something the executor's execution can affect.
+   *Minimise the likelihood that a change is made without the executor learning of it* may be beyond them; *minimise
+   the time between a change and its evidence reaching them* is not. Likewise, a job that hands work on cannot own its
+   resolution: a verification can minimise the likelihood that a discrepancy goes unidentified, undocumented or
+   unreferred, not that it goes unresolved.
+4. **Does a time outcome have a measure?** *Within the time it must be* depends on a deadline that may not exist.
+   Measure the time from the conditions being met to the step being done; record a statutory deadline separately, as a
+   rule, once its source is checked.
+5. **Does it measure this job's success, or another job's?** *Minimise the likelihood that a holder is unaware of a
    change to their holding* measures communicating with holders. Unless that result is necessary to this job's desired
    result, the outcome, and often the step it sits on, belongs to another job: note it and send it to the topology.
 
@@ -70,3 +78,5 @@ survey is quantitative research built on a finished map, not part of mapping. If
 - **Outcomes nobody said**: reasoned into being by the agent and marked attested.
 - **Outcomes that are design requirements**: a quality of the solution, not of the executor's progress.
 - **Another job's outcomes**: success measured for a result this job does not pursue.
+- **Outcomes out of reach**: measuring what the executor cannot affect, or the resolution of work handed on.
+- **Deadlines with no measure**: *within the time it must be*, with no deadline established.

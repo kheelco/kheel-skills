@@ -13,7 +13,7 @@ set of questions to ask about any job, not eight mandatory stages.
 | **Confirm** | verify readiness, assumptions, conditions or prerequisites | What do they check before committing? Who has to have agreed? |
 | **Execute** | perform the central activity of the job | What is the act that, once done, cannot be undone cheaply? |
 | **Monitor** | assess progress, state, performance or emerging conditions | What do they watch while it runs, and afterwards? |
-| **Modify** | adjust execution or respond to deviations | What goes wrong, and what do they do about it? |
+| **Modify** | adjust this job's execution in response to what is found during it | What goes wrong while they do it, and how do they adjust? |
 | **Conclude** | complete the job and establish the resulting state | How do they know it is finished, and what is left behind? |
 
 A type may yield no step, one, or several. Order is loose: the types run roughly in sequence, but Monitor and Modify run
@@ -43,6 +43,14 @@ every job: a continuing responsibility is not automatically a single executable 
      has a distinct beginning, desired result and completion, they are **constituent jobs** of the higher job: report
      them to the topology, each with its own map.
 
+**The same activity, started two ways.** An activity can be a stage of this job when it arises during its execution,
+and a separate job when it is started on its own. Correcting an entry found wrong while the change is being recorded
+is this job's Modify; correcting an entry found wrong years later (with evidence to reconstruct, authority to
+establish and later entries to consider) is a job of its own. Whenever a candidate step, above all a Monitor or Modify
+step, could also be started independently, by its own trigger, split it: keep the in-execution version as the step,
+and test the independently started version as a candidate job with its own beginning, result and completion. Do not
+absorb it because the verb is the same.
+
 **Coverage is not unity.** Being able to place every episode's activities somewhere in the eight step types shows
 nothing about whether they are one job: almost any set of related activities can be distributed across Define to
 Conclude. A table of which episodes pass through which steps is a diagnostic, not evidence; one full of *sometimes*
@@ -60,9 +68,19 @@ Two further signs of trouble:
 ## Assigning step types
 
 Only once the boundary is established, work the eight types as questions about that one progression and assign each
-step found to the type it is in that progression. A type that yields nothing is allowed, but it is also a prompt: ask
-whether the work it would hold was put under a neighbouring type, or whether the job's boundary is drawn so that the
-work falls outside it. Record what the empty type suggests, not just that it is empty.
+step found to the type it is in that progression.
+
+- **Only necessary accomplishments.** Introduce a step only when it is something the executor must accomplish to reach
+  this job's completion. Never create a step to populate a type. Modify in particular means adjusting **this job's
+  execution** in response to what is found during it; work that responds to a finding by starting something else (a
+  correction, an investigation, a dispute) is not this job's Modify, and may be another job.
+- **Every step advances the completion.** Test each step against the job's completion condition: does accomplishing it
+  move the executor towards that completion? Where the job hands work to another (a verification hands its
+  discrepancies on for correction), its steps stop at the hand-off: identify, document and refer, not settle. A step
+  that does the receiving job's work belongs to that job.
+- **An empty type is a prompt.** A type that yields nothing is allowed. Ask whether the work it would hold was put
+  under a neighbouring type, or whether the job's boundary is drawn so that the work falls outside it, and record what
+  the empty type suggests, not just that it is empty.
 
 ## Step rules
 
@@ -83,6 +101,10 @@ milestone.
 - **The job's executor.** Every step is accomplished by the executor of the job. A step that someone else accomplishes
   is part of their job: a related job in the topology. The executor may depend on others (the board's approval arrives);
   the step is then what the executor must accomplish about it (*confirm the transfer has been approved*).
+- **One question per step.** A step whose outcomes answer different questions (whether the action is authorised;
+  whether the parties and holdings affected are eligible for it) may be two steps. Split it where that makes the map
+  clearer, or keep one step with its outcomes plainly grouped; either way, do not let one question stand in for the
+  other.
 - **One level.** A job map breaks a job into steps, not steps into sub-steps. A step that needs its own breakdown is a
   sign the job was stated too high, or that the step is really a job.
 
@@ -110,6 +132,10 @@ glossary's activities into the map as steps. A step's nouns should be glossary t
 ## Errors to watch for
 
 - **Unity inferred from coverage.** Concluding a job holds together because every episode found a step.
+- **A job absorbed as a stage.** An activity that can also be started on its own (a later correction) folded into
+  Monitor or Modify because the in-execution version belongs there.
+- **A step to fill a type.** Modify populated with work that starts another job.
+- **Work past the hand-off.** Steps that do what the receiving job does.
 - **Stages as buckets.** Independently executable activities filed under the nearest type.
 - **An empty type passed over.** No step under a type, with no look at whether the boundary put its work elsewhere.
 - **A process map in disguise.** Steps that name today's documents, systems and hand-offs. Ask what each is for.

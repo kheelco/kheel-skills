@@ -51,14 +51,17 @@ be a step of a larger one.
    and compare their beginnings, desired results and completions. If they are one progression, map the job. If not, or
    in doubt, map the candidates separately and compare, without presuming the answer; constituent jobs go back to the
    topology. Never infer that a job holds together because its episodes can all be placed somewhere in the step types.
+   Where an activity can arise both during the job and on its own, keep the first as a step and test the second as a
+   candidate job. Keep the job statement neutral about whether the change it concerns comes before, during or after it.
 4. **Find the steps** of that one progression. Work the eight step types as questions about it, in order, writing down
-   only what is found ([elicitation](references/elicitation.md)). Where a type yields nothing, ask what that says
-   about the boundary.
+   only what is found ([elicitation](references/elicitation.md)). Add a step only where it is a necessary
+   accomplishment that advances the job's completion, never to fill a type, and stop at any hand-off to another job.
+   Where a type yields nothing, ask what that says about the boundary.
 5. **State each step as a milestone**: what the executor has accomplished once it is done, verb + object, in the
    executor's words, no mechanism. Mark its execution seam, if it has one.
 6. **Find each step's outcomes**: how the executor knows it went well, and what takes too long, goes wrong or varies
-   ([outcomes](references/outcomes.md)). Check each one measures this job's success rather than specifying a solution
-   or serving another job's result. Turn the job's emotional and social qualifiers into outcomes on the steps they bear
+   ([outcomes](references/outcomes.md)). Check each one measures this job's success, within the executor's reach,
+   rather than specifying a solution or serving another job's result. Turn the job's emotional and social qualifiers into outcomes on the steps they bear
    on.
 7. **Read the map back as a story.** If it only makes sense with a screen in mind, it is a workflow. If a step belongs
    to another executor, it goes back to the topology as a related job.

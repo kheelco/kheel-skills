@@ -38,6 +38,11 @@ which identifies it (*Maintain the record of share ownership*).
 It must be free of any solution, independent of current technology, stable enough to outlive any process, stated from
 the executor's perspective, and about something they are trying to accomplish.
 
+It must also be **neutral about sequence**: it should not assume whether a change in the world comes before, during or
+as a consequence of the job, where that differs between circumstances. *Bring the record into line with a change*
+assumes the change has already happened, which is false where making the entry is what effects it; *record a change*
+holds either way. The same applies to every job in the topology and every job map's heading.
+
 ### Altitude and breadth
 
 - **Would it still be the job under a completely different process?** If not, it is too low.

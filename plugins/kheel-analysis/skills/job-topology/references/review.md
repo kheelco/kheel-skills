@@ -15,7 +15,8 @@ and every job that names it, and stop.
    - In a synced topology: entries whose YAML block lacks `id`, `version` or `lastUpdated` (other than jobs not yet
      pushed); two entries with the same `id`.
 2. **Jobs: the checks that need reading.**
-   - Job statements containing a feature, system, document or mechanism.
+   - Job statements containing a feature, system, document or mechanism, or assuming whether a change comes before,
+     during or after the job.
    - The main job failing an altitude test; its object's breadth untested against edge cases.
    - Jobs that change the world filed as the main executor's adjacent jobs, or folded into the main job.
    - Episodes of the main job listed as adjacent jobs; obligations classified as steps or jobs without the outcome

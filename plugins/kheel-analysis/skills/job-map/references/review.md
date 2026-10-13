@@ -26,6 +26,11 @@ stop.
    - Steps whose execution happens in or arrives from the world, unmarked.
    - Outcomes that restate their step, name a mechanism, or contain a target; outcomes that are design requirements;
      outcomes that measure another job's result.
+   - A job statement that assumes whether the change comes before, during or after the job.
+   - Monitor or Modify steps that can also be started on their own, absorbed rather than tested as candidate jobs.
+   - Steps that do not advance the job's completion, or that do a receiving job's work past the hand-off.
+   - Steps whose outcomes answer different questions (authority and eligibility) with neither split nor grouping.
+   - Outcomes beyond the executor's reach, or owning the resolution of work handed on; time outcomes with no measure.
    - Steps stated as operations rather than what is accomplished; types filled by nearest category; empty types with
      no note of what they suggest about the boundary.
    - Where a seam runs both ways: Confirm steps that assume the change has already happened; no test against a case
