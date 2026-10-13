@@ -7,6 +7,7 @@ stop.
    - The map's job is not in the topology, or its executor differs from the topology's.
    - Steps with no type, or a type outside the eight.
    - Steps with sub-steps.
+   - For a continuing job: steps falling into independent cycles that share few steps (constituent jobs not reported to the topology); episodes no step serves.
    - Two steps with the same statement.
    - Significant steps with no outcomes.
    - Outcomes not in the standard form (direction + measure + object + clarifier).

@@ -42,7 +42,9 @@ be a step of a larger one.
 1. **Name the task.** A question about a step or outcome; mapping a job; harvesting from notes; changing a map;
    reviewing; rendering or syncing.
 2. **Confirm the job and executor** from the topology. If either is unsettled, settle it first (with the
-   `job-topology` skill): a map of the wrong job is worthless however good.
+   `job-topology` skill): a map of the wrong job is worthless however good. Do not use the step types to decide what
+   the job is; a tidier sequence is not evidence of the right job. If the job is a continuing one, note its episodes
+   ([steps](references/steps.md), *Mapping a continuing job*).
 3. **Find the steps.** Work the eight step types as questions, in order, writing down only what is found
    ([steps](references/steps.md), [elicitation](references/elicitation.md)). Where a type yields nothing, say so.
 4. **State each step as a milestone**: verb + object, in the executor's words, no mechanism. Mark its execution seam,

@@ -20,6 +20,20 @@ A type may yield no step, one, or several. Order is loose: the types run roughly
 alongside Execute, and real jobs loop. Record steps in the order an executor would describe them, and say in a step's
 notes where it runs alongside or repeats.
 
+## Mapping a continuing job
+
+A continuing job keeps something in a desired state indefinitely and is done through **episodes** (recorded on the job
+in the topology), each with a trigger: event-driven (*incorporate a change in share ownership*), periodic (*verify the
+accuracy of recorded ownership*) or exceptional (*correct an ownership record*). Map it as one job: the steps are what
+the executor must accomplish to keep the state, and the episodes run through them (an event-driven episode passes
+through Define, Confirm, Execute and Conclude; a periodic one through Monitor and Modify). Note on each step which
+episodes pass through it.
+
+The map is also the test of whether the job holds together. If its steps can be read as one coherent sequence, with
+the episodes running through it, the job stands. If they fall into several **independent cycles**, each with its own
+beginning, end and outcomes and sharing few steps, stop and report it to the topology: the episodes are constituent
+jobs of a higher job, each to be mapped on its own. Do not force them into one map.
+
 ## Step rules
 
 Each step says **what the executor must accomplish**, not how the current process or software makes them accomplish it.

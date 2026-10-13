@@ -2,19 +2,31 @@
 
 ## The executor
 
-Define the executor by their **capacity in executing the job**, not by title, department, seniority or persona. A title
-is fine where it names the capacity unambiguously (*Company secretary*, *Reviewer*, *Applicant*) and wrong where it
-names a place in the organisation (*Senior analyst*, *Operations team*). The executor should be an agent term in the
-glossary.
+Define the executor by their **capacity**: the responsibility they carry in getting the job done (*the person or
+organisation responsible for maintaining the company's record of share ownership*), not a title, office, department,
+seniority or persona. Give the executor a convenient **name** (*Company secretary*), an agent term in the glossary, but
+do not let the name assume a formal office the domain does not always have: many companies have no appointed secretary,
+and the job is still done.
 
-- **Unify across scale.** People at different levels getting substantially the same job done, with the same underlying
-  structure, are one executor in different circumstances. Do not split on scale, frequency, seniority or setting.
-- **Split on structure.** Where the intent or the shape of the job is materially different, it is a different executor,
-  and usually a different job. A CFO modelling a capital structure is not the company secretary maintaining the register
-  at a higher level: the intent (*what if* against *what is*) and the lifecycle (throwaway against permanent) differ, so
-  it is another job with its own executor.
+- **Unify when the desired outcome is the same.** People getting the same job done, trying to achieve the same result,
+  are one executor, however different their scale, volume, infrastructure, frequency, seniority or obligations. An
+  in-house secretary, a director doing it themselves and an outsourced provider are one executor; so, at first, is a
+  registry operator for a listed company, whose differences (volume, settlement interfaces, corporate actions,
+  regulation) are **circumstances** of the same job.
+- **Split only when the desired outcome changes.** Where the intent or the shape of the job is materially different, it
+  is a different executor, and usually a different job. A CFO modelling a capital structure is not the company
+  secretary at a higher level: the intent (*what if* against *what is*) and the lifecycle (throwaway against permanent)
+  differ. More steps, more volume or different infrastructure are not reasons to split.
 
 Record, for each executor, a line on what was unified or split and why.
+
+## Roles are not jobs
+
+An executor's role often spans several jobs, and coordinating someone else's job does not make it theirs. The company
+secretary may organise a share issue, draft its resolutions and chase its payments; that does not put the share issue
+in the secretary's job. Ask, of each thing the executor does: **is this getting their job done, or helping someone else
+get theirs done?** Help given to another job is, at most, a step of the executor's own job (*confirm the issue has been
+authorised*) or a sign of a related job.
 
 ## The core functional job
 
@@ -25,32 +37,109 @@ which identifies it (*Maintain the record of share ownership*).
 It must be free of any solution, independent of current technology, stable enough to outlive any process, stated from
 the executor's perspective, and about something they are trying to accomplish.
 
-Three tests of altitude:
+### Altitude and breadth
 
 - **Would it still be the job under a completely different process?** If not, it is too low.
-- **Can it be broken into steps with a beginning and an end?** If not, it is too high: *run the company* is not a job.
+- **Does it have a beginning and an end, or a standing state with recurring work?** If neither (*run the company*), it
+  is too high. If a standing state, see *Continuing jobs* below.
 - **Is there one executor for it?** Two executors in one statement is usually two jobs.
+- **Is the object the right breadth?** Test it against edge cases from the domain, cases at the edge of what the
+  executor must keep coherent (for share ownership: a subdivision, a conversion between classes, partly paid shares, a
+  cancellation). If the executor cannot handle them without artificial distinctions, the object is too narrow (*share
+  ownership* where *share capital and its ownership* is meant). If widening it brings in several independent results,
+  it is too broad. Record the cases tried and what they showed.
+
+### Continuing jobs and their episodes
+
+Some jobs have a beginning, execution and end (*settle an estate*). Others are **continuing**: they keep something in a
+desired state indefinitely (*maintain the record of share ownership*). A continuing job is legitimate, and often the
+right main job, because its intent is the standing state, not any one piece of work. It shows in the work the executor
+does when nothing new arrives: an error found after two years of quiet, a discrepancy with old documents, a disputed
+holding, a reconstruction after loss, a question about ownership on a past date.
+
+A continuing job is done through **episodes**: recurring or exceptional executions of part of the job, each with a
+trigger.
+
+| Trigger | Example episode |
+|---|---|
+| **Event-driven**: something arrives | Incorporate a change in share ownership |
+| **Periodic**: a cycle comes round | Verify the accuracy of recorded ownership |
+| **Exceptional**: something is found wrong | Correct an ownership record |
+
+Episodes are **not separate jobs**. They have the main job's executor and intent, and they are recorded on the main
+job's entry, each with its trigger. Whether they hold together as one job is tested when the job is mapped: if its map
+can be read as one coherent sequence (with episodes running through it), the job stands; if it needs several
+independent cycles, each with its own beginning, end and outcomes, the job is really a higher-level job whose episodes
+are **constituent jobs**, each mapped separately. Record that as an open question until the map settles it, and do not
+use the step types to settle it in advance: that designs a workflow instead of finding the job.
 
 ## The other jobs
 
 | Category | What it is | Test |
 |---|---|---|
 | **Main job** | The job being analysed: the one the map will be built for | Exactly one per topology |
-| **Adjacent job** | A distinct job performed by the **same** executor | Has its own intent, lifecycle or outcome; otherwise it is a step |
-| **Related job** | A job performed by **another** executor that touches the main job | Its executor is not the main executor; if it is, it is adjacent |
+| **Constituent job** | Part of the main job: one of its episodes found, in mapping, to need its own map | Same executor and intent as the main job; its result is part of the main job's |
+| **Adjacent job** | A distinct job performed by the **same** executor | Its own intent, trigger and lifecycle; otherwise it is a step or an episode |
+| **Related job** | A job performed by **another** executor that touches the main job | Its executor is not the main executor; if it is, it is adjacent or constituent |
 
-Each adjacent or related job says **how it stands to the main job**:
+The categories carry the weight: whether a job is the main job, part of it, an independent job of the same executor,
+or another executor's. How a job stands **in time** (*before*, *after*, *alongside*) is useful for an adjacent job, but
+secondary; record it only where it helps.
 
-| Category | Relation to the main job |
+A related job says **how it stands to the main job**:
+
+| Relation | Meaning |
 |---|---|
-| Adjacent | **before** (done to make the main job possible), **after** (what the executor turns to once it is done), **alongside** (done in parallel, a different accomplishment) |
-| Related | **enables** (provides what the main job needs), **constrains** (sets limits on it), **consumes** (uses what it produces), **governs** (authorises, regulates or oversees it), **responds to** (is set off by it) |
+| **changes** | Alters the state the main job maintains or depends on; its result must be taken in (a transfer of shares, a share issue) |
+| **enables** | Provides something the main job needs, without changing its subject |
+| **constrains** | Sets limits on how the main job may be done |
+| **governs** | Authorises, regulates or oversees it |
+| **consumes** | Uses what the main job produces or maintains |
+| **responds to** | Is set off by it |
 
-A relation outside these is worth a second look: it is usually one of them in other words, or a step.
+### Changing the world, and recording it
+
+The commonest misplacement: a job that **changes the reality** (issuing shares, transferring them, buying them back)
+put inside, or beside, the job that **maintains a representation** of that reality (the record of who owns them). They
+are separate jobs, and usually separate executors, even when one person coordinates both. Decompose them:
+
+| Job | Executor | Category |
+|---|---|---|
+| Authorise a share issue | Board | Related: governs |
+| Carry out a share issue | The company, through its authorised officers | Related: changes |
+| Take the resulting holdings into the record | Company secretary | An episode of the main job |
+
+Then check the **direction of the seam**. Recording is not always passive: in some domains the act of recording gives
+the change its legal effect (entry in a share register may complete a transfer). Where it does, say so: the main job
+does not merely receive the change from the world, it takes part in making it. The seam then runs both ways, and the
+job map will have an Execute step with consequences outside the record.
+
+### Event-driven and periodic obligations
+
+An obligation that arises **to complete a particular change** (notifying a registry of a change to capital) is part
+of completing that change: a step of the episode, or of the related job that makes the change, not a job of its own.
+An obligation with **its own trigger and lifecycle** (an annual return) can be an adjacent job. Then test its altitude:
+an annual return covers more than share ownership, so it may belong to a broader job (*maintain the company's statutory
+information*) of which the main job is one part. Where that is unclear, record it as a **boundary question** in the
+framing rather than deciding it.
+
+### Naming a job from its executor's side
+
+A job is named for what **its executor** is trying to get done, at a breadth that covers its variants. A job named for
+an output (*Evidence a holding*, *Produce the report*) usually hides two jobs:
+
+- the **consumer's** job (a shareholder establishing what they own at a given date), a related job with its own
+  executor;
+- the **supplier's** job (*provide authoritative information about share ownership*), which may be an adjacent job of
+  the main executor, covering current and historical, routine and disputed requests alike.
+
+Do not conflate them; their outcomes will differ.
+
+### The intent and difference
 
 For every job other than the main job, record its **core intent and how it differs from the main job's**: *what is*
-against *what if*, a permanent record against an independent check, the present truth against a forecast. This is the
-test that the job is genuinely distinct, and the first place a sub-domain boundary shows: a change of intent, time
+against *what if*, a permanent record against an independent check, a standing state against a transaction. This is
+the test that the job is genuinely distinct, and the first place a sub-domain boundary shows: a change of intent, time
 horizon, lifecycle, authority or language between two jobs is a boundary signal. Record any as a hypothesis in the
 framing; sub-domains are settled through the glossary's folders, not here.
 
@@ -59,14 +148,20 @@ while the wider domain stays on the page.
 
 ## Qualifiers and circumstances
 
-**Emotional and social qualifiers.** Outcome-Driven Innovation also names emotional and social jobs: how the executor
-wants to feel, or be seen, while getting the job done (*not be the one blamed when a filing is late*). In governed
-domains they are often the sharpest thing said in an interview. Record them as **qualifiers on the job**, never as jobs
-of their own; the job map turns them into outcomes on its steps.
+Outcome-Driven Innovation also names **emotional** and **social** jobs. Keep the two apart:
 
-**Circumstances.** Situations in which the executor must do materially different things (first-time against routine;
-contested against agreed; small against large where size changes what is done, not just how much). Record them on the
-job. A circumstance that changes the structure of the job, not just some of its steps, is a sign of a different job.
+- **emotional**: how the executor wants to feel, or avoid feeling (*avoid the anxiety of being blamed when a filing is
+  late*);
+- **social**: how the executor wants to be perceived by others (*be seen as a reliable custodian of the company's
+  records*).
+
+Record them as **qualifiers on the job**, never as jobs of their own; the job map turns them into outcomes on its steps.
+Record one only where the evidence supports it. A topology with no qualifiers is fine; a qualifier invented to fill the
+slot is not.
+
+**Circumstances.** Situations in which the executor must do materially different things: first-time against routine,
+contested against agreed, a listed company against a private one. Record them on the job. A circumstance that changes
+the desired outcome, not just the steps or the scale, is a sign of a different job.
 
 ## The jobs left out
 
@@ -79,23 +174,44 @@ sent there, not forgotten.
 
 A few lines above the jobs:
 
-- the **core executor** and the **main job**, in full;
-- **execution seams**: what happens outside any system, in the world, and what crosses back in. They stop a later map
-  from describing the world as though software did all of it;
-- any **sub-domain split** already evident (a system of record against a system of analysis, say), stated as a
-  hypothesis with the signal that prompted it.
+- the **core executor** (by capacity) and the **main job**, in full;
+- **execution seams**: what happens outside any system and what crosses back in, and in which direction, including
+  where recording gives a change its effect;
+- any **sub-domain split** already evident, stated as a hypothesis with the signal that prompted it;
+- **boundary questions** left open (an obligation that may belong to a broader job; the breadth of the main job's
+  object).
+
+## Settle the topology before mapping
+
+Three questions shape everything downstream; settle them, or record them as open, before the main job is mapped:
+
+1. **Is the main job's object the right breadth?** (*Altitude and breadth*.)
+2. **Is it one job, or a higher job with constituent jobs?** Recorded as open and tested by the map.
+3. **Where does changing the world end and maintaining its representation begin?** (*Changing the world, and recording
+   it*.)
 
 ## Errors to watch for
 
-- **A title as an executor.** *Senior analyst* says where someone sits, not what they are getting done.
+- **A title as an executor.** *Senior analyst* says where someone sits, not what they are getting done; *Company
+  secretary* is fine as a name only if the capacity is stated.
+- **Splitting on scale.** A listed company's registry treated as a different executor because it is bigger, when its
+  desired outcome is the same.
 - **A process as a job.** *Process the transfer form* names today's mechanism. Ask what the form is for.
-- **A step promoted to an adjacent job.** *Obtain board approval* has no life outside the transaction it approves: it is
-  a Confirm step of the main job.
-- **A related job swallowed into the main job.** The auditor's verification written as the company secretary's Monitor
-  step. Different executor, different job.
-- **The main job at the wrong altitude.** Too low and the adjacent jobs are really steps of a job nobody has stated; too
-  high and the map will have forty steps.
-- **An org chart wearing a topology.** One job per department, executors named by title, related jobs that are just the
-  reporting line. Each job needs its own intent, not each group its own name.
+- **A role's coordination as the role's job.** The secretary's work on a share issue recorded as a secretary's job.
+- **Changing the world filed as an adjacent job.** *Carry out a change to share capital* as the company secretary's
+  job, when it is a related job that changes what the main job records.
+- **An episode as an adjacent job.** *Correct the register* listed beside the main job instead of on it.
+- **A completing step as an adjacent job.** Notifying a registry of one change, listed as a job instead of as part of
+  completing the change.
+- **A job named for its output.** *Evidence a holding*, hiding the consumer's job and the supplier's.
+- **A step promoted to an adjacent job.** *Obtain board approval* has no life outside the transaction it approves.
+- **A related job swallowed into the main job.** The auditor's verification written as the main executor's Monitor
+  step.
+- **The main job at the wrong altitude or breadth.** Too low and the adjacent jobs are steps of a job nobody has
+  stated; too high and the map will have forty steps; too narrow and edge cases need artificial distinctions.
+- **An org chart wearing a topology.** One job per department, executors named by title, related jobs that are the
+  reporting line.
 - **A solution in the statement.** *Maintain the register in the system*: the last three words are the product.
-- **An emotional job as a job.** *Feel confident the register is right* is a qualifier on the main job.
+- **A qualifier forced or mislabelled.** An emotional concern labelled social, or a qualifier nobody expressed.
+- **Using the map to settle the topology.** Choosing the main job by which version gives a tidier sequence of step
+  types.

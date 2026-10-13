@@ -13,7 +13,7 @@ words of the domain's glossary.
 
 | Skill | Answers | Artefact |
 |---|---|---|
-| **job-topology** (the head) | Who is trying to get what done, and which jobs surround the main one? | One topology per domain: executors, a main job, adjacent and related jobs, framing |
+| **job-topology** (the head) | Who is trying to get what done, and which jobs surround the main one? | One topology per domain: executors, a main job with its episodes, constituent, adjacent and related jobs, framing |
 | **job-map** | What does it take to get one job done, and how does the executor judge each part done well? | One map per job: steps by type, with desired outcomes |
 | *scenario* (planned) | Does it hold up against a real case? | Concrete stories traced through a job map in the glossary's words |
 
@@ -58,6 +58,7 @@ classDiagram
         category [0..1]
         position [0..1]
         intent [0..1]
+        trigger [0..1]
         source [0..1]
         notes [0..1]
     }
@@ -118,7 +119,7 @@ classDiagram
 | Element | Notes |
 |---|---|
 | **ActivityModel** | One document: a topology or a job map. `profile` says which, and so which labels and constraints apply. `focus` is the activity the model is about: the main job of a topology, the job a map opens up. |
-| **Activity** | The generic unit. `name` identifies it within its model (verb + glossary noun); `statement` is the full form. `category` is a value from the profile's classification. `position` orders it among its siblings where order matters, loosely. `intent` is its core intent where the profile asks for one. |
+| **Activity** | The generic unit. `name` identifies it within its model (verb + glossary noun); `statement` is the full form. `category` is a value from the profile's classification. `position` orders it among its siblings where order matters, loosely. `intent` is its core intent where the profile asks for one. `trigger` says what sets it off (event-driven, periodic, exceptional) where the profile asks. |
 | **partOf** | Decomposition. An activity in one model may be part of an activity in another: a map's steps are part of a job in the topology. Profiles limit the depth. |
 | **Performer** | Who performs an activity, by capacity, not title; should resolve to an agent term in the glossary. `rationale` records what was unified or split. |
 | **actsOn** | The glossary nouns an activity's statement uses. In the documents these are words in the statement, not a separate field; drift checks compare them with the glossary. |
@@ -126,7 +127,7 @@ classDiagram
 | **Criterion** | How success is judged: a desired outcome in a job map (direction + measure + object + clarifier). |
 | **Qualifier** | An emotional or social dimension of the activity; a profile may require qualifiers to be turned into criteria on its parts. |
 | **Circumstance** | A situation in which the activity is materially different. |
-| **Seam** | Where execution leaves any system: it `happensInWorld` or `arrivesFromWorld`. |
+| **Seam** | Where execution leaves any system: it `happensInWorld`, `arrivesFromWorld`, or runs `bothWays` (the act inside gives the change outside its effect, as when registration completes a transfer). |
 | **SyncBinding** | Present only when synced with an external system; never invented. In the documents it is the YAML block under the entry's heading. |
 | **Evidence** | Not in the model: status belongs to drafts. Open questions are text in `notes`, prefixed `Open:`. |
 
@@ -138,24 +139,27 @@ classDiagram
 | focus | The main job | The job being mapped (in the topology) |
 | Activity | Job | Step |
 | name / statement | Verb + object / + contextual clarifier | Verb + object (+ clarifier where two steps would read alike) |
-| category | `Main`, `Adjacent`, `Related` | `Define`, `Locate`, `Prepare`, `Confirm`, `Execute`, `Monitor`, `Modify`, `Conclude` |
-| partOf | None: jobs are top-level | Every step is part of the focus job |
+| category | `Main`, `Episode`, `Constituent`, `Adjacent`, `Related` | `Define`, `Locate`, `Prepare`, `Confirm`, `Execute`, `Monitor`, `Modify`, `Conclude` |
+| partOf | Episodes and constituent jobs are part of the main job; other jobs are top-level | Every step is part of the focus job |
 | position | Not used | The order an executor describes, loosely |
 | Performer | Executor | The job's executor, inherited, never restated |
-| ActivityLink | Each adjacent or related job links to the main job: `Before`, `After`, `Alongside` (adjacent); `Enables`, `Constrains`, `Consumes`, `Governs`, `RespondsTo` (related) | Not used |
-| intent / difference | Required for every job but the main job | Not used |
+| ActivityLink | Each related job links to the main job: `Changes`, `Enables`, `Constrains`, `Governs`, `Consumes`, `RespondsTo`. An adjacent job may link `Before`, `After` or `Alongside`, where its place in time helps | `Serves`: a step to each episode of a continuing job that passes through it |
+| intent / difference | Required for every job but the main job and its episodes | Not used |
+| trigger | Required on episodes: `EventDriven`, `Periodic`, `Exceptional` | Not used |
 | Criterion | Not used: outcomes belong to steps | Desired outcomes, usually two to four per significant step |
 | Qualifier | Emotional and social, on jobs | Not recorded: turned into criteria on the steps they bear on |
 | Circumstance | On jobs | Not used (a step that differs by circumstance says so in notes) |
 | Seam | In the framing and on jobs | On steps |
 
-**Constraints of the job topology**: exactly one main job; no activity is part of another; an adjacent job has the main
-job's performer, a related job a different one; every link runs from an adjacent or related job to the main job, with a
-kind allowed for its category.
+**Constraints of the job topology**: exactly one main job; only episodes and constituent jobs are part of another
+activity, always the main job, and they share its performer and intent; an adjacent job has the main job's performer, a
+related job a different one; every link runs from an adjacent or related job to the main job, with a kind allowed for
+its category. Episodes are recorded on the main job's entry, not as rows; an episode becomes a constituent job when its
+map shows it to be an independent cycle.
 
 **Constraints of the job map**: one focus job, from a topology; every step is part of it and none has parts of its own
 (one level); every step has the focus job's performer; categories are the eight step types; criteria take the
-outcome form.
+outcome form; for a continuing job, every episode is served by at least one step.
 
 ### Other profiles
 

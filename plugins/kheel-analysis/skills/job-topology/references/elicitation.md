@@ -7,19 +7,33 @@ One or two questions at a time, each answer shaping the next. Skip any the evide
 1. **What are they ultimately trying to get done?** Push up until the answer would still be true in twenty years and
    under a different process. *Process transfer forms* is not it; *maintain an accurate, legally compliant record of
    who owns the company's shares* is.
-2. **Who does that, in what capacity?** The role in executing the job, not a title, a department or a seniority.
-3. **What must they have got done before this, and what do they turn to after it?** Candidate adjacent jobs.
-4. **What do they do alongside it that is a different accomplishment?** More candidate adjacent jobs, and the ones most
-   often mistaken for steps.
-5. **Who else has a stake?** Who checks it, is answerable for it, consumes what it produces, governs it, or gets in its
-   way? Candidate related jobs, each with its own executor.
-6. **For each candidate: is it a job or a step?** A job has an intent, a lifecycle and an outcome of its own. If it
-   only makes sense inside the main job, it is a step, and it goes to the map.
-7. **When does the job change?** Circumstances in which the executor must do materially different things (a first
-   time against a routine one; a contested case against an agreed one).
-8. **How do they want to feel, or be seen, while doing it?** Emotional and social qualifiers on the job.
-9. **Where does execution leave the room?** Which parts happen in the world (a negotiation, a payment, a court order,
-   a signature) and what arrives back from them. Execution seams.
+2. **Who is responsible for that?** The responsibility, not a title, a department or a seniority; and whether every
+   case in scope has someone formally holding it.
+3. **Is it ever finished, or kept in a state?** If kept: **what work is there when nothing new arrives?** (Errors found
+   later, disputes, questions about a past date, reconstruction.) Those, with the work set off by events and cycles, are
+   the job's episodes.
+4. **What edge cases must it cope with?** Cases at the edge of the job's object (for shares: a subdivision, a
+   conversion, partly paid shares, a cancellation). Do they fit without artificial distinctions?
+5. **What must they have got done before this, and what do they turn to after it?** Candidate adjacent jobs, or
+   episodes.
+6. **What do they do alongside it that is a different accomplishment?** More candidates, and the ones most often
+   mistaken for steps.
+7. **Who else has a stake?** Who changes what the job is about, checks it, is answerable for it, consumes what it
+   produces, governs it, or gets in its way? Candidate related jobs, each with its own executor.
+8. **For each candidate, a few tests.**
+   - Is it getting their own job done, or helping someone else get theirs done?
+   - Does it change the world, or maintain a representation of it?
+   - Is it a job (its own intent, trigger and lifecycle), an episode of the main job, or a step that only makes sense
+     inside it?
+   - For an obligation: does it arise to complete a particular change, or on its own cycle?
+9. **Does recording anything give it effect?** Whether the executor's act changes the reality outside the record
+   (registration completing a transfer), or only reflects it.
+10. **When does the job change?** Circumstances in which the executor must do materially different things, and whether
+    the desired outcome changes with them.
+11. **How do they want to feel, and how do they want to be seen?** Emotional and social qualifiers, kept apart, and
+    only where they say so.
+12. **Where does execution leave the room?** Which parts happen in the world (a negotiation, a payment, a court order,
+    a signature) and what arrives back from them.
 
 Record each answer's source so the job can be marked attested.
 
@@ -28,13 +42,19 @@ Record each answer's source so the job can be marked attested.
 Given interviews, transcripts or documents, harvest first and ask about the gaps:
 
 - every **verb-object phrase** someone says they have to get done (*we have to keep the register right*);
-- every **"before that we…"** and **"and then it goes to…"**: candidate adjacent jobs, or steps;
-- every **other party** named as checking, approving, receiving or regulating: candidate related jobs;
+- every **"before that we…"** and **"and then it goes to…"**: candidate adjacent jobs, episodes or steps;
+- every **"when X happens, we…"**, **"every year we…"** and **"if we find a mistake…"**: candidate episodes, with their
+  triggers;
+- every **other party** named as deciding, transacting, checking, approving, receiving or regulating: candidate related
+  jobs;
 - every **"what we're really trying to do is…"**: the core job, usually stated higher than the rest;
-- every **complaint about blame, exposure or reputation**: an emotional or social qualifier.
+- every **output someone asks for** (a certificate, an extract, a confirmation): a supplier's job and a consumer's job,
+  to be separated;
+- every expression of **anxiety or blame** (emotional) or **reputation** (social): a qualifier, labelled as the speaker
+  meant it.
 
-Restate each candidate as verb + glossary noun before triaging it. A candidate that cannot be stated without a system,
-document or form in it is a mechanism; ask what it is for.
+Restate each candidate as verb + glossary noun, from its own executor's side, before triaging it. A candidate that
+cannot be stated without a system, document or form in it is a mechanism; ask what it is for.
 
 Everything harvested is at best inferred until a source states it, and a job assembled from passing mentions is the
 agent's synthesis. Mark it so, and confirm the main job and executor before anything else.

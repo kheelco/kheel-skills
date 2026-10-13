@@ -47,12 +47,16 @@ read as true for an organisation that does the work on paper.
    [format](references/format.md), *Where it lives*). If the topology is synced, check the local copy is not behind.
 3. **Gather candidates.** Harvest from what is to hand, then ask about the gaps one or two questions at a time
    ([elicitation](references/elicitation.md)).
-4. **Settle the executor and the core job** ([jobs](references/jobs.md)): the executor by capacity, the core job as
-   verb + object + contextual clarifier, at an altitude that passes the three tests.
-5. **Place the other jobs.** For each candidate: a job or a step? If a job, adjacent (same executor) or related
-   (another executor), how it stands to the main job, and its core intent and how that differs from the main job's.
-   Steps go to the job map, not here.
-6. **Frame it.** The core executor and job, execution seams, and any sub-domain split already evident, as a hypothesis.
+4. **Settle the executor and the core job** ([jobs](references/jobs.md)): the executor by capacity (the responsibility
+   they carry), split only where the desired outcome changes; the core job as verb + object + contextual clarifier, at
+   an altitude and breadth that pass the tests, with edge cases tried. If it is a continuing job, record its episodes
+   and their triggers.
+5. **Place the other jobs.** For each candidate: a step, an episode of the main job, or a job? If a job: adjacent
+   (same executor, its own intent and lifecycle) or related (another executor), how it stands to the main job, and its
+   core intent and how that differs from the main job's. Separate jobs that change the world from the job that records
+   it, and name each job from its own executor's side. Steps go to the job map, not here.
+6. **Frame it.** The core executor and job, execution seams (and their direction), any sub-domain split already
+   evident, and boundary questions left open.
 7. **Check** the structural checks in [review](references/review.md) over what changed and every job that names it, and
    list the open questions.
 8. **Propose, agree, then write**, doing the full ripple of any change (below) in the same sitting.
@@ -62,8 +66,11 @@ read as true for an organisation that does the work on paper.
 
 A topology is **provisionally complete** when the main executor and main job are settled, each other job is placed
 with its executor and its difference from the main job stated, and every question that could change which job is main,
-or whether a candidate is a job or a step, is recorded. Map the main job then; the topology will be revisited as maps
-send jobs back.
+or whether a candidate is a job, an episode or a step, is recorded. Three questions in particular are settled or
+recorded as open before mapping: the breadth of the main job's object; whether it is one job or a higher job with
+constituent jobs; and where changing the world ends and recording it begins ([jobs](references/jobs.md), *Settle the
+topology before mapping*). Then map the main job, without using the step types to answer those questions; the
+topology is revisited as maps send jobs back.
 
 ## Changing a job
 
@@ -71,8 +78,9 @@ send jobs back.
 |---|---|
 | **Restate** | Its job map's heading and every scenario or artefact that cites it. Keep the old wording in its notes until citations are updated. |
 | **Change executor** | Its category (an adjacent whose executor changes becomes related, and the reverse), and every step of its map. |
-| **Demote to a step** | It leaves the topology for the map of the job it belongs to; its outcomes go with it. |
+| **Demote to a step or episode** | It leaves the topology's jobs: a step goes to the map of the job it belongs to, with its outcomes; an episode goes onto the main job's entry. |
 | **Promote a step** | A step found to have its own intent, lifecycle or outcome becomes an adjacent or related job, and leaves its map. |
+| **Episode to constituent job** | When mapping shows an episode is an independent cycle, it becomes a constituent job with a map of its own, and the main job is restated as the higher job they make up. |
 | **Change the main job** | Every other job's category and relation, which are stated against it. Usually means the altitude was wrong; re-test it first. |
 | **Retire** | Only when nothing cites it, and its map (if any) is retired with it. |
 
@@ -92,7 +100,7 @@ send jobs back.
 | File | Holds |
 |---|---|
 | [references/elicitation.md](references/elicitation.md) | The questions to ask, and harvesting jobs from notes |
-| [references/jobs.md](references/jobs.md) | Executors, the core functional job, altitude, adjacent and related jobs, qualifiers and circumstances, framing, errors to watch for |
+| [references/jobs.md](references/jobs.md) | Executors and roles, the core functional job, altitude and breadth, continuing jobs and episodes, constituent, adjacent and related jobs, changing the world against recording it, qualifiers and circumstances, framing, errors to watch for |
 | [references/review.md](references/review.md) | Reviewing a topology: the checks and reporting |
 | [references/format.md](references/format.md) | The topology document, drafts, syncing, rendering and where it lives |
 

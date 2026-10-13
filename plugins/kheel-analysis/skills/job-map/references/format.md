@@ -55,7 +55,7 @@ identified by its statement within its map; restatements keep the old wording in
 
 `## Entries` holds a `###` section per step that has one, headed by its statement, in table order. Directly under the
 heading comes its YAML block when synced. Then a bullet list, written `**Name:**`, leaving out what does not apply:
-**Type**, **Seam**, **Outcomes** (a nested list, as in the row), **Order** (where the step runs alongside another or
+**Type**, **Seam**, **Outcomes** (a nested list, as in the row), **Episodes** (for a continuing job, which episodes pass through it), **Order** (where the step runs alongside another or
 repeats), **Source**, **Notes** (open questions start with *Open:*; candidates moved to the topology; survey results).
 
 ### Drafts
