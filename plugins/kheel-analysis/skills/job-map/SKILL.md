@@ -73,7 +73,7 @@ be a step of a larger one.
    boundaries and circumstances that may be other jobs. Do not draw a workflow for each.
 8. **Find each step's outcomes**: how the executor knows it went well, and what takes too long, goes wrong or varies
    ([outcomes](references/outcomes.md)). Check the wording, and that each measures this job's success, within the
-   executor's reach. Turn the job's emotional and social qualifiers into outcomes on the steps they bear on. Record
+   executor's capacity and consistent with the domain's causal rules (who decides, what makes a change take effect). Turn the job's emotional and social qualifiers into outcomes on the steps they bear on. Record
    what the evidence offers; outcome discovery is refined with practitioners, and is not required to be exhaustive now.
 9. **Check** the checks in [review](references/review.md) over what changed, and list open questions.
 10. **Propose, agree, then write**, then **render or sync** ([format](references/format.md)).

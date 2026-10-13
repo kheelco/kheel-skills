@@ -90,7 +90,8 @@ examined; see C1 and C4 under Coverage). Reported to the topology. Providing inf
 
 ### The steps table
 
-Three columns, steps in the order an executor would describe them:
+Three columns, the steps grouped by stage in the eight stages' order (Define to Conclude), whatever order they were
+found in, and within a stage in the order an executor would describe them:
 
 | Column | Holds |
 |---|---|

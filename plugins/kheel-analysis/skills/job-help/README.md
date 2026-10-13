@@ -243,8 +243,10 @@ criteria take the outcome form, and their completeness is judged separately from
 and edge cases as variants of the steps they change). Completeness is tested by coverage of each circumstance.
 Every constituent candidate is classified (covered; separately mappable, judged by objective and never by a sequence
 of its own; outside scope; or unresolved), covered and separately mappable may both hold, and each classification is
-reported to the topology without holding the map up; a separately mappable sub-job's map works at a finer level and
-does not repeat the parent's steps. The choice of map never changes what the jobs are.
+reported to the topology without holding the map up; a separately mappable sub-job's map works at a finer level, and its
+overlap with the parent's map is expected, never on its own a reason to reject it. Outcomes are
+checked against the executor's capacity and the domain's causal rules, and Conclude steps must be accomplishments the
+job needs. Steps are presented grouped by stage, whatever order they were found in. The choice of map never changes what the jobs are.
 
 ### Other profiles
 

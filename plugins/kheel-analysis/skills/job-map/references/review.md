@@ -7,7 +7,8 @@ finding because it does not follow the one before it, or because an occasion of 
 1. **Structure.** Report each as a count, listing the steps.
    - The map's job is not in the topology, or its executor differs from the topology's.
    - No pre-check recorded: the job not confirmed in the topology before steps were placed.
-   - Steps with no stage, or a stage outside the eight; steps with sub-steps; two steps with the same statement.
+   - Steps with no stage, or a stage outside the eight; steps not grouped by stage in the stages' order; steps with
+     sub-steps; two steps with the same statement.
    - Steps spanning several things with no **Covers**, or with sub-steps where Covers or separate steps were meant.
    - Fewer than about ten steps (stated too broadly) or far more than twenty (job too high), as guidance; systems,
      products or instruments named in step statements.
@@ -25,13 +26,14 @@ finding because it does not follow the one before it, or because an occasion of 
    - **Coverage across circumstances**: for each circumstance and significant edge case, work the job needs there that
      no step holds; boundaries left ambiguous; circumstances that may be other jobs, not reported to the topology.
    - **Placement**: steps placed by when they happen, what they are called or a resemblance to the stage, rather than
-     their functional purpose; Conclude used for *what happens when the object ends* where that is not part of this job;
+     their functional purpose; Conclude steps that are not functional accomplishments the job needs: *what happens when the object ends* where
+     that is not part of this job, or an ending added because every map is expected to have one;
      ambiguous placements forced without the competing readings recorded. Ordinary placements need no justification.
    - **Flow reasoning**: a map criticised, or split, because its steps do not form one sequence; work made a separate
      job or map because it has its own sequence, trigger, source, completion or success criterion.
    - **Constituents**: a candidate forced to covered or to separately mappable where both hold; separate mappability
-     claimed without a distinct functional objective; a separately mappable candidate's map that repeats this map's
-     steps; several separately mappable with no granularity check; the map held up for unresolved candidates.
+     claimed without a distinct functional objective; separate mappability rejected merely because a finer map
+     would overlap with this one; several separately mappable with no granularity check; the map held up for unresolved candidates.
    - Stages filled for their own sake; several thin steps under one stage; steps that read as an operating cycle;
      empty stages with no note of what they suggest about the boundary.
    - Steps naming a system, document, screen or hand-off; steps whose verb belongs to a system rather than the
@@ -52,7 +54,8 @@ finding because it does not follow the one before it, or because an occasion of 
      duplicate another outcome on the same step.
    - Outcomes that restate their step or contain a target; outcomes that are design requirements; outcomes that measure
      another job's result.
-   - Outcomes beyond the executor's reach, or owning the resolution of work handed on; time outcomes with no measure;
+   - Outcomes beyond the executor's capacity, or inconsistent with the domain's causal rules (who decides, what makes
+     a change take effect), or owning the resolution of work handed on; time outcomes with no measure;
      invariants stated as outcomes; effort outcomes that time or likelihood would state more precisely.
    - Qualifiers on the job that yielded no outcome.
    - Where outcomes have been researched with practitioners: significant steps still with none.

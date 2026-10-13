@@ -41,8 +41,10 @@ questions to ask about any job, not eight boxes to fill.
 | **Modify** | adjust in response to a problem that has been found | What goes wrong, and how do they put it right? |
 | **Conclude** | complete the job, or a piece of work within it, and establish the resulting state | How do they know it is finished, and what is left behind? |
 
-A stage may yield no step, one, or several. Record steps in the order an executor would describe them; where it
-helps to understand a step (it runs alongside another, repeats, or is done on demand), say so in its notes.
+A stage may yield no step, one, or several. **Present the steps grouped by stage**, in the eight stages' order,
+whatever order they were found in; within a stage, in the order an executor would describe them. The grouping is for
+reading, not a claim about the order of execution. Where it helps to understand a step (it runs alongside another,
+repeats, or is done on demand), say so in its notes.
 
 ## Placing a step in a stage
 
@@ -60,7 +62,10 @@ name. Most placements are obvious and need no justification; take care with thes
 - **Conclude** brings the job, or a piece of work within it, to completion and establishes the resulting state
   (*establish that the register states the current position*). It does not mean *what happens when the object comes
   to an end*. Finalising or preserving the object at the end of its life is a Conclude step only where that is part
-  of this job; it may instead be another job (winding up, archiving), which goes to the topology.
+  of this job; it may instead be another job (winding up, archiving), which goes to the topology. Test every Conclude
+  step: **is it a functional accomplishment the job needs** (the resulting state established, work handed over, a
+  record left that the job depends on), **or an ending added because maps are expected to have one?** A continuing job
+  may have Conclude steps for pieces of its work, or none; an empty Conclude stage is better than a forced one.
 - **Confirm before Execute.** Confirm establishes readiness and authority; Execute is the commitment that cannot be
   undone cheaply. Keep checks out of Execute and commitments out of Confirm.
 
@@ -109,9 +114,13 @@ as if it might deserve a map of its own, and classify it:
 
 **Covered and separately mappable can both hold.** A map works at one level. Taking in a change can be represented by
 several steps of this map and still be worth a map of its own at a finer level, whose steps are what must be
-accomplished to take a change in and whose outcomes measure that. The two maps are at different levels, not copies:
-this map keeps its steps and outcomes, and the finer map does not repeat them. If a separate map would only repeat this
-map's steps, the candidate is covered and nothing more.
+accomplished to take a change in and whose outcomes measure that. The two maps are at different levels: this map keeps
+its steps and outcomes, and the finer map breaks the same work down further.
+
+**Overlap is expected, not a reason to reject.** A finer map of covered work will overlap with this one, since it
+covers the same ground in more detail. That overlap is never, on its own, grounds for rejecting separate mappability:
+judge the candidate by its objective. Only where a separate map would add nothing (the same steps at the same level,
+with the same outcomes) is the candidate covered and nothing more.
 
 **Separately mappable is judged by objective, not sequence.** The candidate has a functional objective the executor
 sets out to achieve and would judge on its own, and a map of it would find steps and outcomes this map does not hold.
@@ -265,9 +274,11 @@ glossary's activities into the map as steps. A step's nouns should be glossary t
 - **Candidates forced.** A candidate made either covered or separately mappable when both hold; a classification the
   evidence does not support; the map held up until every candidate is settled; classifications not reported to the
   topology.
-- **A copy as a map.** A separately mappable candidate's map that repeats this map's steps at the same level.
+- **Rejected for overlap.** Separate mappability refused because a finer map would overlap with this one, without
+  asking whether the candidate has a distinct objective. (Only a map that would add nothing at all is redundant.)
 - **Placed by timing or name.** A step put under a stage because of when it happens, what it is called or how it
-  resembles the stage; Conclude used for *what happens when the object ends*; an ambiguous placement forced silently.
+  resembles the stage; Conclude used for *what happens when the object ends*, or added as a universal ending the job does not need; an
+  ambiguous placement forced silently.
 - **Stages as buckets.** Steps placed under a stage because it needed filling, or a step per stage, several of them
   thin. The stages are questions, not slots.
 - **Coverage untested.** Circumstances listed with the map but never tested against it; or a workflow drawn for each

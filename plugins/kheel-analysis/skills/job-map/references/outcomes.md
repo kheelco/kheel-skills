@@ -67,7 +67,14 @@ Then six deeper questions:
 2. **Which of its nouns are the domain's, and which are an implementation's?** Some concepts are unavoidable because
    they are part of the job's object (where the record is itself what the domain requires, its entries may be). Others
    assume a solution (a database row, a workflow state). Keep the first, and restate around the second.
-3. **Is it within the executor's reach?** An outcome measures something the executor's execution can affect.
+3. **Is it within the executor's capacity, given how the domain works?** An outcome measures something the
+   executor's execution can affect: within the responsibility their capacity carries, and consistent with the
+   domain's causal rules (who decides what, what makes a change take effect, what evidence exists and who holds it).
+   Check those rules against the glossary and the business rules, not assumption. Where the committee decides
+   admissions, *minimise the likelihood that someone is admitted who should not be* belongs to the committee's job;
+   the secretary's outcome is *minimise the likelihood that an admission is entered without the committee's
+   decision*. Where entry in the roll is what makes membership begin, an outcome about the timing of membership is
+   the secretary's after all: the causal rule decides whose outcome it is.
    *Minimise the likelihood that a change is made without the executor learning of it* may be beyond them; *minimise
    the time between a change and its evidence reaching them* is not. Likewise, work handed to another executor is not the
    job's to resolve: where a dispute goes to a tribunal, the job can minimise the likelihood that it goes
@@ -107,7 +114,8 @@ survey is quantitative research built on a finished map, not part of mapping. If
 - **Outcomes nobody said**: reasoned into being by the agent and marked attested.
 - **Outcomes that are design requirements**: a quality of the solution, not of the executor's progress.
 - **Another job's outcomes**: success measured for a result this job does not pursue.
-- **Outcomes out of reach**: measuring what the executor cannot affect, or the resolution of work handed on.
+- **Outcomes out of reach**: measuring what the executor cannot affect, given their capacity and the domain's causal
+  rules (another party's decision, an effect the executor's act does not cause), or the resolution of work handed on.
 - **Deadlines with no measure**: *within the time it must be*, with no deadline established.
 - **Invariants as outcomes**: a rule about the state, not a measure of the executor's execution.
 - **Effort with no measure**: *minimise the effort* where time or likelihood would say it more precisely.
