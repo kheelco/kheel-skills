@@ -45,23 +45,30 @@ be a step of a larger one.
    reviewing; rendering or syncing.
 2. **Confirm the job and executor** from the topology. If either is unsettled, settle it first (with the
    `job-topology` skill): a map of the wrong job is worthless however good. Do not use the step types to decide what
-   the job is; a tidier sequence is not evidence of the right job. If the job is a continuing one, note its episodes
-   ([steps](references/steps.md), *Mapping a continuing job*).
-3. **Find the steps.** Work the eight step types as questions, in order, writing down only what is found
-   ([steps](references/steps.md), [elicitation](references/elicitation.md)). Where a type yields nothing, say so.
-4. **State each step as a milestone**: verb + object, in the executor's words, no mechanism. Mark its execution seam,
-   if it has one.
-5. **Find each step's outcomes**: how the executor knows it went well, and what takes too long, goes wrong or varies
-   ([outcomes](references/outcomes.md)). Turn the job's emotional and social qualifiers into outcomes on the steps they
-   bear on.
-6. **Read the map back as a story.** If it only makes sense with a screen in mind, it is a workflow. If a step belongs
+   the job is; a tidier sequence is not evidence of the right job.
+3. **Establish the execution boundary.** Before any step is typed, run the coherence test
+   ([steps](references/steps.md), *The coherence test*): write each principal episode's progression in plain words
+   and compare their beginnings, desired results and completions. If they are one progression, map the job. If not, or
+   in doubt, map the candidates separately and compare, without presuming the answer; constituent jobs go back to the
+   topology. Never infer that a job holds together because its episodes can all be placed somewhere in the step types.
+4. **Find the steps** of that one progression. Work the eight step types as questions about it, in order, writing down
+   only what is found ([elicitation](references/elicitation.md)). Where a type yields nothing, ask what that says
+   about the boundary.
+5. **State each step as a milestone**: what the executor has accomplished once it is done, verb + object, in the
+   executor's words, no mechanism. Mark its execution seam, if it has one.
+6. **Find each step's outcomes**: how the executor knows it went well, and what takes too long, goes wrong or varies
+   ([outcomes](references/outcomes.md)). Check each one measures this job's success rather than specifying a solution
+   or serving another job's result. Turn the job's emotional and social qualifiers into outcomes on the steps they bear
+   on.
+7. **Read the map back as a story.** If it only makes sense with a screen in mind, it is a workflow. If a step belongs
    to another executor, it goes back to the topology as a related job.
-7. **Check** the structural checks in [review](references/review.md) over what changed, and list open questions.
-8. **Propose, agree, then write**, then **render or sync** ([format](references/format.md)).
+8. **Check** the structural checks in [review](references/review.md) over what changed, and list open questions.
+9. **Propose, agree, then write**, then **render or sync** ([format](references/format.md)).
 
 ### When to stop
 
-A map is **provisionally complete** when every step type has been asked about, each step found is stated as a
+A map is **provisionally complete** when its execution boundary has been established by the coherence test (or the
+candidates compared and reported), every step type has been asked about, each step found is stated as a
 milestone with its type and seam, each significant step has outcomes, and the questions that could change a step's
 scope or the job's altitude are recorded. Opportunity scoring is not part of mapping (see
 [outcomes](references/outcomes.md)).
@@ -72,6 +79,7 @@ scope or the job's altitude are recorded. Opportunity scoring is not part of map
 |---|---|
 | **Restate a step** | Its outcomes, which may no longer fit; scenarios that walk through it. |
 | **Split or merge steps** | Their outcomes, redistributed one by one, not pooled. |
+| **Split the job** | When the coherence test or a later finding shows several progressions: each becomes a constituent job with its own map, reported to the topology; steps and outcomes are re-homed one by one. |
 | **Move a step out** | A step with its own intent, lifecycle or outcome becomes a job in the topology; a step belonging to another executor becomes a related job. Its outcomes go with it. |
 | **Restate an outcome** | Keep its direction, measure and object in the standard form; a survey already run against the old wording is no longer comparable. |
 | **Re-state the job** | The map's heading and the topology entry, together. |

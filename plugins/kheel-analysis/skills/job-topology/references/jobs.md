@@ -74,11 +74,12 @@ job's entry, each with its trigger.
 piece of work. An exceptional undertaking big enough to have its own beginning, execution and end (rebuilding the state
 from scratch, recovering after a loss, migrating to a new basis) is not an episode beside them, however exceptional its
 trigger: record it as a **candidate constituent job**, or as a circumstance, until mapping tests it. Having several
-episodes does not by itself show that a job can be mapped as one. Whether they hold together as one job is tested when the job is mapped: if its map
-can be read as one coherent sequence (with episodes running through it), the job stands; if it needs several
-independent cycles, each with its own beginning, end and outcomes, the job is really a higher-level job whose episodes
-are **constituent jobs**, each mapped separately. Record that as an open question until the map settles it, and do not
-use the step types to settle it in advance: that designs a workflow instead of finding the job.
+episodes does not by itself show that a job can be mapped as one. Whether they hold together as one job is tested by the job map's **coherence test**:
+do the episodes share one beginning, desired result and completion, as one progression? If so, the job stands; if they
+are several progressions, each with its own beginning, result and completion, the job is really a higher-level job
+whose episodes are **constituent jobs**, each mapped separately. That a set of steps can be found for every episode is
+not evidence either way. Treat a continuing main job as a **hypothesis** of a single job until that test is run, record
+the question as open, and do not use the step types to settle it: that designs a workflow instead of finding the job.
 
 ## The other jobs
 

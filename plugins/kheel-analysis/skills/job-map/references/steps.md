@@ -20,33 +20,56 @@ A type may yield no step, one, or several. Order is loose: the types run roughly
 alongside Execute, and real jobs loop. Record steps in the order an executor would describe them, and say in a step's
 notes where it runs alongside or repeats.
 
-## Mapping a continuing job
+## The coherence test: establish the execution boundary first
 
-A continuing job keeps something in a desired state indefinitely and is done through **episodes** (recorded on the job
-in the topology), each with a trigger: event-driven (*incorporate a change in share ownership*), periodic (*verify the
-accuracy of recorded ownership*) or exceptional (*correct an ownership record*). Map it as one job: the steps are what
-the executor must accomplish to keep the state, and the episodes run through them (an event-driven episode passes
-through Define, Confirm, Execute and Conclude; a periodic one through Monitor and Modify). Note on each step which
-episodes pass through it.
+A job map expresses **one coherent progression**: an executor moving from a beginning, through execution, to a
+completion, in pursuit of one desired result. Before any step is given a type, establish that the job has one. This
+matters most for a continuing job (one done through episodes, recorded on the job in the topology), but applies to
+every job: a continuing responsibility is not automatically a single executable job.
 
-The map is also the test of whether the job holds together, and it must be a real test, not a confirmation. If its
-steps can be read as one coherent sequence, with the episodes running through it, the job stands. If they fall into
-several **independent cycles**, each with its own beginning, end and outcomes and sharing few steps, stop and report
-it to the topology: the episodes are constituent jobs of a higher job, each to be mapped on its own. Do not force
-them into one map.
+1. **Write the progressions in plain words.** For each principal episode or circumstance, write the sequence the
+   executor goes through from what starts it to what finishes it, in a line, without step types.
+2. **Compare them.** Do they share a **beginning** (what sets the executor going), a **desired result** and a
+   **completion condition** (how the executor knows they are done)? Differences in the detail of some steps are
+   circumstances; a different beginning, result or completion is a different progression.
+3. **Apply the stage test.** Could an episode be given a whole Define-to-Conclude progression of its own (a review
+   that defines its scope, locates its sources, prepares comparisons, reconciles, investigates exceptions and
+   concludes)? If so, it is an **independently executable job that resembles a stage**, not a stage of this job.
+4. **Decide, or test further.**
+   - One progression: map the job, and the episodes are circumstances of it.
+   - Several, or in doubt: **map the candidates separately**, as drafts, without presuming the answer. Then compare
+     their desired outcomes, sequences and completion conditions. Where one candidate's progression begins inside
+     another's execution and ends by returning to it, it is that job's Monitor or Modify, and the two merge. Where each
+     has a distinct beginning, desired result and completion, they are **constituent jobs** of the higher job: report
+     them to the topology, each with its own map.
 
-Two signs the test is being failed quietly:
+**Coverage is not unity.** Being able to place every episode's activities somewhere in the eight step types shows
+nothing about whether they are one job: almost any set of related activities can be distributed across Define to
+Conclude. A table of which episodes pass through which steps is a diagnostic, not evidence; one full of *sometimes*
+and gaps is a sign of several progressions sharing vocabulary. Never conclude that a job holds together because its
+episodes all found a step.
+
+Two further signs of trouble:
 
 - **An operating cycle.** Steps that read as the handling of one kind of event (receive a change → validate it →
   update → verify → correct) describe a workflow, not the executor's desired progress, and usually presuppose a
-  particular mechanism. Restate each step as what the executor must accomplish, whatever started the episode.
-- **Episodes with nowhere to go.** If the steps cannot be stated without presupposing the event that starts one
-  episode, and the other episodes (a periodic check, where nothing has arrived) find no steps of their own, that is
-  evidence the job is an overarching responsibility containing several jobs. Report it; do not bend the map to fit.
+  particular mechanism.
+- **A stage as a bucket.** Steps placed under a type because it is the nearest category (verifying the record under
+  Monitor, correcting it under Modify), rather than because they are that moment in this job's progression.
+
+## Assigning step types
+
+Only once the boundary is established, work the eight types as questions about that one progression and assign each
+step found to the type it is in that progression. A type that yields nothing is allowed, but it is also a prompt: ask
+whether the work it would hold was put under a neighbouring type, or whether the job's boundary is drawn so that the
+work falls outside it. Record what the empty type suggests, not just that it is empty.
 
 ## Step rules
 
-Each step says **what the executor must accomplish**, not how the current process or software makes them accomplish it.
+Each step says **what the executor is trying to accomplish** at that point, not the operation they perform, and not
+how the current process or software makes them do it. Ask of each step: *what do they have, once this is done, that
+they did not have before?* A step that can only be answered with *the operation is done* is an operation, not a
+milestone.
 
 | Prefer | Over |
 |---|---|
@@ -70,6 +93,13 @@ so on the step: whether it **happens in the world** (the executor does it, but n
 from the world** (the executor receives its result). The map is then honest about what software could support or
 perform, and what it can only receive.
 
+Where the topology says a seam runs **both ways** (recording gives the change its effect), keep two questions apart in
+the steps: *what should the record say, given the position?* and *what position results from making the entry?* A
+Confirm step then confirms the entitlement to make the change (not that the change has already happened), and the
+Execute step has consequences outside the record. Test the steps against a case where the entry is what makes the
+change, not only against one where it records a change already made, and treat the legal effect as a claim to be
+checked against its source.
+
 ## A step is not a glossary activity
 
 A step is an analytical construct: a milestone in getting this job done. A glossary activity (*Audit*, *Settlement*,
@@ -79,6 +109,9 @@ glossary's activities into the map as steps. A step's nouns should be glossary t
 
 ## Errors to watch for
 
+- **Unity inferred from coverage.** Concluding a job holds together because every episode found a step.
+- **Stages as buckets.** Independently executable activities filed under the nearest type.
+- **An empty type passed over.** No step under a type, with no look at whether the boundary put its work elsewhere.
 - **A process map in disguise.** Steps that name today's documents, systems and hand-offs. Ask what each is for.
 - **A step per type.** Eight steps, one per type, several of them thin. The types are questions, not slots.
 - **A related job's steps in the map.** The auditor's verification appearing as a Monitor step. Different executor;

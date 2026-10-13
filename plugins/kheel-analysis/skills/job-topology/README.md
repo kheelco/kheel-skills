@@ -51,6 +51,7 @@ classDiagram
         title
         profile
         framing [0..1]
+        coherence [0..1]
         subDomainHypotheses [*]
         boundaryQuestions [*]
     }
@@ -125,7 +126,7 @@ classDiagram
 
 | Element | Notes |
 |---|---|
-| **ActivityModel** | One document: a topology or a job map. `profile` says which, and so which labels and constraints apply. `focus` is the activity the model is about: the main job of a topology, the job a map opens up. `framing` is the opening prose; `subDomainHypotheses` (each with the signal that prompted it) and `boundaryQuestions` (left open on purpose, such as whether an obligation completes a change or belongs to a separate job) are kept as lists so they can be found and counted. |
+| **ActivityModel** | One document: a topology or a job map. `profile` says which, and so which labels and constraints apply. `focus` is the activity the model is about: the main job of a topology, the job a map opens up. `framing` is the opening prose; `coherence` records the coherence test (the progressions compared and the conclusion); `subDomainHypotheses` (each with the signal that prompted it) and `boundaryQuestions` (left open on purpose, such as whether an obligation completes a change or belongs to a separate job) are kept as lists so they can be found and counted. |
 | **Activity** | The generic unit. `name` identifies it within its model (verb + glossary noun); `statement` is the full form. `category` is a value from the profile's classification. `position` orders it among its siblings where order matters, loosely. `intent` is the result its performer is pursuing: the desired outcome of the activity as a whole (not to be confused with a `Criterion`, which judges how well a part of it is done). Intent is what distinguishes activities and performers: two activities with the same performer are separate jobs only if their intents differ, and two performers are one only if they pursue the same intent. `trigger` says what sets it off (event-driven, periodic, exceptional) where the profile asks. |
 | **partOf** | Decomposition. An activity in one model may be part of an activity in another: a map's steps are part of a job in the topology. Profiles limit the depth. |
 | **Performer** | Who performs an activity, by capacity (the responsibility carried), not title; should resolve to an agent term in the glossary, which marks a coined name as a functional role. `rationale` records what was unified or split, and on what intent. Performers are unified when they pursue the same intent, however different their scale; never because they stand to another activity the same way. |
@@ -144,14 +145,14 @@ classDiagram
 | Pattern element | Job topology | Job map |
 |---|---|---|
 | ActivityModel | Topology (one per domain) | Job map (one per job) |
-| focus | The main job | The job being mapped (in the topology) |
+| focus | The main job | The job being mapped: the main job, or a constituent or candidate constituent job (in the topology) |
 | Activity | Job | Step |
 | name / statement | Verb + object / + contextual clarifier | Verb + object (+ clarifier where two steps would read alike) |
 | category | `Main`, `Episode`, `CandidateConstituent`, `Constituent`, `Adjacent`, `Related` | `Define`, `Locate`, `Prepare`, `Confirm`, `Execute`, `Monitor`, `Modify`, `Conclude` |
 | partOf | Episodes and candidate and confirmed constituent jobs are part of the main job; other jobs are top-level | Every step is part of the focus job |
 | position | Not used | The order an executor describes, loosely |
 | Performer | Executor | The job's executor, inherited, never restated |
-| ActivityLink | Each related job links to the main job: `Changes`, `Enables`, `Constrains`, `Governs`, `Consumes`, `RespondsTo`. An adjacent job may link `Before`, `After` or `Alongside`, where its place in time helps | `Serves`: a step to each episode of a continuing job that passes through it |
+| ActivityLink | Each related job links to the main job: `Changes`, `Enables`, `Constrains`, `Governs`, `Consumes`, `RespondsTo`. An adjacent job may link `Before`, `After` or `Alongside`, where its place in time helps | `Serves`: a step to each episode of a continuing job that passes through it (a diagnostic only) |
 | intent / difference | `intent` on every job (the main job's is its statement); `difference` on every link, stating how the job's intent differs from the main job's and the signal | Not used (steps share the job's intent) |
 | trigger | Required on episodes: `EventDriven`, `Periodic`, `Exceptional` | Not used |
 | Criterion | Not used: outcomes belong to steps | Desired outcomes, usually two to four per significant step |
@@ -160,6 +161,7 @@ classDiagram
 | Seam | In the framing and on jobs | On steps |
 | EdgeCase | On the main job, testing its object's breadth | Not used |
 | subDomainHypotheses, boundaryQuestions | Used | Not used |
+| coherence | Not used | Required: the principal progressions, how they compared, and the conclusion |
 
 **Constraints of the job topology**: exactly one main job; only episodes and (candidate) constituent jobs are part of
 another activity, always the main job, and they share its performer and intent; an adjacent job has the main job's
@@ -172,7 +174,9 @@ constituent job, not an episode).
 
 **Constraints of the job map**: one focus job, from a topology; every step is part of it and none has parts of its own
 (one level); every step has the focus job's performer; categories are the eight step types; criteria take the
-outcome form; for a continuing job, every episode is served by at least one step.
+outcome form; the map expresses one progression, with one beginning, desired result and completion, established by
+the coherence test before steps are typed. That every episode is served by some step is necessary but never sufficient:
+episodes with progressions of their own are constituent jobs, each the focus of its own map.
 
 ### Other profiles
 

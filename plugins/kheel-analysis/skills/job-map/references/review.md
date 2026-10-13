@@ -7,7 +7,11 @@ stop.
    - The map's job is not in the topology, or its executor differs from the topology's.
    - Steps with no type, or a type outside the eight.
    - Steps with sub-steps.
-   - For a continuing job: steps falling into independent cycles that share few steps (constituent jobs not reported to the topology); episodes no step serves.
+   - No record of the coherence test: the principal progressions not written and compared before steps were typed.
+   - A conclusion that the job holds together resting on coverage (every episode found a step) rather than on one
+     shared beginning, desired result and completion.
+   - For a continuing job: episodes that could each be given a Define-to-Conclude progression of their own, mapped as
+     stages; steps falling into independent cycles (constituent jobs not reported to the topology).
    - Two steps with the same statement.
    - Significant steps with no outcomes.
    - Outcomes not in the standard form (direction + measure + object + clarifier).
@@ -20,7 +24,12 @@ stop.
    - Steps that transcribe glossary activities.
    - Types with several thin steps: the map was filled, not found.
    - Steps whose execution happens in or arrives from the world, unmarked.
-   - Outcomes that restate their step, name a mechanism, or contain a target.
+   - Outcomes that restate their step, name a mechanism, or contain a target; outcomes that are design requirements;
+     outcomes that measure another job's result.
+   - Steps stated as operations rather than what is accomplished; types filled by nearest category; empty types with
+     no note of what they suggest about the boundary.
+   - Where a seam runs both ways: Confirm steps that assume the change has already happened; no test against a case
+     where the entry makes the change.
    - Qualifiers on the job that yielded no outcome.
    - In a draft: steps or outcomes marked attested with no source. In the agreed map: open questions waiting a long time.
 3. **Against the rest**, if the other artefacts are to hand.

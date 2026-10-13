@@ -35,6 +35,20 @@ be measured?**
 - *Ninety per cent of certificates issued within a day* is a KPI: a target set on an outcome, a later act.
 - *Record the transaction accurately* is the step with an adverb. Ask what *accurately* would be measured by.
 
+## Checking each outcome
+
+Three questions for every outcome, after it is written:
+
+1. **Does it measure success, or specify a solution?** *Minimise the likelihood that a class is not provided for in the
+   record* reads as a requirement on how the record is built. Restate it as the executor's judgement of the step (*…
+   that a characteristic of the shares that must be kept is not established*).
+2. **Which of its nouns are the domain's, and which are an implementation's?** Some concepts are unavoidable because
+   they are part of the job's object (where the record is itself what the law requires, its entries may be). Others
+   assume a solution (a database row, a workflow state). Keep the first, and restate around the second.
+3. **Does it measure this job's success, or another job's?** *Minimise the likelihood that a holder is unaware of a
+   change to their holding* measures communicating with holders. Unless that result is necessary to this job's desired
+   result, the outcome, and often the step it sits on, belongs to another job: note it and send it to the topology.
+
 ## The opportunity survey
 
 Outcomes written this way can be prioritised by surveying executors on each outcome's **importance** and their
@@ -54,3 +68,5 @@ survey is quantitative research built on a finished map, not part of mapping. If
 - **Outcomes that are targets**: a number in it is a KPI.
 - **Outcomes pooled at the end of the map** instead of attached to their step.
 - **Outcomes nobody said**: reasoned into being by the agent and marked attested.
+- **Outcomes that are design requirements**: a quality of the solution, not of the executor's progress.
+- **Another job's outcomes**: success measured for a result this job does not pursue.

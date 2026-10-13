@@ -48,14 +48,16 @@ Three columns, steps in the order an executor would describe them:
 | **Step** | The step (verb + object, clarifier if needed) in bold, linked to its entry if it has one; then, on a new line (`<br>`), its seam in italics if it has one: *happens in the world: …* or *arrives from the world: …*. |
 | **Outcomes** | One outcome per line (`<br>` between them), in the standard form. |
 
-After the table, a line listing the types that yielded nothing, and why (none found, or not yet asked). A step is
+Before the table, a short **Coherence** paragraph: the principal progressions written in plain words, how they
+compared (beginning, desired result, completion), and the conclusion: one job, or candidates mapped separately and
+reported. After the table, a line listing the types that yielded nothing, and what each suggests about the boundary. A step is
 identified by its statement within its map; restatements keep the old wording in its notes until citations are updated.
 
 ### The entries
 
 `## Entries` holds a `###` section per step that has one, headed by its statement, in table order. Directly under the
 heading comes its YAML block when synced. Then a bullet list, written `**Name:**`, leaving out what does not apply:
-**Type**, **Seam**, **Outcomes** (a nested list, as in the row), **Episodes** (for a continuing job, which episodes pass through it), **Order** (where the step runs alongside another or
+**Type**, **Seam**, **Outcomes** (a nested list, as in the row), **Episodes** (for a continuing job, which episodes pass through it: a diagnostic, not evidence that the job is one), **Order** (where the step runs alongside another or
 repeats), **Source**, **Notes** (open questions start with *Open:*; candidates moved to the topology; survey results).
 
 ### Drafts
