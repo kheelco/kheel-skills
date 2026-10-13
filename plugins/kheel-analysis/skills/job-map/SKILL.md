@@ -62,7 +62,8 @@ be a step of a larger one.
    contribution belongs to, not when it happens or what it is called. Where placement is ambiguous, record the
    competing readings rather than forcing one.
 5. **State each step as a milestone**: what the executor has accomplished once it is done, verb + object, in the
-   executor's words, no mechanism. Mark its execution seam, if it has one.
+   executor's words, no mechanism. A step that a different method would remove without losing an accomplishment the
+   job needs is a means, not a step: drop it and move its outcomes to the steps it serves. Mark its execution seam, if it has one.
 6. **Classify constituents as they surface** ([steps](references/steps.md), *Constituents, and jobs found while
    mapping*): **covered** (by which steps), **separately mappable**, **outside scope** or **unresolved**; covered and
    separately mappable may both hold. Judge separate mappability by objective, never by a sequence of its own. Do not

@@ -169,6 +169,11 @@ milestone.
 | Establish the vehicle is safe to return to use | Close the work order in the system |
 
 - **A milestone, not a task.** Something that is either accomplished or not.
+- **A step, not a means.** If a step could be eliminated by changing the method of doing the job, without losing an
+  accomplishment the job needs, it is a means, not a step. *Engage the advisers the purchase needs* is a means: a
+  purchaser may do without some advisers, or get the same information and assurance another way, while *obtain the
+  information needed to judge a property* and *confirm the seller can give the expected title* still have to be
+  accomplished. Remove such a step, and move its outcomes to the steps it serves.
 - **Timeless.** Name a particular system, product, document or instrument only as an example of a circumstance or an
   output, marked as such, never in the step statement itself.
 - **Verb + object**, in the executor's own language, the object a glossary noun, with a clarifier only where two steps
@@ -307,6 +312,9 @@ glossary's activities into the map as steps. A step's nouns should be glossary t
 - **Work past the hand-off.** Steps that do the receiving job's work.
 - **An empty stage passed over.** No step under a stage, with no look at whether the boundary put its work elsewhere.
 - **A process map in disguise.** Steps that name today's documents, systems and hand-offs. Ask what each is for.
+- **A means as a step.** A step that a different method of doing the job would remove without losing a necessary
+  accomplishment (engaging an adviser, setting up a tool, appointing someone); its outcomes belong on the steps it
+  serves.
 - **A stakeholder job's steps in the map.** The auditor's verification appearing as a Monitor step. Different
   executor; back to the topology.
 - **Steps that are glossary activities transcribed.** *Admit* as a step because the glossary has *Admission*.

@@ -37,6 +37,9 @@ finding because it does not follow the one before it, or because an occasion of 
      would overlap with this one; granularity judged by counting steps or candidates rather than by the focal job's objective; the map held up for unresolved candidates.
    - Stages filled for their own sake; several thin steps under one stage; steps that read as an operating cycle;
      empty stages with no note of what they suggest about the boundary.
+   - Steps that are means rather than accomplishments: a different method of doing the job would remove them without
+     losing anything the job needs (engaging an adviser, appointing an agent); their outcomes not moved to the steps
+     they serve.
    - Steps naming a system, document, screen or hand-off; steps whose verb belongs to a system rather than the
      executor; steps stated as operations rather than what is accomplished.
    - Steps accomplished by someone other than the executor for their own objective: stakeholder jobs leaking in. Or
