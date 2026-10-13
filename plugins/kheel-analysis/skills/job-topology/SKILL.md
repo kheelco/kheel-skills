@@ -63,9 +63,11 @@ read as true for an organisation that does the work on paper.
    executor, a distinct desired outcome) or related (another executor), with how it stands to the main job in words
    and how its intent differs. Name each job from its own executor's side. Include a related job only where it helps
    establish the main job's boundary, and note those left out. Steps go to the job map.
-6. **Record what cannot be settled.** Wherever a classification is genuinely uncertain (a job or a step; one job or
-   two; part of the main job or beside it), record it as **open**, with the evidence each way, rather than forcing it.
-   A shared higher-level objective is evidence that jobs are related, not that they are one.
+6. **Classify unclear candidates** ([jobs](references/jobs.md), *Classifying a candidate*). Where it is not obvious
+   whether a candidate is a job, an episode or a step, weigh the five tests (independent objective, independent
+   completion, executor, context independence, stable identity); no single test decides, and a trigger and completion
+   alone never make a job. Propose the most defensible classification and explain any material uncertainty; record it
+   as **open** only where the tests genuinely split and the answer would change the main job's boundary.
 7. **Frame it.** The core executor and job; flags for deeper analysis (seams, obligations, supplying); any sub-domain
    split already evident; boundary questions left open.
 8. **Check** the structural checks in [review](references/review.md) over what changed and every job that names it, and

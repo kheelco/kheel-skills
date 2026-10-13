@@ -60,8 +60,15 @@ reciprocal members).
   different terms) break an object of *who belongs* alone; supports *who belongs and on what terms*.
 - **Qualifiers:** Avoid the anxiety of being blamed when a member is wrongly turned away (emotional).
 - **Circumstances:** The first roll when the club is founded; a national federation at volume, with online joining.
-- **Open classifications:** Open: whether checking the roll and correcting it are jobs of their own, part of
-  maintaining it, or only occasions of it; each has its own completion, but all serve an accurate roll.
+- **Classifications:**
+  - Check the roll against its sources: a job of its own, part of maintaining the roll (proposed). Independent
+    objective (agreement established at a date), independent completion, and context independence (done when nothing
+    has changed) all point to a job; same executor; would survive a change of tools.
+  - Take in a change: an episode of maintaining the roll (proposed). It only makes sense when a change arrives, and
+    its result is the main job's own.
+  - Open: whether correcting the roll is a job of its own. Correcting an error found long afterwards has its own
+    objective and completion; correcting one found while recording a change only makes sense inside that work. The
+    tests split, and the answer would change what the map holds.
 - **Map:** [Job map](job-maps/maintain-the-membership-roll.md)
 - **Source:** Membership secretary interviews, 2026-03.
 - **Notes:** Left out: the club's insurer setting premiums (touches the roll only through *Establish membership*).
@@ -99,8 +106,9 @@ does not apply:
 
 - **Statement**, **Category**, **Executor** and **Intent and difference**: as the row says.
 - **Episodes** (a continuing job): each with what sets it off (event-driven, periodic or exceptional).
-- **Open classifications**: each candidate whose classification the topology could not settle, with the evidence each
-  way (*Open: whether checking the roll is a job of its own or part of maintaining it*).
+- **Classifications**: each candidate that needed the tests ([jobs](jobs.md), *Classifying a candidate*): its proposed
+  classification (job, episode or step) and the tests that support it and point against it; or, where the tests
+  genuinely split, *Open:* with the evidence each way.
 - **Map**: a link to its job map, if it has one; a link to the job domain analysis, if one covers it.
 - **Edge cases**: the cases the object's breadth was tested against, and what they showed.
 - **Qualifiers**: emotional and social, each labelled, only where evidence supports them.

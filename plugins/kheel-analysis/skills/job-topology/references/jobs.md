@@ -77,17 +77,35 @@ continuing job is legitimate, and often the right main job, because its intent i
 piece of work. Record the recurring and occasional work it involves, each with what sets it off (*a change arrives*,
 *the annual check falls due*, *an error is found*), as **episodes** on the main job's entry.
 
-Do not decide here whether each episode is just an occasion of the main job, a step of it, or a functional job of its
-own that is part of it: that is established from the evidence (the `job-domain-analysis` skill), and a shared
-higher-level objective does not settle it either way. Where it matters, record it as an **open classification**.
+Where it is unclear whether an episode is just an occasion of the main job or a functional job of its own, classify
+it with the tests in *Classifying a candidate*, below. Deciding how a confirmed job decomposes into sub-jobs is left to
+job domain analysis.
 
-### Open classifications
+### Classifying a candidate: job, episode or step
 
-The topology records what it can establish and marks what it cannot. Wherever a candidate's classification is
-genuinely uncertain (a job or a step; one job or two; part of the main job or a job beside it; one executor or two),
-record it as **open**, with the evidence each way, rather than forcing it into a category. Open classifications are
-taken up by job domain analysis, or by the job map when it reaches them. A topology with open classifications is
-complete enough to map from, so long as the main job and its executor are clear.
+When it is not obvious whether a candidate is a job of its own, an episode of another job, or a step within one, weigh
+five tests. **No single test decides**; together they point to the most defensible classification.
+
+| Test | Question | Points to a job when |
+|---|---|---|
+| **Independent objective** | Is there a meaningful accomplishment distinct from the parent job's objective? | The executor sets out to achieve something they would name and judge on its own (*the vehicle is serviced*), not only a stage towards the parent's result (*the parts are obtained*) |
+| **Independent completion** | Can it be completed, and judged successful, in its own right? | It has its own completion condition and its own sense of *done well*, whether or not the parent job's result is reached |
+| **Executor** | Is the same functional capacity responsible, or a different one? | A different capacity points to a related job; the same capacity is compatible with any classification, and decides nothing alone |
+| **Context independence** | Does it make sense outside a particular episode of another job? | It can be done, and makes sense, when nothing else is under way (a check run when nothing has changed); a step only makes sense inside its job's execution |
+| **Stable identity** | Would it remain recognisable under different processes and technologies? | It would still be a distinct accomplishment if the tools and procedures changed; one that exists only because of today's mechanism is a step, or a mechanism |
+
+- **A trigger and a completion do not establish a job.** Steps have both. Having its own trigger and its own end
+  supports a classification only alongside an independent objective and context independence.
+- **A shared higher-level objective does not settle it either way.** Inspecting, servicing and repairing vehicles all
+  serve a roadworthy fleet and may still be distinct jobs.
+- **Same executor and result, different occasion:** usually an **episode** of the job, not a job of its own: the work
+  makes sense only as one of the occasions on which that job is done.
+
+**Propose, and explain.** Record the most defensible classification as *proposed*, with the tests that support it and
+any that point the other way. Where the tests genuinely split, so that a different answer would change the main job's
+boundary, record it as an **open classification**, with the evidence each way, for job domain analysis or the job map
+to take up. Open is for real uncertainty, not a way to avoid deciding. A topology with open classifications is complete
+enough to map from, so long as the main job and its executor are clear.
 
 ## The other jobs
 
@@ -218,8 +236,12 @@ fine. Do not use the step types to settle the topology: that designs a workflow 
 - **A statement that assumes a sequence.** A job worded as following a change that, in some circumstances, it makes.
 - **An assurance job with no standard.** *Verify the record* with no word on whether consistency or correctness is
   meant.
-- **A forced classification.** A candidate pushed into a category the evidence does not settle, instead of recorded as
-  open; above all, activities merged into one job, or split apart, because they serve the same higher objective.
+- **A forced classification.** A candidate pushed into a category the tests do not support, instead of proposed with
+  its uncertainty or recorded as open; above all, activities merged into one job, or split apart, because they serve
+  the same higher objective.
+- **A job on trigger and completion alone.** A candidate made a job because it has its own trigger and end, without an
+  independent objective or context independence.
+- **Open as a way out.** A candidate left open where the tests clearly point one way.
 - **A topology of everyone.** Related jobs added because an executor touches the main job, not because the
   relationship helps establish its boundary.
 - **Executors merged by relationship.** Different executors folded into one because they stand to the main job the

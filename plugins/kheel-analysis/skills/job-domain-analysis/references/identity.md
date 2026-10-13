@@ -23,19 +23,26 @@ evidence, not assumed.
 ## Job identity: is it a functional job of its own?
 
 A shared higher-level objective is **evidence of relatedness, not of identity**. Inspecting, servicing and repairing
-vehicles all serve a roadworthy fleet; that alone neither makes them one job nor separates them. Weigh several tests
-together:
+vehicles all serve a roadworthy fleet; that alone neither makes them one job nor separates them.
 
-1. **A stable executor objective.** Is there a result the executor sets out to achieve, which they would recognise and
-   name, and judge done well or badly (*the vehicle is serviced*)? An activity whose only result is a step towards
-   something else (*obtain the parts*) is a step.
-2. **A coherent accomplishment.** Does it have its own beginning, execution and completion, with a completion condition
-   of its own? Activities that only make sense inside another's execution are steps of it.
-3. **Independence.** Could it be done, and judged, without the others happening in the same sitting? A check that can
-   be run when nothing has changed is independent of taking in changes.
-4. **Stability.** Would it still be a distinct accomplishment under a different process or technology?
-5. **The stage test, as support only.** That it could run Define to Conclude on its own supports identity; almost any
+Use the **same five tests as the topology** (`job-topology`, *Classifying a candidate*): independent objective,
+independent completion, executor, context independence and stable identity. Here they are applied in more depth, with
+evidence gathered for each:
+
+1. **Independent objective.** Ask the executor what they set out to achieve, and whether they would name it and judge
+   it on its own (*the vehicle is serviced*). An activity whose only result is a stage towards something else (*obtain
+   the parts*) is a step.
+2. **Independent completion.** Establish its completion condition and its own sense of *done well*, and check they hold
+   whether or not the parent job's result is reached.
+3. **Executor.** Confirm the functional capacity responsible. A different capacity makes it a related job; the same
+   capacity decides nothing alone.
+4. **Context independence.** Test whether it is done, and makes sense, when nothing else is under way: a check run when
+   nothing has changed is independent of taking in changes.
+5. **Stable identity.** Test it against a different process or technology: would it still be a distinct accomplishment?
+6. **The stage test, as support only.** That it could run Define to Conclude on its own supports identity; almost any
    complex activity can, so it never decides alone.
+
+A trigger and a completion do not establish identity: steps have both.
 
 What never decides identity on its own: the same executor; the same higher-level objective; a different trigger,
 frequency or size; a different source of instruction or authority (a fault found by the mechanic and one reported in a

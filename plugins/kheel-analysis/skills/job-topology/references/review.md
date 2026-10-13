@@ -16,8 +16,9 @@ and every job that names it, and stop.
    - Job statements containing a feature, system, document or mechanism, or assuming whether a change comes before,
      during or after the job; assurance jobs (verify, check, reconcile) that name no standard.
    - The main job failing an altitude test; its object's breadth untested against edge cases.
-   - **Forced classifications**: candidates pushed into a category the evidence does not settle, instead of recorded
-     as open; activities merged into one job, or split apart, on the strength of a shared higher objective.
+   - **Classifications not tested**: candidates classified without weighing the five tests, or on one test alone (a
+     trigger and completion, the same executor, a shared higher objective); proposed classifications with no stated
+     reasons or uncertainty; candidates left open where the tests clearly point one way, or forced where they split.
    - Jobs that change the world folded into the job that records it, with no flag.
    - Related jobs that do not help establish the main job's boundary; no note of related jobs left out.
    - Executors or jobs merged because they stand to the main job the same way, though their desired outcomes differ.

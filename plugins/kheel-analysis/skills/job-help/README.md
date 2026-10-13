@@ -195,8 +195,8 @@ The three profiles share one set of values and properties, declared once here:
 | `ActivityLink.kind` | Domain analysis: `Changes`, `Enables`, `Constrains`, `Governs`, `Consumes`, `RespondsTo`. Topology: none (described in words); an adjacent job may be `Before`, `After` or `Alongside`. Job map: `Serves` (a step to an episode passing through it) |
 | `Qualifier.kind` | `Emotional`, `Social` |
 | `Criterion` | Job map only: a desired outcome, with properties `direction`, `measure`, `object`, `clarifier` |
-| Model properties | `openClassifications` (each with its evidence), `subDomainHypotheses` (each with its signal), `boundaryQuestions`, `flags` (seams, obligations, supplying): topology. `mapping` (over its life, or a sub-job on its own): job map |
-| Activity properties | `identity` (functional job, step, episode, undecided): domain analysis, and the topology where clear. `trigger` (event-driven, periodic, exceptional), `immediateResult`, `completion`: on episodes. `standard` (consistency, correctness): on any activity whose result is assurance. `edgeCases` tried (each with its finding): on the topology's main job |
+| Model properties | `openClassifications` (only where the five tests genuinely split, each with its evidence), `subDomainHypotheses` (each with its signal), `boundaryQuestions`, `flags` (seams, obligations, supplying): topology. `mapping` (over its life, or a sub-job on its own): job map |
+| Activity properties | `identity` (functional job, step, episode, undecided), with the five tests' findings behind it: proposed in the topology, settled in more depth in domain analysis. `trigger` (event-driven, periodic, exceptional), `immediateResult`, `completion`: on episodes. `standard` (consistency, correctness): on any activity whose result is assurance. `edgeCases` tried (each with its finding): on the topology's main job |
 
 | Pattern element | Job topology | Job domain analysis | Job map |
 |---|---|---|---|

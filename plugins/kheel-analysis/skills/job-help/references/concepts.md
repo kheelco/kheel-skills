@@ -49,8 +49,13 @@ These are this plugin's own, consistent with Ulwick but not part of his method (
 **Job topology.** A compact inventory of the domain's jobs and executors, made before any job is mapped, so the map is
 pointed at the right job. Ulwick does not prescribe one.
 
-**Open classification.** Something the topology could not settle (is checking the roll a job of its own, or part of
-maintaining it?), recorded with the evidence each way instead of being forced.
+**Job, episode or step?** When it is unclear, five tests are weighed: an independent objective, an independent
+completion, the executor, whether it makes sense outside another job's work, and whether it would survive a change of
+tools. No single test decides; having its own trigger and end does not make something a job. The most defensible answer
+is proposed, with its reasons.
+
+**Open classification.** A case where those tests genuinely split (is correcting the roll a job of its own, or part of
+recording a change?), recorded with the evidence each way instead of being forced.
 
 **Continuing job and episodes.** Some jobs never finish: they keep something in a state (*maintain the roll*, *keep
 the fleet roadworthy*). They are done through **episodes**, each set off by something: a change arrives, a check falls
