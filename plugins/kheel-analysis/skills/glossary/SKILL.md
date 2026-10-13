@@ -22,7 +22,7 @@ uses an undefined noun is ambiguous, and nothing downstream repairs that.
 A glossary does **not** establish the complete structural, behavioural or representational model of the domain. It
 may hold kinds of term, relations, characteristics and definitional rules, but only to the extent that they clarify
 meaning. Multiplicity beyond what the domain itself states, lifecycles, full attribute lists, participants in
-activities and the rules a system enforces belong to later work (domain modelling, activity mapping, business rules
+activities and the rules a system enforces belong to later work (domain modelling, activity modelling, business rules
 and constraints).
 
 What it does establish is a **partial concept system**: a connected understanding of the domain's meanings and the
@@ -121,8 +121,9 @@ A glossary with a renamed base and un-renamed types is worse than one never rena
 The glossary is the language the other analysis is written in. When an artefact and the glossary disagree about a
 word, one of them is corrected deliberately, and never neither. Expect the other work to send terms back:
 
-- **Activity mapping** begins from activity-kind terms and agents, and records who takes part in what; it surfaces the
-  objects of verbs.
+- **Activity modelling** (the `job-topology` and `job-map` skills) writes what is done as verbs on glossary nouns (*pass a special
+  resolution*), takes its executors from agents, and records who takes part in what; it sends back the nouns its verbs
+  act on.
 - **Domain modelling** takes concepts, characteristics and relations as its starting vocabulary and adds what the
   glossary deliberately omits: multiplicity the domain has not stated, lifecycle, full attributes.
 - **Use cases and stories** cite glossary terms rather than restating them; agents are where actors begin.

@@ -40,8 +40,9 @@ noun phrases that:
 - **compound**: an ordinary noun with a qualifier that changes its meaning (an *open enrolment window* is not a
   *window*).
 
-Verbs and verb phrases the domain names as single acts (*lodge*, *ratify*, *place*) are candidates too, as activity
-terms.
+Verbs (*lodge*, *ratify*, *place*) point to what is done, which belongs to activity modelling; harvest the nouns they
+act on. A verb becomes a glossary candidate only when the domain also names the act as a noun of its own (*Lodgement*,
+*Ratification*, *Placement*) and talks about it as a thing.
 
 List the candidates, then triage: domain-specific meaning, ambiguous, or ordinary word in its ordinary sense. Only the
 first two go in. A glossary that defines *report* and *user* has been padded, and padding hides the entries that

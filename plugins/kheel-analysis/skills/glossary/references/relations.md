@@ -129,7 +129,7 @@ its own: a department has its own name and head and is still part of an organisa
 
 - **Multiplicity and optionality the domain does not state.** Working them out is domain modelling, where the
   evidence supports it.
-- **Participation in activities** (*performed by*, *acts on*). Activity mapping.
+- **Participation in activities** (*performed by*, *acts on*). Activity modelling.
 - **Lifecycle and state transitions.** Domain modelling.
 - **Aggregation versus composition.** *Is part of* covers the domain's sense of parthood; any stronger commitment is
   a definitional rule with its evidence, or a later modelling decision.

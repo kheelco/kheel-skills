@@ -10,15 +10,23 @@ may be a concept in one glossary and a characteristic in another.
 |---|---|---|
 | **Agent** | Someone or something that acts: a role, an organisation, a body, an external system | *Director*, *Registrar*, *Auditor* |
 | **Concept** | A thing the domain talks about in its own right | *Invoice*, *Special resolution*, *Annual return*, *Share class* |
-| **Activity** | Something done that the domain names as one act or process | *Passing a special resolution*, *Filing an annual return*, *Transferring shares* |
+| **Activity** | An act or process the domain names as a thing in its own right, usually with a noun | *Audit*, *Settlement*, *Onboarding*, *Annual general meeting* |
 | **Characteristic** | Something this glossary describes as a property of another term: a state, a quality, a handle, an amount | *Fully paid* (of a share), *Holder identifier* (of a shareholder), *Holding balance* (of a shareholding) |
 
-**Act or product.** Many domain words name both an act and what the act produces: a *special resolution* is a
-resolution and the passing of one; an *annual return* is a document and the filing of it; a *transfer* is an act and
-the instrument that records it. That is polysemy, and it is the commonest one. When it matters, record each sense as
-its own term, phrased so its kind is plain (*Filing an annual return* the activity, *Annual return* the document), each
-not to be confused with the other. When the domain only ever talks about one of the two, record that one and say in
-its notes which sense it is.
+**Nouns beget activities.** Most of what a domain does is said as a verb on one of its nouns: *pass a special
+resolution*, *file an annual return*, *transfer shares*. The glossary holds the nouns (*Special resolution*, *Annual
+return*, *Share*); the doing belongs to activity modelling, where jobs and their steps are written as a verb and a
+glossary noun. Do not coin activity terms by turning those verbs into entries (*Passing a special resolution*). Record
+an activity term only when the domain names the act itself, as something it talks about in its own right: an *Audit* is
+scheduled, scoped and signed off; a *Settlement* can fail; an *Onboarding* is in progress.
+
+**Act or product.** Many domain words name both an act and what the act produces: an *audit* is the examination and
+the report it ends in; a *transfer* is an act and the instrument that records it; a *settlement* is a process and the
+agreement it reaches. That is polysemy, and it is the commonest one. When the domain talks about both senses, record
+each as its own term, qualified so its kind is plain (*Audit* the activity, *Audit report* the document), each not to
+be confused with the other. When it only ever talks about one, record that one and say in its notes which sense it is;
+when the act is only ever spoken of as a verb on the product, record the product alone (*Special resolution*, a
+concept) and leave the act to activity modelling.
 
 **Concept or characteristic.** A useful heuristic is identity: if you can point at two and say they are different
 ones, it is probably a concept. Treat that as indicative, not decisive. *Address*, *Qualification* or *Status* may be
@@ -27,9 +35,10 @@ the domain needs to say about it: if it is only ever spoken of as what some othe
 characteristic of that term; once the domain talks about it in its own right, it is a concept. A characteristic that
 gains relations does not have to be promoted; promote it when the domain treats it as a thing.
 
-**Activities** are recorded as vocabulary: their word, definition, boundaries, types and parts. Who performs them, what
-they act on and in what order belong to activity mapping. A definition may still mention participants in words (*An
-act by which the board approves…*), using glossary terms, but the glossary records no participant relations.
+**Activities**, where the glossary has them, are recorded as vocabulary: their word, definition, boundaries, types and
+parts. Who performs them, what they act on and in what order belong to activity modelling. A definition may still
+mention participants in words (*An independent examination of a company's financial statements by an auditor…*),
+using glossary terms, but the glossary records no participant relations.
 
 **Unsettled kind.** If the kind cannot be settled, record the likeliest kind and put the question in the term's notes.
 A term whose kind keeps flipping is often two terms. There is no catch-all kind: a term of art that seems to fit none
@@ -140,8 +149,9 @@ one (*Billing account*, *Access account*) and record each as not to be confused 
   resolution means the same and only its rules differ.
 - **Varying a meaning.** The opposite error: one term whose definition is quietly different in some setting. A
   different meaning is a different term.
-- **Act and product in one term.** *Annual return* defined as the filing in one sentence and the document in the
-  next.
+- **Act and product in one term.** *Audit* defined as the examination in one sentence and the report in the next.
+- **Verbs turned into entries.** *Passing a special resolution* as a term, when the domain only ever says *pass* a
+  special resolution. The noun is the term; the act belongs to activity modelling.
 - **Over-definition.** Defining ordinary words with ordinary meanings. If nobody in the domain would disagree about
   it, it needs no entry.
 - **Swallowed detail.** Multiplicity the domain never stated, lifecycle states, full attribute lists, participants or

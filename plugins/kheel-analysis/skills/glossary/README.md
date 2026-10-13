@@ -146,7 +146,7 @@ classDiagram
 |---|---|---|
 | **TermKind** | `Agent` | Someone or something that acts: a role, an organisation, a body, an external system. |
 | | `Concept` | A thing the domain talks about in its own right. |
-| | `Activity` | Something done that the domain names as one act or process. |
+| | `Activity` | An act or process the domain names as a thing in its own right, usually with a noun (*Audit*, *Settlement*). Most doing is a verb on a glossary noun, left to activity modelling. |
 | | `Characteristic` | A property of another term, its bearer (`of`). |
 | **RelationKind** | `IsATypeOf` | *is a type of*: the narrower term is a case of the broader, and what the broader term's definition and definitional rules say holds for it too. |
 | | `IsPartOf` | *is part of*: the part is understood as a component of the whole. |
