@@ -100,16 +100,14 @@ differ mainly in what they call the units, which classifications they impose, wh
 they record and what constraints they add.
 
 The model holds only that shared structure, and says nothing about any one technique. Everything particular to a
-technique is supplied by a **profile** (below).
-
-Activities and performers belong to a **domain**, not to the document that first names them. A document (an
-`ActivityModel`) is a view onto its domain: it refers to the activities it is about, and may propose new ones. So an
-activity exists as soon as any document names it, several documents can refer to the same activity, and one document
-can be agreed as the authoritative list of the domain's activities without being their only container. The domain is
-the same one the glossary uses (the folder that stands for the domain), so activities, performers and terms share one
-scope. Jobs to be Done, as this family practises it, is one configuration of
+technique is declared by a **profile** (below). Jobs to be Done, as this family practises it, is one configuration of
 three profiles ([The model configured for Jobs to be Done](#the-model-configured-for-jobs-to-be-done)); other
 techniques are further profiles, added without changing the model.
+
+Everything belongs to a **domain**: its activities, its performers, and the facts recorded about them. There is no
+separate document entity. What a person reads as a document (a topology, a job map) is a **view**: one activity, and
+what a profile reaches from it ([Views](#views)). The domain is versioned as a whole, and it is the same domain the
+glossary uses, so activities, performers and terms share one scope.
 
 *Activity* is the generic unit. It is not the glossary's Activity kind, which is a word the domain uses; an activity
 here may involve several such words.
@@ -121,18 +119,13 @@ classDiagram
     class Domain {
         name
         description [0..1]
-    }
-    class ActivityModel {
-        title
-        profile
-        description [0..1]
-        properties [*]
+        version [0..1]
     }
     class Activity {
         name
         statement
-        description [0..1]
         status
+        description [0..1]
         category [0..1]
         variantKind [0..1]
         appliesTo [*]
@@ -177,10 +170,8 @@ classDiagram
 
     Domain "1" *-- "*" Activity : activities
     Domain "1" *-- "*" Performer : performers
-    Domain "1" *-- "*" ActivityModel : models
     Domain "*" --> "*" Term : glossary
-    ActivityModel "*" --> "*" Activity : covers
-    ActivityModel "*" --> "0..1" Activity : focus
+    Domain "1" *-- "0..1" SyncBinding : sync
     Activity "*" --> "0..1" Activity : partOf
     Activity "*" --> "1" Performer : performedBy
     Activity "*" --> "*" Term : actsOn
@@ -197,73 +188,92 @@ classDiagram
 
 | Element | Notes |
 |---|---|
-| **Domain** | The scope everything else belongs to: the area of the business being analysed, the same as the glossary's domain (in documents, the folder that stands for it). It owns the activities and performers, and holds the documents about them. An activity is identified by its `name` within its domain. |
-| **ActivityModel** | One document of one profile (a job map, a value chain, a story map), in a domain. `profile` names the profile, and so the labels, values, properties and constraints that apply. `covers` are the domain's activities the document is about or names; `focus` is the one it is centred on. `description` is its opening prose. A document can name an activity the domain did not yet have; it is then added to the domain as proposed. |
-| **Activity** | The generic unit, owned by its domain. `name` identifies it within its domain; `statement` is its full form; `description` says what it covers, without breaking it into sub-activities. `category` is a value from the profile's classification. `position` orders it among its siblings where the profile gives order a meaning. `intent` is the result its performer is pursuing: what distinguishes one activity from another. `status` is `proposed` (named by a document, not yet agreed) or `agreed` (accepted into the document the profile treats as authoritative); a profile says which document that is. |
-| **partOf** | Decomposition: an activity that is part of a larger one, in the same model or another. Whether the part keeps an identity of its own is for the profile to record. Profiles limit the depth. |
+| **Domain** | The scope everything belongs to: the area of the business being analysed, the same as the glossary's domain (in files, the folder that stands for it). It owns the activities and performers, and is versioned as a whole: agreeing a change is recording a new `version` of the domain. |
+| **Activity** | The generic unit. `name` identifies it within its domain; `statement` is its full form; `description` says what it covers, without breaking it into sub-activities. `category` is a value from a profile's classification. `position` orders it among its siblings where the profile gives order a meaning. `intent` is the result its performer is pursuing: what distinguishes one activity from another. `status` is `proposed` or `agreed`; each profile says what makes an activity agreed. An activity may be the **primary activity** of one or more views. |
+| **partOf** | Decomposition: an activity that is part of a larger one. Whether the part keeps an identity of its own is for the profile to record, usually through its `category`. Profiles limit the depth. |
 | **Variants** | A **variant** is an activity that says what another activity (its **core**) must accomplish, or what changes, in a particular case: it is `partOf` its core, shares its `category`, and has a `variantKind` and an `appliesTo` naming the case. Kinds are profile-defined (a situation, a particular kind of thing, a market, a channel). `appliesTo` names one case or several sharing the same statement, as text kept consistent by the profile's naming rule, not a separate entity. A variant never changes its core's intent. |
 | **Performer** | Who performs an activity, by `capacity` (the responsibility carried), not title; resolves to an agent term in the glossary. `rationale` records what was unified or split, and why. |
-| **actsOn** | The glossary nouns an activity's statement uses. In documents these are words in the statement, not a field; drift checks compare them with the glossary. |
+| **actsOn** | The glossary nouns an activity's statement uses. In files these are words in the statement, not a field; drift checks compare them with the glossary. |
 | **ActivityLink** | A link between two distinct activities, other than decomposition. `kind` is a profile-defined value (a relationship, a sequence, a dependency), and may be absent where a profile describes links in words; `description` says what the link is. |
 | **Criterion** | How success of an activity is judged. `statement` is the criterion as written; `kind` and `properties` carry any form the profile imposes (an outcome statement's parts, an acceptance criterion's conditions, a service level's target). `notes` holds what must survive agreement about the criterion itself (to be validated; derived from a qualifier; its measure to be settled). |
 | **Qualifier** | A further dimension of an activity that holds whatever the case (an emotional or social aim, a regulatory note); `kind` is profile-defined. A profile may require qualifiers to be turned into criteria. |
 | **Seam** | Where execution leaves any system: it `happensInWorld`, `arrivesFromWorld`, or runs `bothWays` (the act inside gives the change outside its effect). |
-| **properties** | Profile-defined facts recorded on a model, an activity or a criterion, as a name and a value. A value may be simple (a word, a number), a structured record with named fields, or a list of either. The model fixes only that they exist; each profile declares which properties it uses, where, their fields, and what they mean. |
-| **SyncBinding** | Present only when synced with an external system; never invented. In documents it is the YAML block under an entry's heading. |
+| **properties** | Facts recorded on an activity or a criterion, as a name and a value. A value may be simple (a word, a number), a structured record with named fields, or a list of either. What a view finds about its primary activity (a map's circumstances and coverage, a topology's open questions) is recorded as properties of that activity. **Every property name is declared once, by the profile or profiles that use it, and never means different things in different profiles**, so a property's name says which method recorded it. |
+| **SyncBinding** | Present only when synced with an external system; never invented. On the domain, it records the version synced; on an activity, the external record's id. In files it is the YAML block under an entry's heading. |
 | **Evidence** | Not in the model: evidence marks (attested, inferred, proposed as a modelling choice) belong to drafts and are dropped on agreement. They are not an activity's `status`, which records only whether it has been agreed. Open questions are text in `notes`, prefixed `Open:`. |
+
+### Views
+
+A **view** is one activity, its **primary activity**, together with everything a profile reaches from it: its parts,
+the activities linked to it, and the properties the profile records on them. A topology is the view of a main job by
+the topology profile; a job map is the view of a job by the job map profile. Views are not stored: they are derived
+from the domain whenever they are read, rendered or synced.
+
+The same activity can be the primary activity of several views, one per profile applied to it. Whether a profile has
+been applied is read from the domain itself: a job has been mapped if it has steps with a stage `category`.
+
+In the family's Markdown files, each file is a view written down: `job-topology.md` is the topology view of the main
+job, and `job-maps/<job>.md` the job map view of that job. The files together are the domain's storage, and an
+external system may hold the same views as pages or records. A file never owns anything another file refers to: a job
+named in several files is one activity of the domain.
 
 ### Profiles
 
-A profile configures the model for one technique. It declares:
+A profile configures the model for one technique. It is a set of declarations, not something instantiated. It
+declares:
 
-- what it calls the model and the activity, what the model's `focus` is, and which of its documents is authoritative
-  for an activity's `status`;
-- its `category` values, and how deep `partOf` may go;
+- what it calls the activity, and what can be a primary activity;
+- its **reach**: from a primary activity, what a view includes (its parts, the activities linked to it, or both, and
+  of which categories);
+- its `category` values, disjoint from other profiles' so that a category says which profile placed an activity, and
+  how deep `partOf` may go;
 - its link kinds, and between what they run;
 - which variant kinds and qualifier kinds it uses, and its naming rule for `appliesTo`;
 - the form of its criteria;
-- the properties it records, and where;
+- the properties it records, with their names, fields and the activities that carry them;
+- what makes an activity's `status` agreed;
 - the constraints that tie them together.
 
 Adding a technique is a matter of writing those down, not of changing the model. For example (illustrations of the
 pattern, not skills in this plugin):
 
-| Technique | Activity is | category | partOf | ActivityLink | Criterion |
-|---|---|---|---|---|---|
-| Value chain (Porter) | Activity | Primary, support | Optional: activity → sub-activity | Not used | Not used |
-| Hierarchical task analysis | Goal, subgoal, operation | Level | Recursive, any depth | Plan (when each sub-task is done) | Performance standard |
-| User story map (Patton) | Activity, task, story | Backbone, walking skeleton, release | Activity → task → story | Sequence along the backbone | Acceptance criteria |
-| Process model (swimlane, BPMN) | Process, step | Task, decision, event | Process → step | Sequence, condition, message | Service level |
-| Event partitioning (essential systems analysis) | Planned response | External, temporal event | Response → step | Triggered by (an event) | Not used |
+| Technique | Primary activity | Activity is | category | partOf | ActivityLink | Criterion |
+|---|---|---|---|---|---|---|
+| Value chain (Porter) | The firm's value-creating activity | Activity | Primary, support | Optional: activity → sub-activity | Not used | Not used |
+| Hierarchical task analysis | The top goal | Goal, subgoal, operation | Level | Recursive, any depth | Plan (when each sub-task is done) | Performance standard |
+| User story map (Patton) | The user's overall activity | Activity, task, story | Backbone, walking skeleton, release | Activity → task → story | Sequence along the backbone | Acceptance criteria |
+| Process model (swimlane, BPMN) | The process | Process, step | Task, decision, event | Process → step | Sequence, condition, message | Service level |
+| Event partitioning (essential systems analysis) | The system's purpose | Planned response | External, temporal event | Response → step | Triggered by (an event) | Not used |
 
 ## The model configured for Jobs to be Done
 
 The job family configures the generic model as three profiles: the **job topology**, **job domain analysis** and the
-**job map**. They share one set of values and properties, declared once here.
-
-**Jobs belong to the domain; the topology is the agreed view of them.** A job named by any document (a map's focus
-job made before any topology exists, a higher-order job, a stakeholder job a map finds) is a job of the domain, with
-`status: proposed`. It becomes `agreed` when it is accepted into the topology, which remains the authoritative list of
-the domain's jobs and executors. A step is an activity of the domain too, but belongs to its map: its `status` follows
-its map's agreement. The skills remain the authority on what
+**job map**. They share one set of values and properties, declared once here. The skills remain the authority on what
 each value means in practice; this section says how they land in the model.
+
+**Jobs belong to the domain; the topology is the agreed view of them.** A job named anywhere (a map's job before any
+topology exists, a higher-order job, a stakeholder job a map finds) is a job of the domain, with `status: proposed`.
+It becomes `agreed` when the topology view reaches it (it is the main job, or carries a topology category and is part
+of or linked to the main job) in an agreed version of the domain. A step becomes `agreed` with the version in which
+its map is agreed.
 
 ### The three profiles
 
 | Model element | Job topology | Job domain analysis | Job map |
 |---|---|---|---|
-| ActivityModel | Topology (one per domain); authoritative for jobs' `status` | Analysis (one per domain, optional; refers to the domain's jobs) | Job map (one per job mapped) |
-| focus | The main job | The main job, or the jobs taken up | The job mapped: any job of the domain; one not yet in a topology is `proposed` |
-| Activity | Job (and sub-jobs) | Job | Step, and its variants; may also propose jobs (higher-order, stakeholder, separately mappable) to the domain |
-| Performer | Job executor | The topology's executors | The focus job's executor |
+| Primary activity | The main job (exactly one per domain) | The main job | Any job of the domain: the main job, a sub-job, a related job; one not yet agreed is `proposed` |
+| Reach | Jobs part of or linked to the main job, with a topology category; their executors | The jobs it takes up, linked to the main job or to each other around it | Steps part of the job, with a stage category, and their variants; jobs it links to |
+| Activity | Job (and sub-jobs) | Job | Step, and its variants |
+| Performer | Job executor | The topology's executors | The job's executor |
 | intent | The job's desired result; with `successCriteria` and `scope` kept beside the statement | As the topology | Not used: a step serves its job's intent |
-| partOf | Sub-jobs to the main job; constituent candidates are noted on the main job's entry | Not used | Every step to the focus job; variants to their core step |
+| partOf | Sub-jobs to the main job | Not used | Every step to the job; variants to their core step |
 | position | Not used | Not used | Order within a stage, as the executor would describe it; the stage gives the grouping |
-| ActivityLink | Related and stakeholder jobs to the main job, in words; `MeansTo` from the main job to a higher-order job | Classified relationships, each to the most specific job it bears on | `MeansTo` from the focus job to a higher-order job it proposes |
+| ActivityLink | Related and stakeholder jobs to the main job, in words; `MeansTo` from the main job to a higher-order job | Classified relationships, each to the most specific job it bears on | `MeansTo` from the job to a higher-order job it proposes |
 | Criterion | Not used | Not used | Desired outcomes, usually two to four per significant step once researched |
 | Qualifier | Emotional and social, on jobs | Not used | Turned into criteria on the steps they bear on |
 | Variants | Circumstances on jobs | Not used | `EdgeCase` and `Circumstance` variants of core steps, only where the step changes |
 | Seam | Flagged (`flags`) | Direction settled | Marked on steps |
+| Agreed when | The topology view reaches the job in an agreed version | Its findings are agreed with the version | The map is agreed with the version |
 
 ### The eight stages
 
@@ -285,68 +295,76 @@ when it happens; the stages organise an inventory, not a sequence.
 
 | Declared | Values |
 |---|---|
-| `category` (topology) | `Main`, `SubJob` (a constituent the job map found separately mappable), `Related` (the same executor's other job, in Ulwick's sense), `Stakeholder` (another executor's job that touches the main job) |
-| `category` (domain analysis) | The topology's categories, for the jobs it refers to |
+| `category` (topology) | `Main`, `SubJob` (a constituent the job map found separately mappable), `Related` (the same executor's other job, in Ulwick's sense), `Stakeholder` (another executor's job that touches the main job). Disjoint from the stages, so a sub-job and a step, both `partOf` the main job, are told apart by category |
+| `category` (domain analysis) | None of its own: it uses the topology's |
 | `category` (job map) | The eight stages, above |
-| `variantKind` | `Core` (default), `EdgeCase` (a particular kind of thing the job deals with; `appliesTo` is the glossary's preferred word), `Circumstance` (a situation the whole job is done in; `appliesTo` is its label as listed with the map) |
-| `ActivityLink.kind` | Domain analysis: `Changes`, `Enables`, `Constrains`, `Governs`, `Consumes`, `RespondsTo`. Topology: otherwise described in words; a related job may be `Before`, `After` or `Alongside`. Topology and job map: `MeansTo` (the focal job is one means to a higher-order job: buying a property to *secure a place to live*) |
-| `status` | `proposed`, `agreed`; a job is agreed when accepted into the topology |
+| `variantKind` | `Core` (default), `EdgeCase` (a particular kind of thing the job deals with; `appliesTo` is the glossary's preferred word), `Circumstance` (a situation the whole job is done in; `appliesTo` is its label in the job's `circumstances`) |
+| `ActivityLink.kind` | Domain analysis: `Changes`, `Enables`, `Constrains`, `Governs`, `Consumes`, `RespondsTo`. Topology: otherwise described in words; a related job may be `Before`, `After` or `Alongside`. Topology and job map: `MeansTo` (the job is one means to a higher-order job: buying a property to *secure a place to live*) |
+| `status` | `proposed`, `agreed`, by the rule above |
 | `Qualifier.kind` | `Emotional`, `Social` |
 | `Criterion` | Job map only: a desired outcome, with properties `direction` (minimise, increase), `measure` (time, likelihood, variability, number, effort), `object`, `clarifier`; `notes` for what must survive agreement (to validate, as for an outcome that encodes a decision strategy; derived from a qualifier; measure to settle) |
 
 ### Properties
 
+Each name is declared once and means one thing; *Profile* says which method records it. Properties a view records
+about its primary activity sit on that activity.
+
 | Property | On | Profile | Meaning |
 |---|---|---|---|
+| `framing` | The main job | Topology | The topology's opening prose: the executor and main job in full, and any sub-domain split already evident |
 | `constituents` | The main job | Topology | Each constituent candidate, with its `trigger`, what was noticed, its `lean` (likely an episode, likely a step, possibly a job, unclear) and its `status` (open, or the map's classifications) |
 | `scope` | A job, chiefly the main job | Topology | What the job's object takes in and leaves out, kept out of its statement |
 | `successCriteria` | A job, chiefly the main job | Topology | How the executor judges the whole job, kept out of its statement; not desired outcomes |
 | `edgeCases` | The main job | Topology | The cases its object's breadth was tested against, each with its finding |
+| `openClassifications` | The main job | Topology | Boundary questions the five tests genuinely split on, each with its evidence |
+| `subDomainHypotheses` | The main job | Topology | Each, with the signal that prompted it |
+| `boundaryQuestions` | The main job | Topology | Questions about the main job's edge left open |
+| `flags` | The main job | Topology | Seams, obligations and supplying, for deeper analysis |
+| `leftOut` | The main job | Topology | Jobs considered and left out, with why |
 | `identity` | A job taken up on a boundary question | Topology, domain analysis | One job or two; part of the main job or beside it; one executor or two; with the five tests' findings behind it |
-| `standard` | Any activity whose result is assurance | All | `consistency` or `correctness` |
-| `openClassifications` | The model | Topology | Boundary questions the five tests genuinely split on, each with its evidence |
-| `subDomainHypotheses` | The model | Topology | Each, with the signal that prompted it |
-| `boundaryQuestions` | The model | Topology | Questions about the main job's edge left open |
-| `flags` | The model | Topology | Seams, obligations and supplying, for deeper analysis |
-| `mapping` | The model | Job map | Over its life (the default), or a sub-job on its own |
-| `circumstances` | The model | Job map | The circumstances the job is done in, declared once: each with its `label` (C1, C2, …) and `description`; a `Circumstance` variant's `appliesTo` names one |
-| `episodes` | The model | Job map | For a continuing job, each episode with its trigger and the steps it uses; a step entry's *Episodes* is the inverse view |
-| `classifications` | The model | Job map | Each constituent candidate: `covered` (with the steps), `separatelyMappable`, `outsideScope`, `unresolved` (with why); covered and separately mappable may both hold |
-| `coverage` | The model | Job map | Each circumstance, and each significant edge case: the steps that cover it, and the finding (covered, a gap, an ambiguous boundary, possibly another job) |
+| `obligations` | The main job | Domain analysis | Each obligation, with where it is placed or why it is open |
+| `boundaryTests` | The main job | Domain analysis | The exceptional cases, settings and changes tried, and what each showed |
+| `topologyProposals` | The main job | Domain analysis | Changes to the topology the analysis proposes that are not already proposed jobs or links (merging or splitting executors, say) |
+| `standard` | Any job or step whose result is assurance | All | `consistency` or `correctness` |
+| `preCheck` | A mapped job | Job map | The map's opening prose: how it is mapped and what it found before the steps |
+| `mapping` | A mapped job | Job map | Over its life (the default), or a sub-job on its own |
+| `circumstances` | A mapped job | Job map | The circumstances the job is done in, declared once: each with its `label` (C1, C2, …) and `description`; a `Circumstance` variant's `appliesTo` names one |
+| `episodes` | A mapped job | Job map | For a continuing job, each episode with its trigger and the steps it uses; a step entry's *Episodes* is the inverse view |
+| `classifications` | A mapped job | Job map | Each constituent candidate: `covered` (with the steps), `separatelyMappable`, `outsideScope`, `unresolved` (with why); covered and separately mappable may both hold |
+| `coverage` | A mapped job | Job map | Each circumstance, and each significant edge case: the steps that cover it, and the finding (covered, a gap, an ambiguous boundary, possibly another job) |
+| `emptyStages` | A mapped job | Job map | Stages that yielded nothing, and what each suggests about the boundary |
 | `order` | A step | Job map | Where it helps: that the step runs alongside another, repeats, is done on demand, or returns to another step. Never a required sequence |
 
 ### Constraints
 
 **Job topology**
 
-- Exactly one main job.
-- The topology is the agreed view of the domain's jobs: a job is `agreed` once it is in the topology, and `proposed`
-  until then, whichever document named it.
+- Exactly one main job per domain.
+- A job is `agreed` once the topology view reaches it in an agreed version of the domain, and `proposed` until then,
+  whichever file named it.
 - A related job has the main job's performer and a different intent; a stakeholder job has a different performer.
 - Performers are one only if they pursue the same intent, never because they stand to another activity the same way;
   two stakeholder jobs with the same relationship to the main job but different intents remain separate.
-- A different motivation for the same functional objective is not a different job; a higher-order job the focal job is
-  one means to is a different job, not a restatement of it.
-- Work that seems to make up the main job is recorded as constituent candidates, with a lean but no verdict, until a
-  job map classifies it.
+- A different motivation for the same functional objective is not a different job; a higher-order job the main job is
+  one means to is a different job, linked by `MeansTo`, not a restatement of it.
+- Work that seems to make up the main job is recorded in `constituents`, with a lean but no verdict, until a job map
+  classifies it.
 - Boundary questions the evidence does not settle go in `openClassifications`, not forced; a shared higher-level
   objective never settles identity on its own.
-- The topology is the authoritative list of jobs and executors, updated when a map's classifications and proposed
-  jobs are agreed. A higher-order job is recorded with a `MeansTo` link from the main job, not used to restate it.
 
 **Job domain analysis**
 
-- It refers to the topology's jobs and does not define its own.
+- It refers to the domain's jobs and does not define its own; jobs it concludes are missing or wrong go to
+  `topologyProposals`, or are proposed as jobs, for the topology to agree.
 - It works between jobs and leaves their internal structure to their maps.
 - Identity is settled by weighing the five tests, never by a shared objective, performer, trigger, source or success
   criterion alone.
 - Every relationship has a kind and runs to the most specific job it bears on.
-- Changes to the topology are proposed there, not made here.
 
 **Job map**
 
-- One focus job, a job of the domain: agreed in the topology, or `proposed` where the map is made before one exists.
-  Every step has the focus job's performer (delegated work stays the performer's).
+- Its primary activity is a job of the domain: agreed, or `proposed` where the map is made before a topology exists.
+  Every step has the job's performer (delegated work stays the performer's).
 - Circumstances are declared once, in `circumstances`; every `Circumstance` variant names one of them.
 - Jobs the map finds that are not its own (higher-order, stakeholder, separately mappable) are proposed to the domain,
   for the topology to agree; the map does not make them agreed.
@@ -360,7 +378,7 @@ when it happens; the stages organise an inventory, not a sequence.
   Completeness is tested by coverage of each circumstance.
 - Every constituent candidate is classified, and each classification is reported to the topology without holding the
   map up. Separate mappability is judged by objective, never by a sequence of its own; overlap with the parent's map
-  is expected. Granularity is judged by the focal job's objective, never by counting steps.
+  is expected. Granularity is judged by the job's objective, never by counting steps.
 - Criteria take the outcome form; their completeness is judged separately from the steps', they are checked against
   the executor's capacity and the domain's causal rules, and tensions between them are recorded, not resolved.
 - Conclude steps must be accomplishments the job needs. The choice of map never changes what the jobs are.
@@ -370,7 +388,8 @@ when it happens; the stages organise an inventory, not a sequence.
 - **Matching.** Use an external system's identifier once it has one (`SyncBinding.id`); until then match on an
   activity's `name` within its domain.
 - **Scope.** Map the domain to the target's container for a body of work (a project, a space, a folder); activities
-  and performers are created there, and each document refers to them rather than copying them.
+  and performers are created there once. Where the target holds documents or pages, each is a view (a primary
+  activity and what its profile reaches), and refers to the activities rather than copying them.
 - **Status.** Carry `proposed` and `agreed` as a status or tag, so a proposed job is not read back as agreed.
 - **Hierarchy.** Most tools hold a tree (initiative → epic → story, process → step, job → step). Map `partOf` to it and
   `category` to a type or tag, and keep the profile so the tree can be read back with the right labels.
@@ -382,4 +401,5 @@ when it happens; the stages organise an inventory, not a sequence.
 - **Links.** Keep the link kind; where the target has only untyped links, carry the kind in a custom attribute.
 - **Criteria.** Tools built around Outcome-Driven Innovation hold jobs, steps and outcomes natively; elsewhere criteria
   map to child records or a structured field of their activity, never pooled at a higher level.
-- **Versions.** Before pushing, compare `version` or `lastUpdated` with the external record and stop on a mismatch.
+- **Versions.** The domain is versioned as a whole. Before pushing, compare the domain's synced `version`, and each
+  record's `version` or `lastUpdated`, with the external system, and stop on a mismatch.
