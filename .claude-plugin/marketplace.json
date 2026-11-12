@@ -9,6 +9,15 @@
       "name": "kheel-analysis",
       "source": "./plugins/kheel-analysis",
       "description": "Agent skills for requirements analysis: glossary (ontology), activity mapping, domain modelling, use cases, stories, business rules and constraints."
+    },
+    {
+      "name": "kheel-mockup",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/kheelco/kheel-mockups.git",
+        "path": "plugins/kheel-mockup"
+      },
+      "description": "Agent skills for creating and maintaining design-system-bound mockups that render in the browser without a build."
     }
   ]
 }

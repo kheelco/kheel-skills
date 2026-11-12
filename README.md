@@ -11,13 +11,18 @@ to use, including commercially, but not to build into a product that competes wi
 | Plugin | What it does |
 |---|---|
 | [kheel-analysis](plugins/kheel-analysis/README.md) | Requirements analysis: glossary (ontology), activity mapping, domain modelling, use cases, stories, business rules and constraints. |
+| [kheel-mockup](https://github.com/kheelco/kheel-mockups) | Mockups built from a design system that render in the browser without a build: set up, create, explore options and publish. Its code, releases and VS Code previewer live in [kheel-mockups](https://github.com/kheelco/kheel-mockups); this marketplace lists it from there. |
 
 ## Installing
 
 ```
 /plugin marketplace add kheelco/kheel-skills
 /plugin install kheel-analysis@kheel-skills
+/plugin install kheel-mockup@kheel-skills
 ```
+
+Install either plugin or both. `kheel-mockup` is also offered by kheel-mockups' own marketplace
+(`kheel-mockup@kheel-mockup`); install it from one marketplace or the other, not both, or its skills appear twice.
 
 From a local clone, add the marketplace by its path instead: `/plugin marketplace add ./kheel-skills`.
 
@@ -42,6 +47,9 @@ Create `plugins/<name>/` with a `.claude-plugin/plugin.json` (with `"license": "
 `README.md` and a `skills/` folder, then add an entry for it to `.claude-plugin/marketplace.json` and the table
 above. Every skill folder carries `LICENSE.md`, an exact copy of the one at the repository root, so the licence
 travels with a skill however it is installed; copy it into each new skill.
+
+A plugin kept in another repository is listed by a `git-subdir` source: the repository's URL and the plugin's
+folder within it (as `kheel-mockup` is). Its own repository holds its code, licence and releases.
 
 ## Licence
 
