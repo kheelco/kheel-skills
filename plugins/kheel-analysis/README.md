@@ -20,4 +20,11 @@ rules a system must enforce:
 | [job-map](skills/job-map/SKILL.md) | Breaks one job into the steps its executor must accomplish, with the desired outcomes by which each step is judged. |
 | [job-help](skills/job-help/SKILL.md) | Explains the Jobs to be Done model, what is Ulwick and what is the extension, and guides people through modelling a domain's jobs stage by stage. Its [README](skills/job-help/README.md) describes the job family and its generic activity model. |
 
-Each skill is a folder under `skills/` holding a `SKILL.md` and any `references/`, `assets/` or `scripts/` it needs.
+Each skill is a folder under `skills/` holding a `SKILL.md`, a copy of `LICENSE.md` and any `references/`,
+`assets/` or `scripts/` it needs.
+
+## Licence
+
+Source-available under the [PolyForm Shield License 1.0.0](../../LICENSE.md): free to use, including
+commercially, but not to build into a product that competes with it or with Kheel. Each skill folder carries its
+own copy of the licence.
